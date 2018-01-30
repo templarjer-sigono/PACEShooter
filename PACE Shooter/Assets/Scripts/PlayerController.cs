@@ -7,6 +7,13 @@ public class PlayerController : MonoBehaviour {
 	public float MaxSpeed;
 	public float decreasingSpeed;
 	private Rigidbody2D rigidbody2D = null;
+	public GameObject bulletCandidate;
+	private float bulletOffset = 0.6f;
+
+	public float bulletVelocity = 5f;
+	public GameObject bullet;
+	public GameObject bullet1;
+
 
 	// Use this for initialization
 	void Start () {
@@ -49,5 +56,18 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		rigidbody2D.AddForce (force2D);
+
+		if (Input.GetButtonDown ("Fire1")) {
+			Vector3 worldMousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			Vector2 direction = (Vector2)((worldMousePos - transform.position));
+			direction.Normalize ();
+			// Creates the bullet locally
+			GameObject bullet = (GameObject)Instantiate (
+				                    bulletCandidate,
+				                    transform.position + (Vector3)(direction * 0.5f),
+				                    Quaternion.identity);
+			// Adds velocity to the bullet
+			bullet.GetComponent<Rigidbody2D> ().velocity = direction * bulletVelocity;
+		}
 	}
 }
