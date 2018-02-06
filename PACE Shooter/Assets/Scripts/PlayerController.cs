@@ -9,11 +9,10 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D rigidbody2D = null;
 	public GameObject bulletCandidate;
 	private float bulletOffset = 0.6f;
-
+	public GameObject Player;
 	public float bulletVelocity = 5f;
 	public GameObject bullet;
-	public GameObject bullet1;
-
+	private int deathcount = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +20,13 @@ public class PlayerController : MonoBehaviour {
 	}
 	float speed = 6;
 	// Update is called once per frame
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		//	deathcount = deathcount +1
+		if ((col.tag == "EBLTS")) {
+			Debug.Log ("asdasd");
+		}
+		}
 	void Update () {
 
 		Vector2 force2D = Vector2.zero;
@@ -70,4 +76,6 @@ public class PlayerController : MonoBehaviour {
 			bullet.GetComponent<Rigidbody2D> ().velocity = direction * bulletVelocity;
 		}
 	}
-}
+
+	}
+

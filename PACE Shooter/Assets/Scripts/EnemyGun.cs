@@ -15,13 +15,20 @@ public class EnemyGun : MonoBehaviour {
 	}
 	void FireEnemyBullet()
 	{
-		GameObject playerShip = GameObject.Find ("playerishere");
+		GameObject playerishere = GameObject.Find ("playerishere");
 
-		if (playerShip != null){
+		if (playerishere != null){
 		GameObject bullet = (GameObject)Instantiate(EnemyBulletGO);
 		bullet.transform.position = transform.position;
-			Vector2 direction = playerShip.transform.position - bullet.transform.position;
+			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if((col.tag == "Humanoid") || (col.tag == "Bullets")){
+			Destroy(gameObject);
 		}
 	}
 }

@@ -9,13 +9,14 @@ public class EnemyBullet : MonoBehaviour {
 
 	void Awake()
 	{
-		speed = 5f;
+		speed = 7f;
 		isReady = false;
 	}
 	// Use this for initialization
-	void OnCollisionEnter2D(Collision2D col){
-		 Destroy (gameObject);
+	void OnCollisionEnter2D(Collision2D coll){
+		Destroy(gameObject);
 	}
+
 	void Start () {
 		
 	}
