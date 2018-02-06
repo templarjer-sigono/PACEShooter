@@ -7,30 +7,33 @@ public class PlayerController : MonoBehaviour {
 	public float forceValue;
 	public float MaxSpeed;
 	public float decreasingSpeed;
-	private Rigidbody2D rigidbody2D = null;
+	private Rigidbody2D rigidbody2Dp = null;
 	public GameObject bulletCandidate;
-	private float bulletOffset = 0.6f;
+	//private float bulletOffset = 0.6f;
 	public GameObject Player;
 	public float bulletVelocity = 5f;
 	public GameObject bullet;
 	public Camera GameCamera;
 	public float CameraShakeDuration;
 	public float CameraShakeStrength;
-	private float OrthoSizeA = 3f;
-	private float OrthoSizeB = 0.02f;
+	private float OrthoSizeA = 4f;
+	private float OrthoSizeb = 3.2f;
+	private float OrthoSizec = 0.02f;
 	private float SmoothZoomt = 5f;
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
+	private float injurelap = 0.0f;
 	private int health = 1;
+	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 	public BoxCollider2D boxcollider;
 
 
 	// Use this for initialization
 	void Start () {
-		rigidbody2D = this.GetComponent<Rigidbody2D> ();
+		rigidbody2Dp = this.GetComponent<Rigidbody2D> ();
 	}
-	float speed = 6;
+	//float speed = 6;
 	// Update is called once per frame
 
 	void OnTriggerEnter2D(Collider2D col)
@@ -40,22 +43,31 @@ public class PlayerController : MonoBehaviour {
 		//	deathcount = deathcount +1
 		if ((col.tag == "EBLTS")) {
 			
-			if (health != 0) {
+			if (health > 0) {
 				health -= 1;
 				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
+				injuredzoom = true;
 			}
-				else
-			{	DeathZoom = true;
-				DeathCheck = true;
+				else {
+					DeathZoom = true;
+					DeathCheck = true;
+				}
 			}
-		}
 		}
 
 	void FixedUpdate () {
 
+		if (injuredzoom){
+			injurelap += Time.deltaTime / 6f;
+			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
+			if (injurelap >= 1.0f) {
+					injuredzoom = false;
+				}
+			}
+			
 		if (DeathZoom) {
-			elapsed += Time.deltaTime / SmoothZoomt;
-			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeA, OrthoSizeB, elapsed);
+			elapsed += Time.deltaTime / SmoothZoomt * 1.4f ;
+			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
 			if (elapsed >= 1.0f) {
 				DeathZoom = false;
 			}
@@ -79,24 +91,24 @@ public class PlayerController : MonoBehaviour {
 				force2D.x += forceValue;
 			}
 			if (force2D != Vector2.zero) {
-				rigidbody2D.AddForce (force2D);
-				float speed = rigidbody2D.velocity.magnitude;
+				rigidbody2Dp.AddForce (force2D);
+				float speed = rigidbody2Dp.velocity.magnitude;
 				if (speed > MaxSpeed) {
 					speed = MaxSpeed;
 				}
-				rigidbody2D.velocity = rigidbody2D.velocity.normalized * speed;
+				rigidbody2Dp.velocity = rigidbody2Dp.velocity.normalized * speed;
 			} else {
-				float speed = rigidbody2D.velocity.magnitude;
+				float speed = rigidbody2Dp.velocity.magnitude;
 				speed -= decreasingSpeed * Time.deltaTime;
 				if (speed < 0) {
 					speed = 0;
 				}
-				rigidbody2D.velocity = rigidbody2D.velocity.normalized * speed;
+				rigidbody2Dp.velocity = rigidbody2Dp.velocity.normalized * speed;
 			}
 
-			rigidbody2D.AddForce (force2D);
+			rigidbody2Dp.AddForce (force2D);
 			if (DeathCheck) {
-				rigidbody2D.mass = 1000f;
+				rigidbody2Dp.mass = 1000f;
 				Debug.Log ("MASS INCREASED");
 			}
 			if (Input.GetButtonDown ("Fire1")) {

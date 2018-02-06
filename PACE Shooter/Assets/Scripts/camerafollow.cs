@@ -8,6 +8,7 @@ public class camerafollow : MonoBehaviour {
 	public float followDistance;
 	public GameObject target;
 	public Vector3 offset;
+	public float followspd;
 	Vector3 targetPos;
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,7 @@ public class camerafollow : MonoBehaviour {
 
 			targetPos = transform.position + (targetDirection.normalized * interpVelocity * Time.deltaTime); 
 
-			transform.position = Vector3.Lerp( transform.position, targetPos + offset, 0.25f);
+			transform.position = Vector3.Lerp( transform.position, targetPos + offset, followspd);
 
 		}
 	}

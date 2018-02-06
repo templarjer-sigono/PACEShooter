@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour {
 
-	float speed;
+	public float speed;
 	Vector2 _direction;
 	bool isReady;
 
 	void Awake()
 	{
-		speed = 7f;
+		
 		isReady = false;
 	}
 	// Use this for initialization
