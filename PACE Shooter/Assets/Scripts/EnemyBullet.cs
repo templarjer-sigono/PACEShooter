@@ -14,7 +14,9 @@ public class EnemyBullet : MonoBehaviour {
 	}
 	// Use this for initialization
 	void OnCollisionEnter2D(Collision2D coll){
-		Destroy(gameObject);
+		if((coll.gameObject.tag == "Colliders") || (coll.gameObject.tag == "Humanoid")){
+			Destroy(gameObject);
+		}
 	}
 
 	void Start () {

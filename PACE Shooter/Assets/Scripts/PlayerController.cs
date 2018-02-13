@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
 	private float injurelap = 0.0f;
-	private int health = 1;
+	private int health = 2;
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 	public BoxCollider2D boxcollider;
@@ -42,9 +42,9 @@ public class PlayerController : MonoBehaviour {
 	
 		//	deathcount = deathcount +1
 		if ((col.tag == "EBLTS")) {
-			
+			health -= 1;
 			if (health > 0) {
-				health -= 1;
+				
 				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 				injuredzoom = true;
 			}
