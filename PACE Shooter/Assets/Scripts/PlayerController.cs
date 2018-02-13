@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour {
 	public Camera GameCamera;
 	public float CameraShakeDuration;
 	public float CameraShakeStrength;
-	private float OrthoSizeA = 4f;
-	private float OrthoSizeb = 3.2f;
+	private float OrthoSizeA = 6f;
+	private float OrthoSizeb = 4f;
 	private float OrthoSizec = 0.02f;
 	private float SmoothZoomt = 5f;
 	private bool DeathZoom = false;
@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour {
 	private int health = 2;
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
-	public BoxCollider2D boxcollider;
 
 
 	// Use this for initialization
@@ -43,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 		//	deathcount = deathcount +1
 		if ((col.tag == "EBLTS")) {
 			health -= 1;
-			if (health > 0) {
+			if ((health > 0)) {
 				
 				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 				injuredzoom = true;
@@ -66,6 +65,7 @@ public class PlayerController : MonoBehaviour {
 			}
 			
 		if (DeathZoom) {
+			injuredzoom = false;
 			elapsed += Time.deltaTime / SmoothZoomt * 1.4f ;
 			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
 			if (elapsed >= 1.0f) {

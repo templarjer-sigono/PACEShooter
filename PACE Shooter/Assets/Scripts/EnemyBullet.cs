@@ -14,9 +14,7 @@ public class EnemyBullet : MonoBehaviour {
 	}
 	// Use this for initialization
 	void OnCollisionEnter2D(Collision2D coll){
-		if((coll.gameObject.tag == "Colliders") || (coll.gameObject.tag == "Humanoid")){
 			Destroy(gameObject);
-		}
 	}
 
 	void Start () {
@@ -33,6 +31,7 @@ public class EnemyBullet : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
 		if (isReady) {
 			Vector2 position = transform.position;
 			position += _direction * speed * Time.deltaTime;
