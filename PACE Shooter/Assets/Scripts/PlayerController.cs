@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
 	private float injurelap = 0.0f;
-	private int health = 2;
+	private int health = 3;
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 
@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour {
 			
 		if (DeathZoom) {
 			injuredzoom = false;
+			rigidbody2Dp.bodyType = RigidbodyType2D.Static;
 			elapsed += Time.deltaTime / SmoothZoomt * 1.4f ;
 			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
 			if (elapsed >= 1.0f) {
