@@ -1,20 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AdvanceLevel : MonoBehaviour {
 	int BossLeft = 2;
-	bool killedAllBoss = false;
+	int SceneNbr ;
+	int SceneTotal;
 	// Use this for initialization
 	void Start () {
-		
+		SceneNbr = SceneManager.GetActiveScene ().buildIndex;
+		SceneTotal = SceneManager.sceneCount;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
 		BossLeft = enemies.Length;
-		Debug.Log(BossLeft + "Left");
-
+		if (BossLeft > 1) {
+			if (SceneTotal >= SceneNbr) {
+				SceneManager.LoadScene (SceneNbr + 1);
+			}
+			else
+			{		SceneManager.LoadScene (0);
+			}
+		}
 	}
 }
