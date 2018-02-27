@@ -59,7 +59,6 @@ public class PlayerController : MonoBehaviour {
 		if ((col.tag == "EBLTS")) {
 			health -= 1;
 			if ((health > 0)) {
-				
 				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 				injuredzoom = true;
 			}
@@ -75,6 +74,7 @@ public class PlayerController : MonoBehaviour {
 		if (injuredzoom){
 			injurelap += Time.deltaTime / 6f;
 			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
+			Debug.Log (OrthoSizeA + OrthoSizeb + OrthoSizec);
 			if (injurelap >= 1.0f) {
 					injuredzoom = false;
 				}
