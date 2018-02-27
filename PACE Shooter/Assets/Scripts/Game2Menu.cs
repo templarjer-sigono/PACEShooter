@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MENUtoGAME : MonoBehaviour {
+public class Game2Menu : MonoBehaviour {
 
-	public string levelName;
+	public GameObject UICheck;
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Return)) {
-			SceneManager.LoadScene ("Game");
+		if (Input.GetKey (KeyCode.Return) && UICheck.activeInHierarchy == true) {
+			SceneManager.LoadScene ("Menu");
 		}
 	}
 }

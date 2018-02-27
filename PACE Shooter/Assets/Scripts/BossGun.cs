@@ -13,7 +13,7 @@ public class BossGun : MonoBehaviour {
 	}
 	private void PlayShootAnim(){
 		_ShootAnim.Play ("EnemyShootAnim");
-		Debug.Log ("Anim Triggered!");
+	//	Debug.Log ("Anim Triggered!");
 	}
 	// Update is called once per frame
 	void Update () {
@@ -23,8 +23,8 @@ public class BossGun : MonoBehaviour {
 	{
 		PlayShootAnim ();
 		if (BossMultiShot > 0) {
-			AudioSource audio = GetComponent<AudioSource> ();
-			audio.Play();
+			//AudioSource audio = GetComponent<AudioSource> ();
+			//audio.Play();
 			GameObject playerishere = GameObject.Find ("playerishere");
 			GameObject bullet = (GameObject)Instantiate (BossBulletGO);
 			bullet.transform.position = transform.position;
