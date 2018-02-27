@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossGun : MonoBehaviour {
 	public GameObject BossBulletGO;
-	private int BossHealth = 12;
+	private int BossHealth = 4;
 	private int BossMultiShot = 7;
 	public Animator _ShootAnim;
 	// Use this for initialization

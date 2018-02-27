@@ -9,7 +9,7 @@ public class EnemyGun : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		InvokeRepeating ("FireEnemyBullet", 0.423f, 0.846f);
+		InvokeRepeating ("FireEnemyBullet", 0.4225f, 0.845f);
 	}
 
 	private void PlayShootAnim(){
