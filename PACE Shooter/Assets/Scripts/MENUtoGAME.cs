@@ -15,7 +15,7 @@ public class MENUtoGAME : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Return)) {
-			SceneManager.LoadScene ("Game");
+			SceneManager.LoadScene ("Stage1");
 		}
 	}
 }
