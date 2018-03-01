@@ -49,6 +49,7 @@
      <Compile Include="Assets\AdvanceLevel.cs" />
      <Compile Include="Assets\AudioManager.cs" />
      <Compile Include="Assets\FontSizeIncrease.cs" />
+     <Compile Include="Assets\MinionSpawn.cs" />
      <Compile Include="Assets\Scripts\BossGun.cs" />
      <Compile Include="Assets\Scripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\EnemyBullet.cs" />
@@ -56,6 +57,9 @@
      <Compile Include="Assets\Scripts\Game2Menu.cs" />
      <Compile Include="Assets\Scripts\MENUtoGAME.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\StageController.cs" />
+     <Compile Include="Assets\Scripts\StageData.cs" />
+     <Compile Include="Assets\Scripts\StageSetting.cs" />
      <Compile Include="Assets\Scripts\camerafollow.cs" />
      <Compile Include="Assets\SnapshotManager.cs" />
      <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />

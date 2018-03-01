@@ -15,14 +15,16 @@ public class AdvanceLevel : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
 		BossLeft = enemies.Length;
 		if (BossLeft < 1) 
 		{
 			if (SceneTotal >= SceneNbr) 
 			{
-				SceneManager.LoadScene (SceneNbr + 1);
+//				SceneManager.LoadScene (SceneNbr + 1);
+
 			}
 			else
 			{		
