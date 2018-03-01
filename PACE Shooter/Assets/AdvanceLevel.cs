@@ -11,18 +11,22 @@ public class AdvanceLevel : MonoBehaviour {
 	void Start () {
 		SceneNbr = SceneManager.GetActiveScene ().buildIndex;
 		SceneTotal = SceneManager.sceneCount;
+		Debug.Log ("SceneTotal" + SceneTotal + "SceneNbr" + SceneNbr);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
 		BossLeft = enemies.Length;
-		if (BossLeft > 1) {
-			if (SceneTotal >= SceneNbr) {
+		if (BossLeft < 1) 
+		{
+			if (SceneTotal >= SceneNbr) 
+			{
 				SceneManager.LoadScene (SceneNbr + 1);
 			}
 			else
-			{		SceneManager.LoadScene (0);
+			{		
+				SceneManager.LoadScene (0);
 			}
 		}
 	}
