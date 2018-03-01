@@ -55,6 +55,7 @@ public class StageController : MonoBehaviour {
 				{
 					GameObject.Destroy (_currentstage);
 					stage++;
+					_currentstage++;
 					LoadLevel();
 				}
 				else
