@@ -6,22 +6,25 @@ using UnityEngine.SceneManagement;
 public class StageController : MonoBehaviour {
 	
 	bool Cmon = false;
+	bool Adv = false;
+	int BossLeft;
 
 	[SerializeField]
 	private List<GameObject> stages;
-
+	private GameObject _currentstage;
 	[SerializeField]
 	private int stage;
 
 	private void Awake()
 	{
-		stage = PlayerPrefs.GetInt("Stage", 0);
-		if (stage >= stages.Count)
+//		stage = PlayerPrefs.GetInt("Stage", 0);
+/*		if (stage >= stages.Count)
 		{
 			stage = 0;
 		}
-		GameObject.Instantiate(stages[stage], transform);
+*/
 
+		LoadLevel ();
 		if (!Cmon){
 			Cmon = true;
 		}
@@ -39,7 +42,7 @@ public class StageController : MonoBehaviour {
 	}
 */
 
-	/*void Update () 
+	void Update () 
 	{
 		if (Cmon)
 		{
@@ -48,11 +51,11 @@ public class StageController : MonoBehaviour {
 
 			if (BossLeft < 1) 
 			{
-				if (stage <= stages.Count) 
+				if (stage < stages.Count) 
 				{
-					GameObject.Instantiate(stages[stage], transform);
-					PlayerPrefs.SetInt("Stage", stage + 1);
-					SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+					GameObject.Destroy (_currentstage);
+					stage++;
+					LoadLevel();
 				}
 				else
 				{		
@@ -60,6 +63,13 @@ public class StageController : MonoBehaviour {
 				}
 			}
 		}
-	} */
+	} 
+
+	void LoadLevel ()
+	{
+		_currentstage = GameObject.Instantiate (stages [stage], transform);
+						
+	}
+					
 
 }
