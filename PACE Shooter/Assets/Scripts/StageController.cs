@@ -54,7 +54,7 @@ public class StageController : MonoBehaviour {
 			GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
 			BossLeft = enemies.Length;
 
-			if (BossLeft < 1 || Input.GetKey (KeyCode.P)) 
+			if (BossLeft < 1 || Input.GetKeyDown (KeyCode.P)) 
 			{
 				stage++;
 				if (stage < 3) 
