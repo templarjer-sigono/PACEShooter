@@ -59,7 +59,6 @@ public class PlayerController : MonoBehaviour {
 		//	deathcount = deathcount +1
 		if ((col.tag == "EBLTS")) {
 			health -= 1;
-			Debug.Log (health);
 			if ((health > 0)) {
 				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 				injuredzoom = true;

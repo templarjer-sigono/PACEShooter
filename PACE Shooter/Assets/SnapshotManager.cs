@@ -33,15 +33,15 @@ public class SnapshotManager : MonoBehaviour {
 			Stage3S_.TransitionTo (SmoothTimer/2);
 		}
 		if (coll.tag == "SnapshotStage4") {
-			Debug.Log ("Snapshot4 Activated!");
+			//Debug.Log ("Snapshot4 Activated!");
 			Stage4S_.TransitionTo (SmoothTimer/2);
 		}
 		if (coll.tag == "SnapshotStage6") {
-			Debug.Log ("Snapshot4 Activated!");
+			//Debug.Log ("Snapshot4 Activated!");
 			Stage6S_.TransitionTo (3f);
 		}
 		if (coll.tag == "SnapshotStage5") {
-			Debug.Log ("Snapshot5 Activated!");
+			//Debug.Log ("Snapshot5 Activated!");
 			Stage5S_.TransitionTo (0);
 		}
 	}

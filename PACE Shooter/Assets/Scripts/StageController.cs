@@ -28,10 +28,7 @@ public class StageController : MonoBehaviour {
 */
 	
 		LoadLevel ();
-		if (!Cmon){
-			Cmon = true;
-		}
-
+		Cmon = true;
 /*		GameObject.Instantiate(stages[stage], transform);
 		StartCoroutine(ChangeLevel()); 
 */
@@ -47,16 +44,21 @@ public class StageController : MonoBehaviour {
 
 	void Update () 
 	{
-		
+
+	
 
 		if (Cmon)
 		{
 			GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
 			BossLeft = enemies.Length;
+			if (Input.GetKeyDown (KeyCode.T)){
+				Debug.Log(BossLeft);
+			}
 
 			if (BossLeft < 1 || Input.GetKeyDown (KeyCode.P)) 
 			{
 				stage++;
+				Debug.Log ("No Boss Detected");
 				if (stage < 3) 
 				{
 					GameObject.Destroy (_currentstage);
@@ -67,7 +69,8 @@ public class StageController : MonoBehaviour {
 				}
 				else
 				{		
-					SceneManager.LoadScene (0);
+					SceneManager.LoadScene (2);
+					Debug.Log ("Scene Changed");
 				}
 			}
 		}

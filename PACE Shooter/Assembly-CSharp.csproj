@@ -49,6 +49,7 @@
      <Compile Include="Assets\AdvanceLevel.cs" />
      <Compile Include="Assets\AudioManager.cs" />
      <Compile Include="Assets\FontSizeIncrease.cs" />
+     <Compile Include="Assets\MenuMover.cs" />
      <Compile Include="Assets\MinionSpawn.cs" />
      <Compile Include="Assets\Scripts\BossGun.cs" />
      <Compile Include="Assets\Scripts\BulletScript.cs" />
