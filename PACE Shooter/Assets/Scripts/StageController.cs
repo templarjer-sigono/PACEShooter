@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StageController : MonoBehaviour {
 	
 	bool Cmon = false;
-	bool Adv = false;
+
 	int BossLeft;
 
 	[SerializeField]
@@ -15,7 +15,7 @@ public class StageController : MonoBehaviour {
 	[SerializeField]
 	private int stage;
 
-	private int playerhealth;
+
 	public bool EnemyBulletSwitch;
 
 	private void Awake()
@@ -47,14 +47,14 @@ public class StageController : MonoBehaviour {
 
 	void Update () 
 	{
-		playerhealth = GameObject.Find("playerishere").GetComponent<PlayerController>().health;
+		
 
 		if (Cmon)
 		{
 			GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
 			BossLeft = enemies.Length;
 
-			if (BossLeft < 1) 
+			if (BossLeft < 1 || Input.GetKey (KeyCode.P)) 
 			{
 				stage++;
 				if (stage < 3) 
