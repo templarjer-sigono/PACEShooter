@@ -9,11 +9,13 @@ public class SnapshotManager : MonoBehaviour {
 	public AudioMixerSnapshot Stage2S_;
 	public AudioMixerSnapshot Stage3S_;
 	public AudioMixerSnapshot Stage4S_;
+	public AudioMixerSnapshot Stage42S_;
 	public AudioMixerSnapshot Stage5S_;
 	public BoxCollider2D Stage1C_;
 	public BoxCollider2D Stage2C_;
 	public BoxCollider2D Stage3C_;
 	public BoxCollider2D Stage4C_;
+	public BoxCollider2D Stage42C_;
 	public BoxCollider2D Stage5C_;
 	public float SmoothTimer;
 
@@ -39,6 +41,10 @@ public class SnapshotManager : MonoBehaviour {
 		if (coll.tag == "SnapshotStage4") {
 			//Debug.Log ("Snapshot4 Activated!");
 			Stage4S_.TransitionTo (SmoothTimer);
+		}
+		if (coll.tag == "SnapshotStage42") {
+			//Debug.Log ("Snapshot4 Activated!");
+			Stage42S_.TransitionTo (SmoothTimer);
 		}
 		if (coll.tag == "SnapshotStage5") {
 			//Debug.Log ("Snapshot5 Activated!");
