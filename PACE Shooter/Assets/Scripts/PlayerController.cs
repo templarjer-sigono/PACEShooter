@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
 	private float injurelap = 0.0f;
-	private int health = 5;
+	private int health = 999;
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 
