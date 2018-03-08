@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class EnemyGun : MonoBehaviour {
 	public GameObject EnemyBulletGO;
 	public Animator _ShootAnim;
+	public bool EnemyShootSwitch;
 	int EnemyDeaths;
-
+	private int health;
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireEnemyBullet", 0.4225f, 0.845f);
@@ -21,12 +22,15 @@ public class EnemyGun : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+
 	}
 	void FireEnemyBullet()
 	{
 		GameObject playerishere = GameObject.Find ("playerishere");
+	
+		health = GameObject.Find("playerishere").GetComponent<PlayerController>().health;
 		PlayShootAnim ();
-		if (playerishere != null){
+		if (health > 0){
 		GameObject bullet = (GameObject)Instantiate(EnemyBulletGO);
 		bullet.transform.position = transform.position;
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
@@ -39,7 +43,7 @@ public class EnemyGun : MonoBehaviour {
 		if((col.tag == "Bullets")){
 			Destroy(gameObject);
 			EnemyDeaths = EnemyDeaths + 1;
-			Debug.Log ("ENEMY = " + EnemyDeaths);
+//			Debug.Log ("ENEMY = " + EnemyDeaths);
 		}
 			
 	}

@@ -2,6 +2,7 @@
 using System.Collections;
 using DG.Tweening;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
 	private float injurelap = 0.0f;
-	private int health = 999;
+	public int health = 5;
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour {
 		//	deathcount = deathcount +1
 		if ((col.tag == "EBLTS")) {
 			health -= 1;
+			Debug.Log (health);
 			if ((health > 0)) {
 				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 				injuredzoom = true;
@@ -83,7 +85,13 @@ public class PlayerController : MonoBehaviour {
 			injuredzoom = false;
 			rigidbody2Dp.bodyType = RigidbodyType2D.Static;
 			elapsed += Time.deltaTime / SmoothZoomt * 1.4f ;
+
 			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
+		
+			if (Input.GetKey (KeyCode.Return)) {
+				SceneManager.LoadScene (0);
+			}
+
 			OverText.SetActive(true);
 			if (elapsed >= 1.0f) {
 				DeathZoom = false;

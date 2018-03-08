@@ -15,6 +15,9 @@ public class StageController : MonoBehaviour {
 	[SerializeField]
 	private int stage;
 
+	private int playerhealth;
+	public bool EnemyBulletSwitch;
+
 	private void Awake()
 	{
 //		stage = PlayerPrefs.GetInt("Stage", 0);
@@ -23,7 +26,7 @@ public class StageController : MonoBehaviour {
 			stage = 0;
 		}
 */
-
+	
 		LoadLevel ();
 		if (!Cmon){
 			Cmon = true;
@@ -44,6 +47,8 @@ public class StageController : MonoBehaviour {
 
 	void Update () 
 	{
+		playerhealth = GameObject.Find("playerishere").GetComponent<PlayerController>().health;
+
 		if (Cmon)
 		{
 			GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyBoss");
@@ -51,10 +56,12 @@ public class StageController : MonoBehaviour {
 
 			if (BossLeft < 1) 
 			{
-				if (stage < stages.Count) 
+				stage++;
+				if (stage < 3) 
 				{
 					GameObject.Destroy (_currentstage);
-					stage++;
+
+					Debug.Log ("Level Now Changed to: " + stage);
 					//_currentstage++;
 					LoadLevel();
 				}
