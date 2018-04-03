@@ -44,6 +44,20 @@ public class PlayerController : MonoBehaviour {
 	public AudioClip[] FootSteps;
 	public float Timer;
 
+	//
+	public Transform firepoint;
+	public Rigidbody2D Bullet;
+
+
+	/*Perspktif Pointkliking
+	public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z) {
+		Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+		Plane xy = new Plane(Vector3.forward, new Vector3(0, 0, z));
+		float distance;
+		xy.Raycast(ray, out distance);
+		return ray.GetPoint(distance);
+	}
+*/
 
 	// Use this for initialization
 	void Start () {
@@ -151,28 +165,12 @@ public class PlayerController : MonoBehaviour {
 				rigidbody2Dp.mass = 1000f;
 				Debug.Log ("MASS INCREASED");
 			}
-			if (Input.GetButtonDown ("Fire1")) {
-				Vector3 worldMousePos = Vector3.one;
-				Ray _mouseRay = Camera.main.ScreenPointToRay (Input.mousePosition);
-				RaycastHit hit;
-				if (Physics.Raycast (_mouseRay,out hit)) {
-					worldMousePos = hit.point;
-					Debug.Log (worldMousePos);
-				}
-				float midPoint = (transform.position - Camera.main.transform.position).magnitude * 44f;
 
-				//worldMousePos.z = Camera.main.farClipPlane;
-				Vector2 direction = (Vector2)((_mouseRay.origin + _mouseRay.direction * midPoint));
-				//Debug.Log (worldMousePos);
-				direction.Normalize ();
-				// Creates the bullet locally
-				GameObject bullet = (GameObject)Instantiate (
-					                    bulletCandidate,
-					                    transform.position + (Vector3)(direction * 1f),
-					                    Quaternion.identity);
-				// Adds velocity to the bullet
-				bullet.GetComponent<Rigidbody2D> ().velocity = direction * bulletVelocity;
-				//bullet.GetComponent<Rigidbody2D> ().AddForce = worldMousePos;
+
+
+			if (Input.GetButtonDown ("Fire1")) {
+
+			
 			}
 		}
 
