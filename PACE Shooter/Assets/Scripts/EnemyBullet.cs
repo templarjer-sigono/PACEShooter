@@ -14,8 +14,15 @@ public class EnemyBullet : MonoBehaviour {
 		isReady = false;
 	}
 	// Use this for initialization
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnCollisionEnter(Collision coll){
 			Destroy(gameObject);
+	}
+
+	void OnTriggerEnter(Collider bullet)
+	{
+		if (bullet.gameObject.tag == "Colliders") {
+			DestroyObject (bullet.gameObject);
+		}
 	}
 
 	void Start () {

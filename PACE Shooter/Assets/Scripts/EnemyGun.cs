@@ -38,7 +38,7 @@ public class EnemyGun : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D col)
+	void OnTriggerEnter(Collider col)
 	{
 		if((col.tag == "Bullets")){
 			Destroy(gameObject);
