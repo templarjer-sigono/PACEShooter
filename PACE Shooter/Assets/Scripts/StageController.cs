@@ -11,9 +11,10 @@ public class StageController : MonoBehaviour {
 
 	[SerializeField]
 	private List<GameObject> stages;
-	private GameObject _currentstage;
+	//private GameObject _currentstage;
 	[SerializeField]
 	private int stage;
+	private int SceneNbr;
 
 
 	public bool EnemyBulletSwitch;
@@ -27,14 +28,15 @@ public class StageController : MonoBehaviour {
 		}
 */
 	
-		LoadLevel ();
 		Cmon = true;
 /*		GameObject.Instantiate(stages[stage], transform);
 		StartCoroutine(ChangeLevel()); 
 */
 	}
 
-/*	private IEnumerator ChangeLevel()
+
+
+	/*private IEnumerator ChangeLevel()
 	{
 		yield return new WaitForSeconds(5.0f);
 		PlayerPrefs.SetInt("Stage", stage + 1);
@@ -44,7 +46,7 @@ public class StageController : MonoBehaviour {
 
 	void Update () 
 	{
-
+		SceneNbr = SceneManager.GetActiveScene().buildIndex;
 	
 
 		if (Cmon)
@@ -57,28 +59,17 @@ public class StageController : MonoBehaviour {
 
 			if (BossLeft < 1 || Input.GetKeyDown (KeyCode.P)) 
 			{
-				stage++;
-				Debug.Log ("No Boss Detected");
-				if (stage < 3) 
-				{
-					GameObject.Destroy (_currentstage);
-
 					Debug.Log ("Level Now Changed to: " + stage);
 					//_currentstage++;
-					LoadLevel();
-				}
-				else
-				{		
-					SceneManager.LoadScene (2);
-					Debug.Log ("Scene Changed");
+					SceneManager.LoadScene (SceneNbr+1);
 				}
 			}
 		}
-	} 
+
 
 	void LoadLevel ()
 	{
-		_currentstage = GameObject.Instantiate (stages [stage], transform);
+		//_currentstage = GameObject.Instantiate (stages [stage], transform);
 						
 	}
 					
