@@ -170,8 +170,9 @@ public class PlayerController : MonoBehaviour {
 
 			if (Input.GetButtonDown ("Fire1")) {
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				Vector3 target = ray.GetPoint(10)
-					firepoint.look
+				Vector3 target = ray.GetPoint (10);
+				//	firepoint.look
+			
 			
 			}
 		}
