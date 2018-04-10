@@ -1,0 +1,670 @@
+fileFormatVersion: 2
+guid: 46a73c6a17d2a47a4881363cd4f29428
+timeCreated: 1523327564
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone_Control
+    100002: Bone_Control.001
+    100004: Bone_Control.002
+    100006: Bone_Control.003
+    100008: Bone_Control.004
+    100010: Bone_Control.005
+    100012: Bone_Control.006
+    100014: Bone_Control.007
+    100016: Bone_Control.008
+    100018: Bone_Control.009
+    100020: Bone_Control.010
+    100022: Bone_Control.011
+    100024: Bone_Control.012
+    100026: Bone_Control.013
+    100028: Bone_Control.014
+    100030: Bone_Control.015
+    100032: Bone_Control_Center
+    100034: Bone_Control_end
+    100036: Bone_Control_Root
+    100038: Bone_Def.017
+    100040: Bone_Def.017_end
+    100042: Bone_Def.018
+    100044: Bone_Def.018_end
+    100046: Bone_Def.019
+    100048: Bone_Def.019_end
+    100050: Bone_Def.020
+    100052: Bone_Def.020_end
+    100054: Bone_Def.021
+    100056: Bone_Def.021_end
+    100058: Bone_Def.022
+    100060: Bone_Def.022_end
+    100062: Bone_Def.023
+    100064: Bone_Def.023_end
+    100066: Bone_Def.024
+    100068: Bone_Def.024_end
+    100070: Bone_Def.025
+    100072: Bone_Def.025_end
+    100074: Bone_Def.026
+    100076: Bone_Def.026_end
+    100078: Bone_Def.027
+    100080: Bone_Def.027_end
+    100082: Bone_Def.028
+    100084: Bone_Def.028_end
+    100086: Bone_Def.029
+    100088: Bone_Def.029_end
+    100090: Bone_Def.030
+    100092: Bone_Def.030_end
+    100094: Bone_Def.031
+    100096: Bone_Def.031_end
+    100098: Bone_Def.032
+    100100: Bone_Def.032_end
+    100102: Bone_Def.033
+    100104: Bone_Def.033_end
+    100106: Bone_Def.034
+    100108: Bone_Def.034_end
+    100110: Bone_Def.035
+    100112: Bone_Def.035_end
+    100114: Bone_Def.036
+    100116: Bone_Def.036_end
+    100118: Bone_Def.037
+    100120: Bone_Def.037_end
+    100122: Bone_Def.038
+    100124: Bone_Def.038_end
+    100126: Bone_Def.039
+    100128: Bone_Def.039_end
+    100130: Bone_Def.040
+    100132: Bone_Def.040_end
+    100134: Bone_Def.041
+    100136: Bone_Def.041_end
+    100138: Bone_Def.042
+    100140: Bone_Def.042_end
+    100142: Bone_Def.043
+    100144: Bone_Def.043_end
+    100146: Bone_Def.044
+    100148: Bone_Def.044_end
+    100150: Bone_Def.045
+    100152: Bone_Def.045_end
+    100154: Bone_Def.046
+    100156: Bone_Def.046_end
+    100158: Bone_Def.047
+    100160: Bone_Def.047_end
+    100162: Bone_Def.048
+    100164: Bone_Def.048_end
+    100166: //RootNode
+    100168: Object_Tesseract.096
+    100170: Object_Tesseract.097
+    100172: Object_Tesseract.098
+    100174: Object_Tesseract.099
+    100176: Object_Tesseract.100
+    100178: Object_Tesseract.101
+    100180: Object_Tesseract.102
+    100182: Object_Tesseract.103
+    100184: Object_Tesseract.104
+    100186: Object_Tesseract.105
+    100188: Object_Tesseract.106
+    100190: Object_Tesseract.107
+    100192: Object_Tesseract.108
+    100194: Object_Tesseract.109
+    100196: Object_Tesseract.110
+    100198: Object_Tesseract.111
+    100200: Object_Tesseract.112
+    100202: Object_Tesseract.113
+    100204: Object_Tesseract.114
+    100206: Object_Tesseract.115
+    100208: Object_Tesseract.116
+    100210: Object_Tesseract.117
+    100212: Object_Tesseract.118
+    100214: Object_Tesseract.119
+    100216: Object_Tesseract.120
+    100218: Object_Tesseract.121
+    100220: Object_Tesseract.122
+    100222: Object_Tesseract.123
+    100224: Object_Tesseract.124
+    100226: Object_Tesseract.125
+    100228: Object_Tesseract.126
+    100230: Object_Tesseract.127
+    400000: Bone_Control
+    400002: Bone_Control.001
+    400004: Bone_Control.002
+    400006: Bone_Control.003
+    400008: Bone_Control.004
+    400010: Bone_Control.005
+    400012: Bone_Control.006
+    400014: Bone_Control.007
+    400016: Bone_Control.008
+    400018: Bone_Control.009
+    400020: Bone_Control.010
+    400022: Bone_Control.011
+    400024: Bone_Control.012
+    400026: Bone_Control.013
+    400028: Bone_Control.014
+    400030: Bone_Control.015
+    400032: Bone_Control_Center
+    400034: Bone_Control_end
+    400036: Bone_Control_Root
+    400038: Bone_Def.017
+    400040: Bone_Def.017_end
+    400042: Bone_Def.018
+    400044: Bone_Def.018_end
+    400046: Bone_Def.019
+    400048: Bone_Def.019_end
+    400050: Bone_Def.020
+    400052: Bone_Def.020_end
+    400054: Bone_Def.021
+    400056: Bone_Def.021_end
+    400058: Bone_Def.022
+    400060: Bone_Def.022_end
+    400062: Bone_Def.023
+    400064: Bone_Def.023_end
+    400066: Bone_Def.024
+    400068: Bone_Def.024_end
+    400070: Bone_Def.025
+    400072: Bone_Def.025_end
+    400074: Bone_Def.026
+    400076: Bone_Def.026_end
+    400078: Bone_Def.027
+    400080: Bone_Def.027_end
+    400082: Bone_Def.028
+    400084: Bone_Def.028_end
+    400086: Bone_Def.029
+    400088: Bone_Def.029_end
+    400090: Bone_Def.030
+    400092: Bone_Def.030_end
+    400094: Bone_Def.031
+    400096: Bone_Def.031_end
+    400098: Bone_Def.032
+    400100: Bone_Def.032_end
+    400102: Bone_Def.033
+    400104: Bone_Def.033_end
+    400106: Bone_Def.034
+    400108: Bone_Def.034_end
+    400110: Bone_Def.035
+    400112: Bone_Def.035_end
+    400114: Bone_Def.036
+    400116: Bone_Def.036_end
+    400118: Bone_Def.037
+    400120: Bone_Def.037_end
+    400122: Bone_Def.038
+    400124: Bone_Def.038_end
+    400126: Bone_Def.039
+    400128: Bone_Def.039_end
+    400130: Bone_Def.040
+    400132: Bone_Def.040_end
+    400134: Bone_Def.041
+    400136: Bone_Def.041_end
+    400138: Bone_Def.042
+    400140: Bone_Def.042_end
+    400142: Bone_Def.043
+    400144: Bone_Def.043_end
+    400146: Bone_Def.044
+    400148: Bone_Def.044_end
+    400150: Bone_Def.045
+    400152: Bone_Def.045_end
+    400154: Bone_Def.046
+    400156: Bone_Def.046_end
+    400158: Bone_Def.047
+    400160: Bone_Def.047_end
+    400162: Bone_Def.048
+    400164: Bone_Def.048_end
+    400166: //RootNode
+    400168: Object_Tesseract.096
+    400170: Object_Tesseract.097
+    400172: Object_Tesseract.098
+    400174: Object_Tesseract.099
+    400176: Object_Tesseract.100
+    400178: Object_Tesseract.101
+    400180: Object_Tesseract.102
+    400182: Object_Tesseract.103
+    400184: Object_Tesseract.104
+    400186: Object_Tesseract.105
+    400188: Object_Tesseract.106
+    400190: Object_Tesseract.107
+    400192: Object_Tesseract.108
+    400194: Object_Tesseract.109
+    400196: Object_Tesseract.110
+    400198: Object_Tesseract.111
+    400200: Object_Tesseract.112
+    400202: Object_Tesseract.113
+    400204: Object_Tesseract.114
+    400206: Object_Tesseract.115
+    400208: Object_Tesseract.116
+    400210: Object_Tesseract.117
+    400212: Object_Tesseract.118
+    400214: Object_Tesseract.119
+    400216: Object_Tesseract.120
+    400218: Object_Tesseract.121
+    400220: Object_Tesseract.122
+    400222: Object_Tesseract.123
+    400224: Object_Tesseract.124
+    400226: Object_Tesseract.125
+    400228: Object_Tesseract.126
+    400230: Object_Tesseract.127
+    2300000: Object_Tesseract.096
+    2300002: Object_Tesseract.097
+    2300004: Object_Tesseract.098
+    2300006: Object_Tesseract.099
+    2300008: Object_Tesseract.100
+    2300010: Object_Tesseract.101
+    2300012: Object_Tesseract.102
+    2300014: Object_Tesseract.103
+    2300016: Object_Tesseract.104
+    2300018: Object_Tesseract.105
+    2300020: Object_Tesseract.106
+    2300022: Object_Tesseract.107
+    2300024: Object_Tesseract.108
+    2300026: Object_Tesseract.109
+    2300028: Object_Tesseract.110
+    2300030: Object_Tesseract.111
+    2300032: Object_Tesseract.112
+    2300034: Object_Tesseract.113
+    2300036: Object_Tesseract.114
+    2300038: Object_Tesseract.115
+    2300040: Object_Tesseract.116
+    2300042: Object_Tesseract.117
+    2300044: Object_Tesseract.118
+    2300046: Object_Tesseract.119
+    2300048: Object_Tesseract.120
+    2300050: Object_Tesseract.121
+    2300052: Object_Tesseract.122
+    2300054: Object_Tesseract.123
+    2300056: Object_Tesseract.124
+    2300058: Object_Tesseract.125
+    2300060: Object_Tesseract.126
+    2300062: Object_Tesseract.127
+    3300000: Object_Tesseract.096
+    3300002: Object_Tesseract.097
+    3300004: Object_Tesseract.098
+    3300006: Object_Tesseract.099
+    3300008: Object_Tesseract.100
+    3300010: Object_Tesseract.101
+    3300012: Object_Tesseract.102
+    3300014: Object_Tesseract.103
+    3300016: Object_Tesseract.104
+    3300018: Object_Tesseract.105
+    3300020: Object_Tesseract.106
+    3300022: Object_Tesseract.107
+    3300024: Object_Tesseract.108
+    3300026: Object_Tesseract.109
+    3300028: Object_Tesseract.110
+    3300030: Object_Tesseract.111
+    3300032: Object_Tesseract.112
+    3300034: Object_Tesseract.113
+    3300036: Object_Tesseract.114
+    3300038: Object_Tesseract.115
+    3300040: Object_Tesseract.116
+    3300042: Object_Tesseract.117
+    3300044: Object_Tesseract.118
+    3300046: Object_Tesseract.119
+    3300048: Object_Tesseract.120
+    3300050: Object_Tesseract.121
+    3300052: Object_Tesseract.122
+    3300054: Object_Tesseract.123
+    3300056: Object_Tesseract.124
+    3300058: Object_Tesseract.125
+    3300060: Object_Tesseract.126
+    3300062: Object_Tesseract.127
+    4300000: Object_Tesseract.114
+    4300002: Object_Tesseract.106
+    4300004: Object_Tesseract.099
+    4300006: Object_Tesseract.112
+    4300008: Object_Tesseract.113
+    4300010: Object_Tesseract.111
+    4300012: Object_Tesseract.110
+    4300014: Object_Tesseract.105
+    4300016: Object_Tesseract.108
+    4300018: Object_Tesseract.107
+    4300020: Object_Tesseract.115
+    4300022: Object_Tesseract.109
+    4300024: Object_Tesseract.120
+    4300026: Object_Tesseract.096
+    4300028: Object_Tesseract.126
+    4300030: Object_Tesseract.122
+    4300032: Object_Tesseract.123
+    4300034: Object_Tesseract.121
+    4300036: Object_Tesseract.097
+    4300038: Object_Tesseract.100
+    4300040: Object_Tesseract.125
+    4300042: Object_Tesseract.127
+    4300044: Object_Tesseract.098
+    4300046: Object_Tesseract.124
+    4300048: Object_Tesseract.116
+    4300050: Object_Tesseract.102
+    4300052: Object_Tesseract.119
+    4300054: Object_Tesseract.117
+    4300056: Object_Tesseract.103
+    4300058: Object_Tesseract.118
+    4300060: Object_Tesseract.104
+    4300062: Object_Tesseract.101
+    7400000: Tesseract_Armature.003|ArmatureAction
+    7400002: Tesseract_Armature.003|ArmatureAction.001
+    7400004: Tesseract_Armature.003|ArmatureAction.003
+    7400006: Char_Player_Armature|Char_Player
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 1
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Char_Player_Armature|Char_Player
+      takeName: Char_Player_Armature|Char_Player
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Control_Root
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control/Bone_Control_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.001
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.001/Bone_Def.035
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.001/Bone_Def.035/Bone_Def.035_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.001/Bone_Def.035/Object_Tesseract.114
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002/Bone_Def.029
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002/Bone_Def.029/Bone_Def.029_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002/Bone_Def.029/Object_Tesseract.106
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002/Bone_Def.036
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002/Bone_Def.036/Bone_Def.036_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.002/Bone_Def.036/Object_Tesseract.099
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.003
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.003/Bone_Def.030
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.003/Bone_Def.030/Bone_Def.030_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.003/Bone_Def.030/Object_Tesseract.112
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.004
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.004/Bone_Def.025
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.004/Bone_Def.025/Bone_Def.025_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.004/Bone_Def.025/Object_Tesseract.113
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005/Bone_Def.023
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005/Bone_Def.023/Bone_Def.023_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005/Bone_Def.023/Object_Tesseract.111
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005/Bone_Def.034
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005/Bone_Def.034/Bone_Def.034_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.005/Bone_Def.034/Object_Tesseract.110
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.027
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.027/Bone_Def.027_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.027/Object_Tesseract.105
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.032
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.032/Bone_Def.032_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.032/Object_Tesseract.107
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.033
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.033/Bone_Def.033_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.006/Bone_Def.033/Object_Tesseract.108
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007/Bone_Def.026
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007/Bone_Def.026/Bone_Def.026_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007/Bone_Def.026/Object_Tesseract.115
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007/Bone_Def.031
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007/Bone_Def.031/Bone_Def.031_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.007/Bone_Def.031/Object_Tesseract.109
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.020
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.020/Bone_Def.020_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.020/Object_Tesseract.120
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.041
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.041/Bone_Def.041_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.041/Object_Tesseract.096
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.048
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.048/Bone_Def.048_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.008/Bone_Def.048/Object_Tesseract.126
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009/Bone_Def.021
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009/Bone_Def.021/Bone_Def.021_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009/Bone_Def.021/Object_Tesseract.122
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009/Bone_Def.045
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009/Bone_Def.045/Bone_Def.045_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.009/Bone_Def.045/Object_Tesseract.123
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.024
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.024/Bone_Def.024_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.024/Object_Tesseract.121
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.039
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.039/Bone_Def.039_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.039/Object_Tesseract.097
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.042
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.042/Bone_Def.042_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.042/Object_Tesseract.100
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.047
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.047/Bone_Def.047_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.010/Bone_Def.047/Object_Tesseract.125
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.022
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.022/Bone_Def.022_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.022/Object_Tesseract.127
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.040
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.040/Bone_Def.040_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.040/Object_Tesseract.098
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.046
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.046/Bone_Def.046_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.011/Bone_Def.046/Object_Tesseract.124
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012/Bone_Def.017
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012/Bone_Def.017/Bone_Def.017_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012/Bone_Def.017/Object_Tesseract.116
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012/Bone_Def.038
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012/Bone_Def.038/Bone_Def.038_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.012/Bone_Def.038/Object_Tesseract.102
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.013
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.013/Bone_Def.028
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.013/Bone_Def.028/Bone_Def.028_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.013/Bone_Def.028/Object_Tesseract.119
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014/Bone_Def.019
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014/Bone_Def.019/Bone_Def.019_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014/Bone_Def.019/Object_Tesseract.117
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014/Bone_Def.043
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014/Bone_Def.043/Bone_Def.043_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.014/Bone_Def.043/Object_Tesseract.103
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.018
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.018/Bone_Def.018_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.018/Object_Tesseract.118
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.037
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.037/Bone_Def.037_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.037/Object_Tesseract.104
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.044
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.044/Bone_Def.044_end
+        weight: 1
+      - path: Bone_Control_Root/Bone_Control_Center/Bone_Control.015/Bone_Def.044/Object_Tesseract.101
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
