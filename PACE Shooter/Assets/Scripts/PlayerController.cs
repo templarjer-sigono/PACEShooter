@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 
 	//private float bulletOffset = 0.6f;
 	public GameObject Player;
-	public float bulletVelocity = 5f;
+	public float bulletVelocity = 0.001f;
 	public GameObject bullet;
 
 	//CAMERA
@@ -45,17 +45,14 @@ public class PlayerController : MonoBehaviour {
 	public float Timer;
 
 	//Fire
-	public float speed = 3f;
+	public float speed = 0.3f;
 	public float fireRate = 3f;
 	public float force = 10f;
 	public GameObject bulletPrefab;
 	public GameObject gunEnd;
-
-	private GameObject bulletGO;
-	private float distance = 50f;
-	private Vector3 mousePos;
-	private PlayerController bc;
-	private Vector3 aim;
+	public bool canShoot = true;
+	public float timeBetweenShots = 0.1f;
+	private float timestamp;
 
 
 
@@ -72,7 +69,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rigidbody2Dp = this.GetComponent<Rigidbody2D> ();
-		mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+
 	}
 	//float speed = 6;
 	// Update is called once per frame
@@ -179,14 +176,34 @@ public class PlayerController : MonoBehaviour {
 
 
 
-			mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			aim = new Vector3(mousePos.x, mousePos.y, transform.localPosition.z+10f);
-			if (Input.GetMouseButton(1)) {
-				bulletGO = Instantiate (bulletPrefab, gunEnd.transform.position, Quaternion.identity);
-				bulletGO.transform.LookAt (aim);
-				Rigidbody b = bullet.GetComponent<Rigidbody> ();
-				b.AddRelativeForce (Vector3.forward*force);
-			
+
+			//PlayerShoot
+
+
+			if (Time.time >=timestamp && Input.GetButtonDown("Fire1")&&canShoot) {
+				Vector3 worldMousePos = Vector3.one;
+				Ray _mouseRay = Camera.main.ScreenPointToRay (Input.mousePosition);
+				RaycastHit hit;
+				if (Physics.Raycast (_mouseRay,out hit)) {
+					worldMousePos = hit.point;
+					Debug.Log (worldMousePos);
+				}
+
+				float midPoint = (transform.position - Camera.main.transform.position).magnitude * 10000000f;
+
+				//worldMousePos.z = Camera.main.farClipPlane;
+				Vector2 direction = (Vector2)((_mouseRay.origin + _mouseRay.direction * midPoint));
+				//Debug.Log (worldMousePos);
+				direction.Normalize ();
+				// Creates the bullet locally
+				GameObject bullet = (GameObject)Instantiate (
+					bulletCandidate,
+					transform.position + (Vector3)(direction * 0.5f),
+					Quaternion.identity);
+				// Adds velocity to the bullet
+				bullet.GetComponent<Rigidbody2D> ().velocity = direction * bulletVelocity / 1.2f;
+
+				timestamp = Time.time + timeBetweenShots;
 			}
 
 		}
@@ -195,6 +212,7 @@ public class PlayerController : MonoBehaviour {
 			
 
 	}
+		
 
 	void FootStepRandomize()
 	{
