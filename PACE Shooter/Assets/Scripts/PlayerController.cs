@@ -25,16 +25,22 @@ public class PlayerController : MonoBehaviour {
 	public GameObject OverText;
 	public float CameraShakeDuration;
 	public float CameraShakeStrength;
-	private float OrthoSizeA = 6f;
-	private float OrthoSizeb = 4f;
-	private float OrthoSizec = 0.02f;
-	private float SmoothZoomt = 5f;
+	private float OrthoSizeA = 13.9f;
+	private float OrthoSizeb = 12f;
+	private float OrthoSizec = 999f;
+	private float SmoothZoomt = 10f;
+
+	//BETWEEN CAMERA SHAKE
+	private float BetweenCameraShake = 0.65f;
+	private float Camtimestamp;
+	private bool CanCamShake = true;
 
 	//INJURY AND DEATHS
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
 	private float injurelap = 0.0f;
 	public int health = 5;
+
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 
@@ -79,10 +85,13 @@ public class PlayerController : MonoBehaviour {
 		
 	
 		//	deathcount = deathcount +1
-		if ((col.tag == "EBLTS")) {
+		if ((col.tag == "EBLTS") && CanCamShake) {
 			health -= 1;
 			if ((health > 0)) {
-				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
+				if (CanCamShake) {
+					GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
+					CanCamShake = false;
+				}
 				injuredzoom = true;
 			}
 				else {
@@ -94,9 +103,14 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 
+		if (Time.time >= Camtimestamp) {
+			CanCamShake = true;
+			Camtimestamp = Time.time + BetweenCameraShake;
+		}
+
 		if (injuredzoom){
 			injurelap += Time.deltaTime / 6f;
-			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
+			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
 			if (injurelap >= 1.0f) {
 					injuredzoom = false;
 				}
@@ -106,17 +120,16 @@ public class PlayerController : MonoBehaviour {
 			injuredzoom = false;
 			rigidbody2Dp.bodyType = RigidbodyType2D.Static;
 			elapsed += Time.deltaTime / SmoothZoomt * 1.4f ;
+			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
+		
 
-			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
 		
 			if (Input.GetKey (KeyCode.Return)) {
 				SceneManager.LoadScene (0);
 			}
 
 			OverText.SetActive(true);
-			if (elapsed >= 1.0f) {
-				DeathZoom = false;
-			}
+
 		}
 
 		if (DeathCheck != true) {
