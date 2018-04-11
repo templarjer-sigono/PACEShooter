@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class MENUtoGAME : MonoBehaviour {
 
 	public string levelName;
-	int SceneNbr;
+
 	// Use this for initialization
 	void Start () {
-		SceneNbr = SceneManager.GetActiveScene ().buildIndex;
+		int SceneNbr = SceneManager.GetActiveScene ().buildIndex;
 	}
 	
 	// Update is called once per frame

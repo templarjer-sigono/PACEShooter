@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 
 	//private float bulletOffset = 0.6f;
 	public GameObject Player;
-	public float bulletVelocity = 5f;
+	public float bulletVelocity = 0.001f;
 	public GameObject bullet;
 
 	//CAMERA
@@ -25,16 +25,22 @@ public class PlayerController : MonoBehaviour {
 	public GameObject OverText;
 	public float CameraShakeDuration;
 	public float CameraShakeStrength;
-	private float OrthoSizeA = 6f;
-	private float OrthoSizeb = 4f;
-	private float OrthoSizec = 0.02f;
-	private float SmoothZoomt = 5f;
+	private float OrthoSizeA = 13.9f;
+	private float OrthoSizeb = 12f;
+	private float OrthoSizec = 999f;
+	private float SmoothZoomt = 10f;
+
+	//BETWEEN CAMERA SHAKE
+	private float BetweenCameraShake = 0.65f;
+	private float Camtimestamp;
+	private bool CanCamShake = true;
 
 	//INJURY AND DEATHS
 	private bool DeathZoom = false;
 	private float elapsed = 0.0f;
 	private float injurelap = 0.0f;
 	public int health = 5;
+
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 
@@ -44,10 +50,32 @@ public class PlayerController : MonoBehaviour {
 	public AudioClip[] FootSteps;
 	public float Timer;
 
+	//Fire
+	public float speed = 0.3f;
+	public float fireRate = 3f;
+	public float force = 10f;
+	public GameObject bulletPrefab;
+	public GameObject gunEnd;
+	public bool canShoot = true;
+	public float timeBetweenShots = 0.1f;
+	private float timestamp;
+
+
+
+	/*Perspktif Pointkliking
+	public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z) {
+		Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+		Plane xy = new Plane(Vector3.forward, new Vector3(0, 0, z));
+		float distance;
+		xy.Raycast(ray, out distance);
+		return ray.GetPoint(distance);
+	}
+*/
 
 	// Use this for initialization
 	void Start () {
 		rigidbody2Dp = this.GetComponent<Rigidbody2D> ();
+
 	}
 	//float speed = 6;
 	// Update is called once per frame
@@ -57,10 +85,13 @@ public class PlayerController : MonoBehaviour {
 		
 	
 		//	deathcount = deathcount +1
-		if ((col.tag == "EBLTS")) {
+		if ((col.tag == "EBLTS") && CanCamShake) {
 			health -= 1;
 			if ((health > 0)) {
-				GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
+				if (CanCamShake) {
+					GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
+					CanCamShake = false;
+				}
 				injuredzoom = true;
 			}
 				else {
@@ -72,9 +103,14 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 
+		if (Time.time >= Camtimestamp) {
+			CanCamShake = true;
+			Camtimestamp = Time.time + BetweenCameraShake;
+		}
+
 		if (injuredzoom){
 			injurelap += Time.deltaTime / 6f;
-			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
+			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
 			if (injurelap >= 1.0f) {
 					injuredzoom = false;
 				}
@@ -84,17 +120,16 @@ public class PlayerController : MonoBehaviour {
 			injuredzoom = false;
 			rigidbody2Dp.bodyType = RigidbodyType2D.Static;
 			elapsed += Time.deltaTime / SmoothZoomt * 1.4f ;
+			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
+		
 
-			GameCamera.orthographicSize = Mathf.Lerp (OrthoSizeb, OrthoSizec, elapsed);
 		
 			if (Input.GetKey (KeyCode.Return)) {
 				SceneManager.LoadScene (0);
 			}
 
 			OverText.SetActive(true);
-			if (elapsed >= 1.0f) {
-				DeathZoom = false;
-			}
+
 		}
 
 		if (DeathCheck != true) {
@@ -151,7 +186,14 @@ public class PlayerController : MonoBehaviour {
 				rigidbody2Dp.mass = 1000f;
 				Debug.Log ("MASS INCREASED");
 			}
-			if (Input.GetButtonDown ("Fire1")) {
+
+
+
+
+			//PlayerShoot
+
+
+			if (Time.time >=timestamp && Input.GetButtonDown("Fire1")&&canShoot) {
 				Vector3 worldMousePos = Vector3.one;
 				Ray _mouseRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 				RaycastHit hit;
@@ -159,7 +201,8 @@ public class PlayerController : MonoBehaviour {
 					worldMousePos = hit.point;
 					Debug.Log (worldMousePos);
 				}
-				float midPoint = (transform.position - Camera.main.transform.position).magnitude * 44f;
+
+				float midPoint = (transform.position - Camera.main.transform.position).magnitude * 10000000f;
 
 				//worldMousePos.z = Camera.main.farClipPlane;
 				Vector2 direction = (Vector2)((_mouseRay.origin + _mouseRay.direction * midPoint));
@@ -167,19 +210,22 @@ public class PlayerController : MonoBehaviour {
 				direction.Normalize ();
 				// Creates the bullet locally
 				GameObject bullet = (GameObject)Instantiate (
-					                    bulletCandidate,
-					                    transform.position + (Vector3)(direction * 1f),
-					                    Quaternion.identity);
+					bulletCandidate,
+					transform.position + (Vector3)(direction * 0.5f),
+					Quaternion.identity);
 				// Adds velocity to the bullet
-				bullet.GetComponent<Rigidbody2D> ().velocity = direction * bulletVelocity;
-				//bullet.GetComponent<Rigidbody2D> ().AddForce = worldMousePos;
+				bullet.GetComponent<Rigidbody2D> ().velocity = direction * bulletVelocity / 1.2f;
+
+				timestamp = Time.time + timeBetweenShots;
 			}
+
 		}
 
 
 			
 
 	}
+		
 
 	void FootStepRandomize()
 	{

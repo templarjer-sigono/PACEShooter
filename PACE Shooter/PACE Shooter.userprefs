@@ -1,17 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyBullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
+      <File FileName="Assets/Scripts/EnemyBullet.cs" Line="19" Column="3" />
       <File FileName="Assets/Scripts/camerafollow.cs" Line="31" Column="65" />
-      <File FileName="Assets/Scripts/StageController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StageController.cs" Line="72" Column="5" />
       <File FileName="Assets/Scripts/BossGun.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EnemyGun.cs" Line="47" Column="4" />
-      <File FileName="Assets/Scripts/EnemyBullet.cs" Line="20" Column="2" />
+      <File FileName="Assets/Scripts/EnemyGun.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/BulletScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MENUtoGAME.cs" Line="21" Column="2" />
+      <File FileName="Assets/Scripts/MENUtoGAME.cs" Line="12" Column="7" />
       <File FileName="Assets/Scripts/Game2Menu.cs" Line="1" Column="1" />
       <File FileName="Assets/SnapshotManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="161" Column="6" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="173" Column="40" />
+      <File FileName="Assets/Scripts/StageData.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
