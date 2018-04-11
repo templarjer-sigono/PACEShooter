@@ -44,9 +44,19 @@ public class PlayerController : MonoBehaviour {
 	public AudioClip[] FootSteps;
 	public float Timer;
 
-	//
-	public Transform firepoint;
-	public Rigidbody2D Bullet;
+	//Fire
+	public float speed = 3f;
+	public float fireRate = 3f;
+	public float force = 10f;
+	public GameObject bulletPrefab;
+	public GameObject gunEnd;
+
+	private GameObject bulletGO;
+	private float distance = 50f;
+	private Vector3 mousePos;
+	private PlayerController bc;
+	private Vector3 aim;
+
 
 
 	/*Perspktif Pointkliking
@@ -62,6 +72,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rigidbody2Dp = this.GetComponent<Rigidbody2D> ();
+		mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 	}
 	//float speed = 6;
 	// Update is called once per frame
@@ -168,13 +179,16 @@ public class PlayerController : MonoBehaviour {
 
 
 
-			if (Input.GetButtonDown ("Fire1")) {
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				Vector3 target = ray.GetPoint (10);
-				//	firepoint.look
-			
+			mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			aim = new Vector3(mousePos.x, mousePos.y, transform.localPosition.z+10f);
+			if (Input.GetMouseButton(1)) {
+				bulletGO = Instantiate (bulletPrefab, gunEnd.transform.position, Quaternion.identity);
+				bulletGO.transform.LookAt (aim);
+				Rigidbody b = bullet.GetComponent<Rigidbody> ();
+				b.AddRelativeForce (Vector3.forward*force);
 			
 			}
+
 		}
 
 
