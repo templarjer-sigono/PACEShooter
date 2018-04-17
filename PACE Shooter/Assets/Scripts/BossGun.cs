@@ -7,6 +7,7 @@ public class BossGun : MonoBehaviour {
 	private int BossHealth = 6;
 	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
+	private float aka = -0.1f;
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireBossBullet", 140/180f, 140/500f);

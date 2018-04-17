@@ -11,7 +11,7 @@ public class EnemyGun : MonoBehaviour {
 	private int health;
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("FireEnemyBullet", 0.4225f, 0.845f);
+		InvokeRepeating ("FireEnemyBullet", 0.5f, 1f);
 	}
 
 	private void PlayShootAnim(){
