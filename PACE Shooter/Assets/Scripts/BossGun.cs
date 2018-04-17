@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BossGun : MonoBehaviour {
 	public GameObject BossBulletGO;
-	private int BossHealth = 4;
-	private int BossMultiShot = 7;
+	private int BossHealth = 6;
+	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("FireBossBullet", 140/60/4f, 140/60/16f);
+		InvokeRepeating ("FireBossBullet", 140/180f, 140/500f);
 	}
 	private void PlayShootAnim(){
 		_ShootAnim.Play ("EnemyShootAnim");
@@ -30,9 +30,9 @@ public class BossGun : MonoBehaviour {
 			bullet.transform.position = transform.position;
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
-			BossMultiShot -= Random.Range(1, 3);
+			BossMultiShot -= Random.Range(0, 2);
 		} else {
-			BossMultiShot = Random.Range(0, 8);
+			BossMultiShot = Random.Range(0, 4);
 		}
 	}
 
