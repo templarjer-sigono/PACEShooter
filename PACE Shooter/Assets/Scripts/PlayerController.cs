@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour {
 
 	//Fire
 	public float speed = 0.3f;
-	public float fireRate = 3f;
 	public float force = 10f;
 	public GameObject bulletPrefab;
 	public GameObject gunEnd;
@@ -202,7 +201,7 @@ public class PlayerController : MonoBehaviour {
 					Debug.Log (worldMousePos);
 				}
 
-				float midPoint = (transform.position - Camera.main.transform.position).magnitude * 10000000f;
+				float midPoint = (transform.position - Camera.main.transform.position).magnitude * 10000000000000f;
 
 				//worldMousePos.z = Camera.main.farClipPlane;
 				Vector2 direction = (Vector2)((_mouseRay.origin + _mouseRay.direction * midPoint));
