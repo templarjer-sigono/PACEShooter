@@ -41,6 +41,10 @@ public class PlayerController : MonoBehaviour {
 	private float injurelap = 0.0f;
 	public int health = 18;
 
+	//Hurt Sound
+	public AudioClip HurtSound;
+	public AudioSource Playerhurt;
+
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
 
@@ -74,6 +78,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rigidbody2Dp = this.GetComponent<Rigidbody2D> ();
+		Playerhurt = GetComponent<AudioSource>();
+		Playerhurt.playOnAwake = false;
 
 	}
 	//float speed = 6;
@@ -88,6 +94,8 @@ public class PlayerController : MonoBehaviour {
 			health -= 1;
 			if ((health > 0)) {
 				if (CanCamShake) {
+					Playerhurt.clip = HurtSound;
+					Playerhurt.Play ();
 					GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 					CanCamShake = false;
 				}
