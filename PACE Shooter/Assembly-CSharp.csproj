@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\AdvanceLevel.cs" />
      <Compile Include="Assets\AudioManager.cs" />
+     <Compile Include="Assets\Epi_To_Menu.cs" />
      <Compile Include="Assets\FontSizeIncrease.cs" />
      <Compile Include="Assets\MenuMover.cs" />
      <Compile Include="Assets\MinionSpawn.cs" />

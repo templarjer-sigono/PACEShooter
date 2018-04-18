@@ -15,7 +15,7 @@ public class Game2Menu : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Return) && UICheck.activeInHierarchy == true) {
+		if (Input.GetKey(KeyCode.Return) && UICheck.activeInHierarchy == true) {
 			SceneManager.LoadScene ("Menu");
 		}
 	}
