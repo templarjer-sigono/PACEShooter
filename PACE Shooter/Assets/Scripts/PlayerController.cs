@@ -132,8 +132,8 @@ public class PlayerController : MonoBehaviour {
 
 		if (injuredzoom){
 			injurelap += Time.deltaTime / 3f;
-			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
-			if (injurelap >= 1.0f) {
+			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap*1.4f);
+			if (injurelap >= 2f) {
 					injuredzoom = false;
 				}
 			}
