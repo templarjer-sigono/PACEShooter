@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 	public float CameraShakeDuration;
 	public float CameraShakeStrength;
 	private float OrthoSizeA = 13.9f;
-	private float OrthoSizeb = 12f;
+	private float OrthoSizeb = 10f;
 	private float OrthoSizec = 999f;
 	private float SmoothZoomt = 10f;
 
@@ -44,6 +44,10 @@ public class PlayerController : MonoBehaviour {
 	//Hurt Sound
 	public AudioClip HurtSound;
 	public AudioSource Playerhurt;
+
+	//Low Health Alert
+	public AudioClip HealthAlert;
+	public AudioSource HealthAlertSource;
 
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
@@ -81,6 +85,8 @@ public class PlayerController : MonoBehaviour {
 		Playerhurt = GetComponent<AudioSource>();
 		Playerhurt.playOnAwake = false;
 
+	
+
 	}
 	//float speed = 6;
 	// Update is called once per frame
@@ -92,6 +98,7 @@ public class PlayerController : MonoBehaviour {
 		//	deathcount = deathcount +1
 		if ((col.tag == "EBLTS") && CanCamShake) {
 			health -= 1;
+
 			if ((health > 0)) {
 				if (CanCamShake) {
 					Playerhurt.clip = HurtSound;
@@ -99,7 +106,9 @@ public class PlayerController : MonoBehaviour {
 					GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 					CanCamShake = false;
 				}
-				injuredzoom = true;
+				if ((health < 10)) {
+					injuredzoom = true;
+				}
 			}
 				else {
 					DeathZoom = true;
@@ -110,13 +119,19 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 
+		if (health < 10 && !HealthAlertSource.isPlaying) {
+			HealthAlertSource.clip = HealthAlert;
+			HealthAlertSource.Play ();
+		}
+
+
 		if (Time.time >= Camtimestamp) {
 			CanCamShake = true;
 			Camtimestamp = Time.time + BetweenCameraShake;
 		}
 
 		if (injuredzoom){
-			injurelap += Time.deltaTime / 6f;
+			injurelap += Time.deltaTime / 3f;
 			GameCamera.fieldOfView = Mathf.Lerp (OrthoSizeA,OrthoSizeb, injurelap);
 			if (injurelap >= 1.0f) {
 					injuredzoom = false;
