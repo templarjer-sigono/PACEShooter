@@ -8,6 +8,13 @@ public class BossGun : MonoBehaviour {
 	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
 	private float aka = -0.1f;
+
+	public AudioClip BossDeathSound;
+	public AudioSource BossDeathSource;
+
+	public AudioClip BossHurtSound;
+	public AudioSource BossHurtSource;
+
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireBossBullet", 140/180f, 140/500f);
@@ -41,8 +48,12 @@ public class BossGun : MonoBehaviour {
 	{
 		if((col.tag == "Bullets")){
 			BossHealth -= 1;
+			BossHurtSource.clip = BossHurtSound;
+			BossHurtSource.Play ();
 			if (BossHealth <= 0) {
 				Destroy (gameObject);
+				BossDeathSource.clip = BossDeathSound;
+				BossDeathSource.Play ();
 			}
 		}
 	}

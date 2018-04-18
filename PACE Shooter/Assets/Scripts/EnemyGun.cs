@@ -9,9 +9,15 @@ public class EnemyGun : MonoBehaviour {
 	public bool EnemyShootSwitch;
 	int EnemyDeaths;
 	private int health;
+
+	//Enemy Death Sound
+	public AudioClip DeathSound;
+	public AudioSource DeathSoundSource;
+
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireEnemyBullet", 0.5f, 1f);
+		DeathSoundSource.playOnAwake = false;
 	}
 
 	private void PlayShootAnim(){
@@ -42,8 +48,9 @@ public class EnemyGun : MonoBehaviour {
 	{
 		if((col.tag == "Bullets")){
 			Destroy(gameObject);
-			EnemyDeaths = EnemyDeaths + 1;
-//			Debug.Log ("ENEMY = " + EnemyDeaths);
+			Debug.Log ("Destroyed!");
+			DeathSoundSource.clip = DeathSound;
+			DeathSoundSource.Play ();
 		}
 			
 	}
