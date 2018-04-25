@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DF978B83-CB69-46FE-B14E-613146DD9453}" SchemaVersion="85">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{DF978B83-CB69-46FE-B14E-613146DD9453}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DF978B83-CB69-46FE-B14E-613146DD9453}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Footsteps_Soundbank" ID="{C0DCCB81-4F4D-42AC-BFC8-7D6FDC5D49D9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Footsteps" ID="{E934CCF8-2C64-4BA8-BBDC-9D932FF70CDB}" WorkUnitID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambient" ID="{F4DECC43-B9AA-412B-8C92-7CA1E2EE67A3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_CHANT" ID="{A3F9A019-1289-472C-B090-E5A3605FF908}" WorkUnitID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Rain" ID="{4A0D9004-7D4A-49E0-90A0-129EAFAA9168}" WorkUnitID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

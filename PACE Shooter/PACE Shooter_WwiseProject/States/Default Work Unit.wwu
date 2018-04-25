@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5B015C1E-8B57-4FA4-ADFD-98E68D563C89}" SchemaVersion="85">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{5B015C1E-8B57-4FA4-ADFD-98E68D563C89}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5B015C1E-8B57-4FA4-ADFD-98E68D563C89}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PosType" ID="{CF74FA68-166E-457A-AD4E-77A0B84B5192}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{02F1C2A7-15FF-43A3-855C-9CA8F64AA8B9}"/>
+						<State Name="Exterior" ID="{3D6B2921-5DA6-4E53-A0C0-1A588BEEEA76}"/>
+						<State Name="Interior" ID="{EAB8ED60-5CFD-4946-9D82-4145AA994BE9}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

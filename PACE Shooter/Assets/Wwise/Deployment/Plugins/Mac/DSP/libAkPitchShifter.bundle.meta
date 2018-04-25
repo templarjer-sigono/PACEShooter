@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: dcdf7de9897d84f3486c6de346725866
-timeCreated: 1524626294
+timeCreated: 1524643807
 licenseType: Free
 PluginImporter:
   serializedVersion: 2
@@ -31,7 +31,7 @@ PluginImporter:
       first:
         Editor: Editor
       second:
-        enabled: 1
+        enabled: 0
         settings:
           DefaultValueInitialized: true
     data:

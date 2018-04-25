@@ -4,6 +4,7 @@ using DG.Tweening;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerController : MonoBehaviour {
 
 	//PLAYER MOVEMENT
@@ -53,11 +54,13 @@ public class PlayerController : MonoBehaviour {
 	private bool DeathCheck = false;
 
 	//FOOTSTEP
-	public float FootStepRatePlay;
+	/*
 	public AudioSource PlayerAudioSource;
-	public AudioClip[] FootSteps;
+	public AudioClip[] FootSteps; */
 	public float Timer;
-
+	public float FootStepRatePlay;
+	public float m_StepCycle, m_NextStep;
+   
 	//Fire
 	public float speed = 0.3f;
 	public float force = 10f;
@@ -157,35 +160,28 @@ public class PlayerController : MonoBehaviour {
 		if (DeathCheck != true) {
 			Vector2 force2D = Vector2.zero;
 
+
+
+
+
 			if (Input.GetKey (KeyCode.W)) {
-				//this.transform.position += new Vector3 (0, speed * Time.deltaTime, 0);
 				force2D.y += forceValue;
-				if (Time.time > Timer) {
-					Timer = Time.time + 1 / FootStepRatePlay;
-					FootStepRandomize ();
-				}
+
 			}
 			if (Input.GetKey (KeyCode.S)) {
-				//this.transform.position += new Vector3 (0, -speed * Time.deltaTime, 0);
 				force2D.y -= forceValue;
-				if (Time.time > Timer) {
-					Timer = Time.time + 1 / FootStepRatePlay;
-					FootStepRandomize ();
-				}
+
 			}
 			if (Input.GetKey (KeyCode.A)) {
 				force2D.x -= forceValue;
-				if (Time.time > Timer) {
-					Timer = Time.time + 1 / FootStepRatePlay;
-					FootStepRandomize ();
-				}
+
 			}
 			if (Input.GetKey (KeyCode.D)) {
 				force2D.x += forceValue;
-				if (Time.time > Timer) {
+				/*if (Time.time > Timer) {
 					Timer = Time.time + 1 / FootStepRatePlay;
 					FootStepRandomize ();
-				}
+				} */
 			}
 			if (force2D != Vector2.zero) {
 				rigidbody2Dp.AddForce (force2D);
@@ -240,6 +236,12 @@ public class PlayerController : MonoBehaviour {
 
 				timestamp = Time.time + timeBetweenShots;
 			}
+			/*
+			if (force2D.x != 0 || force2D.y != 0) {
+
+				AkSoundEngine.PostEvent ("Play_Footsteps", gameObject);
+
+			} */
 
 		}
 
@@ -249,11 +251,11 @@ public class PlayerController : MonoBehaviour {
 	}
 		
 
-	void FootStepRandomize()
+	/*void FootStepRandomize()
 	{
 		AudioClip SoundToPlay = FootSteps [Random.Range (0, FootSteps.Length)];
 		PlayerAudioSource.PlayOneShot (SoundToPlay);
 	}
-
+*/
 	}
 

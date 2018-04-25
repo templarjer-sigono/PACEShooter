@@ -9,6 +9,15 @@
 							<ObjectRef Name="System" ID="{07190603-2171-412C-9D24-3E17E9DB5021}" WorkUnitID="{F18FAD52-0648-45B6-92A5-571833773E9F}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Reverb_Send" ID="{304B5935-BF87-4498-A7B4-C28F03939BF0}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="77978275" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambient</ObjectPath>
+			<ShortName>Ambient</ShortName>
+			<Path>Ambient.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2984543794" Name="Play_CHANT" ObjectPath="\Events\Default Work Unit\Play_CHANT" MaxAttenuation="30.000000"/>
+				<Event Id="2838936948" Name="Play_Rain" ObjectPath="\Events\Default Work Unit\Play_Rain" MaxAttenuation="30.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="395219531" Language="SFX">
+					<ShortName>heavy rain 01.wav</ShortName>
+					<Path>SFX/heavy rain 01_F17FB28C.wem</Path>
+				</File>
+				<File Id="655475190" Language="SFX">
+					<ShortName>CHANT.wav</ShortName>
+					<Path>SFX/CHANT_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1183542248" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps_Soundbank</ObjectPath>
+			<ShortName>Footsteps_Soundbank</ShortName>
+			<Path>Footsteps_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="330266813" Language="SFX">
+					<ShortName>Dirt 2.wav</ShortName>
+					<Path>SFX/Dirt 2_675F1A86.wem</Path>
+				</File>
+				<File Id="347626138" Language="SFX">
+					<ShortName>Dirt 1.wav</ShortName>
+					<Path>SFX/Dirt 1_1FBBFC01.wem</Path>
+				</File>
+				<File Id="388425972" Language="SFX">
+					<ShortName>Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot.wav</ShortName>
+					<Path>SFX/Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot_E762EE87.wem</Path>
+				</File>
+				<File Id="591293366" Language="SFX">
+					<ShortName>Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1).wav</ShortName>
+					<Path>SFX/Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)_FD3F96DC.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2838936948	Play_Rain			\Default Work Unit\Play_Rain	
+	2984543794	Play_CHANT			\Default Work Unit\Play_CHANT	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2742602365	PosType			\Default Work Unit\PosType	
+
+State	ID	Name	State Group			Notes
+	0	None	PosType			
+	1132214669	Interior	PosType			
+	2213992659	Exterior	PosType			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	735927294	Interior	PosType	\Actor-Mixer Hierarchy\Default Work Unit\Rain		
+	861118594	Exterior	PosType	\Actor-Mixer Hierarchy\Default Work Unit\Rain		
+
+Effect plug-ins	ID	Name	Type				Notes
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	395219531	heavy rain 01	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\heavy rain 01		21173824
+	655475190	CHANT	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\CHANT_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Holy\CHANT		5377600
+
