@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Enemy_Stealth" ID="{DE1EA70A-B642-4D3B-A1D6-9BFF4FEFEE2A}"/>
+				<Event Name="Enemy_Detected" ID="{09D1FE48-B786-43D6-A317-8A4D27D61009}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
