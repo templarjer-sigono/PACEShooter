@@ -9,8 +9,15 @@ Switch	ID	Name	Switch Group			Notes
 	2195636714	Dirt	Footsteps			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+<<<<<<< HEAD
 	330266813	Dirt 2	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Dirt 2_675F1A86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\DirtSteps\Dirt 2		35396
 	347626138	Dirt 1	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Dirt 1_1FBBFC01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\DirtSteps\Dirt 1		34952
 	388425972	Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot_E762EE87.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot		35768
 	591293366	Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)_FD3F96DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)		31828
+=======
+	330266813	Dirt 2	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Dirt 2_2B277E61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\DirtSteps\Dirt 2		6472
+	347626138	Dirt 1	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Dirt 1_EC076132.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\DirtSteps\Dirt 1		19048
+	388425972	Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot_9D9B98EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot		6540
+	591293366	Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)_168983B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)		5824
+>>>>>>> 153ee25... Adjusted the size again.
 

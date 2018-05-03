@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BankMemory>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 153ee25... Adjusted the size again.
 	<Timestamp>1525339159</Timestamp>
 	<DataSize>25893964</DataSize>
 	<FileSize>25897520</FileSize>
 	<DecodedSize>25893892</DecodedSize>
+<<<<<<< HEAD
 =======
 	<Timestamp>1525333744</Timestamp>
 	<DataSize>116654480</DataSize>
 	<FileSize>116658651</FileSize>
 	<DecodedSize>116654388</DecodedSize>
 >>>>>>> parent of f2eeace... Prefabbed level kit audio. Bingrun can run now!
+=======
+>>>>>>> 153ee25... Adjusted the size again.
 	<SFXPreFetchSize>0</SFXPreFetchSize>
 	<SFXInMemorySize>25893892</SFXInMemorySize>
 	<SFXMissingFiles>0</SFXMissingFiles>

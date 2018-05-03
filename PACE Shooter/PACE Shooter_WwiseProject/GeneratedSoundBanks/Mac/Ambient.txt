@@ -18,6 +18,28 @@ Effect plug-ins	ID	Name	Type				Notes
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+<<<<<<< HEAD
 	395219531	heavy rain 01	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\heavy rain 01		21173824
 	655475190	CHANT	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\CHANT_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Holy\CHANT		5377600
+=======
+	17408302	BossShoot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\BossShoot_AD9B39E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossBullet\BossShoot		20352
+	84542189	PB2	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\PB2_2165B597.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerBullet\PB2		2032
+	118744823	PlayScream	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_24767D7E.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayScream		1598788
+	139758792	EnemyShoot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\EnemyShoot_AD9B39E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyBullet\EnemyShoot		20352
+	140784330	Computer humming in a large room 3	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Computer humming in a large room 3_9924478C.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossStrange\Computer humming in a large room 3		2032868
+	142445884	BossHurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossHurt_3_AD9B39E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossHurt		10304
+	196847529	ES2	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\ES2_0DBBD7CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyBullet\ES2		10064
+	395219531	heavy rain 02	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_276319E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\heavy rain 02		5264256
+	540899051	DreamReal	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\DreamReal_2E7A9FFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossStrange\DreamReal		1203056
+	654522031	PlayScience	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Science_3972B648.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayScience		1206188
+	655475190	CHANT	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\CHANT_DC76B95C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Holy\CHANT		2148316
+	666551077	PB3	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\PB3_7440D8F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerBullet\PB3		2404
+	668876529	PlayJunkyard	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_4FEF729E.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayJunkyard		224680
+	693075171	EnemyDeath	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\EnemyHurt_AD9B39E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyDeath		41488
+	710228122	PB1	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\PB1_9D786EB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerBullet\PB1		1720
+	746307401	BossDeath	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossDeath_2_AD9B39E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossDeath		142452
+	919839730	ES1	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\ES1_651A1AF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyBullet\ES1		1072
+	964254671	PlayCricket	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Cricket_D72F7A08.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayCricket		4967904
+	1020226350	heavy rain 01	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_CEB1787E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\heavy rain 01		6995596
+>>>>>>> 153ee25... Adjusted the size again.
 
