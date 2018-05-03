@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: be2f65b6efb324d98a50c25cc73ed6d0
-timeCreated: 1517307064
+timeCreated: 1525334364
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - EnemyBulletGO: {fileID: 1020512175840960, guid: 02fda9f977fbe4610b994adce6939ccc,
+      type: 2}
+  - EnemyDeathSFX: {fileID: 1117177163714580, guid: 6529cc2e64e11420888e9c34b0222bb0,
+      type: 2}
+  - _ShootAnim: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -9,6 +9,7 @@ public class EnemyGun : MonoBehaviour {
 	public bool EnemyShootSwitch;
 	int EnemyDeaths;
 	private int health;
+	public GameObject EnemyDeathSFX;
 
 	//Enemy Death Sound
 	public AudioClip DeathSound;
@@ -41,6 +42,7 @@ public class EnemyGun : MonoBehaviour {
 		bullet.transform.position = transform.position;
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
+			AkSoundEngine.PostEvent ("EnemyBulletSFX", gameObject);
 		}
 	}
 
@@ -49,8 +51,7 @@ public class EnemyGun : MonoBehaviour {
 		if((col.tag == "Bullets")){
 			Destroy(gameObject);
 			Debug.Log ("Destroyed!");
-			DeathSoundSource.clip = DeathSound;
-			DeathSoundSource.Play ();
+			GameObject.Instantiate(EnemyDeathSFX);
 		}
 			
 	}
