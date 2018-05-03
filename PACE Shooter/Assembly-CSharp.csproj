@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\BossGun.cs" />
      <Compile Include="Assets\Scripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\EnemyBullet.cs" />
+     <Compile Include="Assets\Scripts\EnemyDeathPostEvent.cs" />
      <Compile Include="Assets\Scripts\EnemyGun.cs" />
      <Compile Include="Assets\Scripts\Game2Menu.cs" />
      <Compile Include="Assets\Scripts\MENUtoGAME.cs" />
