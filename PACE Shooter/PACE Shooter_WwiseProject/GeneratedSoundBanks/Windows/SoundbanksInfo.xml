@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/HSW.TW/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Users/Sourcetree Repositories/PACEShooter/PACE Shooter/PACE Shooter_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="77978275" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambient</ObjectPath>
+			<ShortName>Ambient</ShortName>
+			<Path>Ambient.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2670322463" Name="BossBulletSFX" ObjectPath="\Events\Default Work Unit\BossBulletSFX" MaxAttenuation="30.000000"/>
+				<Event Id="2242875617" Name="BossDeathSFX" ObjectPath="\Events\Default Work Unit\BossDeathSFX"/>
+				<Event Id="118212162" Name="BossHurtSFX" ObjectPath="\Events\Default Work Unit\BossHurtSFX"/>
+				<Event Id="4205847320" Name="EnemyBulletSFX" ObjectPath="\Events\Default Work Unit\EnemyBulletSFX"/>
+				<Event Id="2382307924" Name="EnemyDeathSFX" ObjectPath="\Events\Default Work Unit\EnemyDeathSFX"/>
+				<Event Id="2984543794" Name="Play_CHANT" ObjectPath="\Events\Default Work Unit\Play_CHANT" MaxAttenuation="45.000000"/>
+				<Event Id="3829433163" Name="Play_Cricket" ObjectPath="\Events\Default Work Unit\Play_Cricket" MaxAttenuation="50.000000"/>
+				<Event Id="3863467300" Name="Play_Junkyard" ObjectPath="\Events\Default Work Unit\Play_Junkyard"/>
+				<Event Id="2838936948" Name="Play_Rain" ObjectPath="\Events\Default Work Unit\Play_Rain" MaxAttenuation="30.000000"/>
+				<Event Id="2450307524" Name="Play_Science" ObjectPath="\Events\Default Work Unit\Play_Science" MaxAttenuation="30.000000"/>
+				<Event Id="2470536401" Name="Play_Scream" ObjectPath="\Events\Default Work Unit\Play_Scream" MaxAttenuation="30.000000"/>
+				<Event Id="3018580490" Name="Play_strange" ObjectPath="\Events\Default Work Unit\Play_strange" MaxAttenuation="30.000000"/>
+				<Event Id="1280289895" Name="PlayerBulletSFX" ObjectPath="\Events\Default Work Unit\PlayerBulletSFX"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="17408302" Language="SFX">
+					<ShortName>BossShoot.wav</ShortName>
+					<Path>SFX/BossShoot_AD9B39E1.wem</Path>
+				</File>
+				<File Id="84542189" Language="SFX">
+					<ShortName>PB2.wav</ShortName>
+					<Path>SFX/PB2_2165B597.wem</Path>
+				</File>
+				<File Id="118744823" Language="SFX">
+					<ShortName>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</ShortName>
+					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_24767D7E.wem</Path>
+				</File>
+				<File Id="139758792" Language="SFX">
+					<ShortName>EnemyShoot.wav</ShortName>
+					<Path>SFX/EnemyShoot_AD9B39E1.wem</Path>
+				</File>
+				<File Id="140784330" Language="SFX">
+					<ShortName>Computer humming in a large room 3.wav</ShortName>
+					<Path>SFX/Computer humming in a large room 3_9924478C.wem</Path>
+				</File>
+				<File Id="142445884" Language="SFX">
+					<ShortName>SFX_BossHurt_3.wav</ShortName>
+					<Path>SFX/SFX_BossHurt_3_AD9B39E1.wem</Path>
+				</File>
+				<File Id="196847529" Language="SFX">
+					<ShortName>ES2.wav</ShortName>
+					<Path>SFX/ES2_0DBBD7CB.wem</Path>
+				</File>
+				<File Id="395219531" Language="SFX">
+					<ShortName>heavy rain 01.wav</ShortName>
+					<Path>SFX/heavy rain 01_276319E7.wem</Path>
+				</File>
+				<File Id="540899051" Language="SFX">
+					<ShortName>DreamReal.wav</ShortName>
+					<Path>SFX/DreamReal_2E7A9FFB.wem</Path>
+				</File>
+				<File Id="654522031" Language="SFX">
+					<ShortName>Science.wav</ShortName>
+					<Path>SFX/Science_3972B648.wem</Path>
+				</File>
+				<File Id="655475190" Language="SFX">
+					<ShortName>CHANT.wav</ShortName>
+					<Path>SFX/CHANT_DC76B95C.wem</Path>
+				</File>
+				<File Id="666551077" Language="SFX">
+					<ShortName>PB3.wav</ShortName>
+					<Path>SFX/PB3_7440D8F6.wem</Path>
+				</File>
+				<File Id="668876529" Language="SFX">
+					<ShortName>Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149.wav</ShortName>
+					<Path>SFX/Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_4FEF729E.wem</Path>
+				</File>
+				<File Id="693075171" Language="SFX">
+					<ShortName>EnemyHurt.wav</ShortName>
+					<Path>SFX/EnemyHurt_AD9B39E1.wem</Path>
+				</File>
+				<File Id="710228122" Language="SFX">
+					<ShortName>PB1.wav</ShortName>
+					<Path>SFX/PB1_9D786EB7.wem</Path>
+				</File>
+				<File Id="746307401" Language="SFX">
+					<ShortName>SFX_BossDeath_2.wav</ShortName>
+					<Path>SFX/SFX_BossDeath_2_AD9B39E1.wem</Path>
+				</File>
+				<File Id="919839730" Language="SFX">
+					<ShortName>ES1.wav</ShortName>
+					<Path>SFX/ES1_651A1AF1.wem</Path>
+				</File>
+				<File Id="964254671" Language="SFX">
+					<ShortName>Cricket.wav</ShortName>
+					<Path>SFX/Cricket_D72F7A08.wem</Path>
+				</File>
+				<File Id="1020226350" Language="SFX">
+					<ShortName>heavy rain 01.wav</ShortName>
+					<Path>SFX/heavy rain 01_CEB1787E.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1183542248" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps_Soundbank</ObjectPath>
+			<ShortName>Footsteps_Soundbank</ShortName>
+			<Path>Footsteps_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="330266813" Language="SFX">
+					<ShortName>Dirt 2.wav</ShortName>
+					<Path>SFX/Dirt 2_2B277E61.wem</Path>
+				</File>
+				<File Id="347626138" Language="SFX">
+					<ShortName>Dirt 1.wav</ShortName>
+					<Path>SFX/Dirt 1_EC076132.wem</Path>
+				</File>
+				<File Id="388425972" Language="SFX">
+					<ShortName>Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot.wav</ShortName>
+					<Path>SFX/Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot_9D9B98EC.wem</Path>
+				</File>
+				<File Id="591293366" Language="SFX">
+					<ShortName>Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1).wav</ShortName>
+					<Path>SFX/Feet-Footsteps-Tile-Boots-Leather Sole-Frye-12R-Right Foot (1)_168983B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

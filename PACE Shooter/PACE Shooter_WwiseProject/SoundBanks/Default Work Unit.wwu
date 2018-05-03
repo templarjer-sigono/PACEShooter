@@ -11,6 +11,16 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Ambient" ID="{F4DECC43-B9AA-412B-8C92-7CA1E2EE67A3}">
+<<<<<<< HEAD
+=======
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>77594624</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+>>>>>>> 71e3645... Updated Windows soundbank.
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_CHANT" ID="{A3F9A019-1289-472C-B090-E5A3605FF908}" WorkUnitID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Rain" ID="{4A0D9004-7D4A-49E0-90A0-129EAFAA9168}" WorkUnitID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" Filter="7" Origin="Manual"/>

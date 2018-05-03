@@ -356,7 +356,6 @@
 								<Value>81</Value>
 							</ValueList>
 						</Property>
-						<Property Name="EnablePanner" Type="bool" Value="True"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>

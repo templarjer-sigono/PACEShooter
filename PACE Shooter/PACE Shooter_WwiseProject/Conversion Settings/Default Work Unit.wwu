@@ -31,8 +31,13 @@
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
+<<<<<<< HEAD
 								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+=======
+								<Value Platform="Mac">1</Value>
+								<Value Platform="Windows">1</Value>
+>>>>>>> 71e3645... Updated Windows soundbank.
 							</ValueList>
 						</Property>
 					</PropertyList>
