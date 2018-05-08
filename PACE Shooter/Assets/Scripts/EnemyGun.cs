@@ -42,7 +42,7 @@ public class EnemyGun : MonoBehaviour {
 		bullet.transform.position = transform.position;
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
-			AkSoundEngine.PostEvent ("EnemyBulletSFX", gameObject);
+			AkSoundEngine.PostEvent ("Enemy_shoot", gameObject);
 		}
 	}
 

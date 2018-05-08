@@ -6,7 +6,7 @@ public class EnemyDeathPostEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		AkSoundEngine.PostEvent ("EnemyDeathSFX", gameObject);
+		AkSoundEngine.PostEvent ("Enemy_death", gameObject);
 	}
 	
 	// Update is called once per frame

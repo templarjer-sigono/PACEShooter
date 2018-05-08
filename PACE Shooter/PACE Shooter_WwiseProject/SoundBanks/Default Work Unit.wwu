@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BF85268D-DC81-4626-BB82-C86696A67134}" SchemaVersion="85">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{BF85268D-DC81-4626-BB82-C86696A67134}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BF85268D-DC81-4626-BB82-C86696A67134}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Soundbank" ID="{EE706D8A-C0EF-4369-81E8-E8D3C452A3A5}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>50000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_noise" ID="{EB326613-4C7F-4073-9EDA-D734FB0699DB}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_garage" ID="{3FCE44BC-C80E-40A4-810F-B96E5B722062}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Enemy_shoot" ID="{43F81637-18B3-4244-B056-DEE1FE45538F}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_chant" ID="{4F66D2DE-5055-4272-834E-F93E38EEB790}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Enemy_boss_death" ID="{F44E9720-58C5-42F6-A70D-F1C0A53BDEBF}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_scream" ID="{EA5165E7-D914-44C5-8EFE-84E61EBB28D0}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_cricket" ID="{B9376B47-86D8-46AD-B318-E460E0EA7C51}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Enemy_boss_hurt" ID="{0AC9D3CF-34DA-4883-9F38-437110FA039A}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_bosswind" ID="{7624FD9F-06C4-4C75-826F-02B056ED858E}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Player_shoot" ID="{3DE071F4-F77F-4D2F-8C23-83F034DA440A}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Enemy_death" ID="{B8EC9362-9971-4DFC-A5A3-468D62B3E24F}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_rain" ID="{4F68DC85-9E02-4E2E-A49B-E1DD605227AD}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Player_heartbeat" ID="{9C9984FC-2011-4F69-A7BC-BA9560549963}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
