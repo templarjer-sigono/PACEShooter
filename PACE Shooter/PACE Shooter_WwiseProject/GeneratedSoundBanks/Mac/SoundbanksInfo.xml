@@ -24,7 +24,7 @@
 				<Event Id="3388699230" Name="Enemy_boss_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_death"/>
 				<Event Id="3891866179" Name="Enemy_boss_hurt" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_hurt"/>
 				<Event Id="1205999388" Name="Enemy_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_death"/>
-				<Event Id="1050776119" Name="Enemy_shoot" ObjectPath="\Events\Default Work Unit\Characters\Enemy_shoot" MaxAttenuation="30.000000"/>
+				<Event Id="1050776119" Name="Enemy_shoot" ObjectPath="\Events\Default Work Unit\Characters\Enemy_shoot" MaxAttenuation="25.000000"/>
 				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="45.000000"/>
 				<Event Id="2984543794" Name="Play_chant" ObjectPath="\Events\Default Work Unit\Ambient\Play_chant" MaxAttenuation="45.000000"/>
 				<Event Id="3829433163" Name="Play_cricket" ObjectPath="\Events\Default Work Unit\Ambient\Play_cricket" MaxAttenuation="100.000000"/>

@@ -11,16 +11,13 @@ public class EnemyGun : MonoBehaviour {
 	private int health;
 	public GameObject EnemyDeathSFX;
 
-	//Enemy Death Sound
-	public AudioClip DeathSound;
-	public AudioSource DeathSoundSource;
+
 
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireEnemyBullet", 0.5f, 1f);
-		DeathSoundSource.playOnAwake = false;
+	
 	}
-
 	private void PlayShootAnim(){
 		_ShootAnim.Play ("EnemyShootAnim");
 	//	Debug.Log ("Anim Triggered!");

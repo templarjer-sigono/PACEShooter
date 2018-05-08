@@ -212,6 +212,7 @@ public class PlayerController : MonoBehaviour {
 
 
 			if (Time.time >=timestamp && Input.GetButtonDown("Fire1")&&canShoot) {
+				AkSoundEngine.PostEvent ("Player_shoot", gameObject);
 				Vector3 worldMousePos = Vector3.one;
 				Ray _mouseRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 				RaycastHit hit;

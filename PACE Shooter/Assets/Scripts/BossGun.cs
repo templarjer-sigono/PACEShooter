@@ -7,13 +7,6 @@ public class BossGun : MonoBehaviour {
 	private int BossHealth = 6;
 	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
-	private float aka = -0.1f;
-
-	public AudioClip BossDeathSound;
-	public AudioSource BossDeathSource;
-
-	public AudioClip BossHurtSound;
-	public AudioSource BossHurtSource;
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +32,7 @@ public class BossGun : MonoBehaviour {
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
 			BossMultiShot -= Random.Range(0, 2);
+			AkSoundEngine.PostEvent ("Enemy_boss_shoot", gameObject);
 		} else {
 			BossMultiShot = Random.Range(0, 4);
 		}
@@ -48,12 +42,10 @@ public class BossGun : MonoBehaviour {
 	{
 		if((col.tag == "Bullets")){
 			BossHealth -= 1;
-			BossHurtSource.clip = BossHurtSound;
-			BossHurtSource.Play ();
+			AkSoundEngine.PostEvent ("Enemy_boss_hurt", gameObject);
 			if (BossHealth <= 0) {
 				Destroy (gameObject);
-				BossDeathSource.clip = BossDeathSound;
-				BossDeathSource.Play ();
+
 			}
 		}
 	}
