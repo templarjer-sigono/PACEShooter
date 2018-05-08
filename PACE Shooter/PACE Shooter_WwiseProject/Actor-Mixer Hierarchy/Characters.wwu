@@ -172,7 +172,7 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>0.34394</XPos>
+												<XPos>1.5</XPos>
 												<YPos>1.69776</YPos>
 												<Flags>0</Flags>
 											</Point>
@@ -300,7 +300,7 @@
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-23</Value>
+								<Value>-30</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -338,6 +338,9 @@
 				<BlendContainer Name="Enemy_Death" ID="{322F53AC-E6C8-465F-AC25-234FAB8B738C}" ShortID="649685999">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-430</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{AC87E8CC-93DA-4EA1-A876-A1680DDF2F78}"/>
@@ -353,7 +356,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>-11</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -431,7 +434,7 @@
 						<Property Name="EnablePositioning" Type="bool" Value="False"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
-								<Value>-1060</Value>
+								<Value>-680</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -452,7 +455,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

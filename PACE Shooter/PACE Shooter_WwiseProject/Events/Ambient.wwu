@@ -115,6 +115,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Ending" ID="{29CCBDCE-060E-411E-905A-FDA9F0D4A0BE}">
+					<ChildrenList>
+						<Action Name="" ID="{2BE5F0F9-B456-433A-AECF-C40BCA8F9F78}" ShortID="994439418">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ENDING" ID="{225198F7-1233-47DA-87E7-E62524C7CE9E}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

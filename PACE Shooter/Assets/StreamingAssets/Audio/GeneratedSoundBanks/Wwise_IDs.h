@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENDING = 3966194980U;
         static const AkUniqueID ENEMY_BOSS_DEATH = 3388699230U;
         static const AkUniqueID ENEMY_BOSS_HURT = 3891866179U;
         static const AkUniqueID ENEMY_DEATH = 1205999388U;

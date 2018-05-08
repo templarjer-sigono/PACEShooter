@@ -21,16 +21,17 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3966194980" Name="Ending" ObjectPath="\Events\Default Work Unit\Ambient\Ending"/>
 				<Event Id="3388699230" Name="Enemy_boss_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_death" MaxAttenuation="40.000000"/>
 				<Event Id="3891866179" Name="Enemy_boss_hurt" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_hurt" MaxAttenuation="40.000000"/>
 				<Event Id="1205999388" Name="Enemy_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_death" MaxAttenuation="40.000000"/>
 				<Event Id="1050776119" Name="Enemy_shoot" ObjectPath="\Events\Default Work Unit\Characters\Enemy_shoot" MaxAttenuation="25.000000"/>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Ambient\Music"/>
-				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="45.000000"/>
-				<Event Id="2984543794" Name="Play_chant" ObjectPath="\Events\Default Work Unit\Ambient\Play_chant" MaxAttenuation="45.000000"/>
+				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="25.000000"/>
+				<Event Id="2984543794" Name="Play_chant" ObjectPath="\Events\Default Work Unit\Ambient\Play_chant" MaxAttenuation="25.000000"/>
 				<Event Id="3829433163" Name="Play_cricket" ObjectPath="\Events\Default Work Unit\Ambient\Play_cricket" MaxAttenuation="100.000000"/>
 				<Event Id="897895173" Name="Play_garage" ObjectPath="\Events\Default Work Unit\Ambient\Play_garage"/>
-				<Event Id="1932796752" Name="Play_noise" ObjectPath="\Events\Default Work Unit\Ambient\Play_noise" MaxAttenuation="45.000000"/>
+				<Event Id="1932796752" Name="Play_noise" ObjectPath="\Events\Default Work Unit\Ambient\Play_noise" MaxAttenuation="25.000000"/>
 				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="120.000000"/>
 				<Event Id="2470536401" Name="Play_scream" ObjectPath="\Events\Default Work Unit\Ambient\Play_scream" MaxAttenuation="100.000000"/>
 				<Event Id="3484321931" Name="Player_heartbeat" ObjectPath="\Events\Default Work Unit\Characters\Player_heartbeat"/>
@@ -57,6 +58,10 @@
 				<File Id="396550388" Language="SFX">
 					<ShortName>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</ShortName>
 					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_5306B646.wem</Path>
+				</File>
+				<File Id="449354016" Language="SFX">
+					<ShortName>150 ting ting.wav</ShortName>
+					<Path>SFX/150 ting ting_A682DE37.wem</Path>
 				</File>
 				<File Id="635012149" Language="SFX">
 					<ShortName>SFX_BossDeath_2.wav</ShortName>

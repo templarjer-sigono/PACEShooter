@@ -55,18 +55,26 @@
 				</Sound>
 				<Sound Name="Play_Scream" ID="{089B2A0E-8C3D-4B02-A4FF-2AC5658F7446}" ShortID="962817344">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="Highpass" Type="int16">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>37</Value>
 							</ValueList>
 						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{8556D0C4-635A-43B0-9F82-8A3C4516148F}">
 								<Attenuation Name="Amb (Custom)" ID="{FBF3E17F-6B10-4999-958A-B93CA53412F7}" ShortID="879987353">
+									<PropertyList>
+										<Property Name="ConeInnerAngle" Type="int32" Value="230"/>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -77,17 +85,17 @@
 													<PointList>
 														<Point>
 															<XPos>0</XPos>
-															<YPos>0</YPos>
+															<YPos>-11.22203</YPos>
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>2.19101</XPos>
-															<YPos>-29.63849</YPos>
+															<XPos>8.4606</XPos>
+															<YPos>-25.20143</YPos>
 															<Flags>0</Flags>
 														</Point>
 														<Point>
-															<XPos>2.19201</XPos>
-															<YPos>-28.24132</YPos>
+															<XPos>19.43339</XPos>
+															<YPos>-200</YPos>
 															<Flags>0</Flags>
 														</Point>
 														<Point>
@@ -118,8 +126,13 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>66.1442</XPos>
-															<YPos>25</YPos>
+															<XPos>10.65831</XPos>
+															<YPos>46</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>20.21944</XPos>
+															<YPos>100</YPos>
 															<Flags>0</Flags>
 														</Point>
 														<Point>
@@ -132,13 +145,77 @@
 											</CurveUsageInfo>
 										</LowPassFilterUsage>
 										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="HighPassFilter" ID="{0405CBF8-8860-40D9-8569-75C100E8DB3D}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>10.18809</XPos>
+															<YPos>25</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>19.59248</XPos>
+															<YPos>100</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>100</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</HighPassFilterUsage>
 										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Spread" ID="{DDC781FD-F1CB-4F92-8C2F-2C62B9CAF683}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>100</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</SpreadUsage>
 										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Focus" ID="{7156CFAA-9378-4166-8E58-8EF449851A41}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>100</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</FocusUsage>
 									</CurveUsageInfoList>
 								</Attenuation>
@@ -478,6 +555,32 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="pace" ID="{5342B34A-2ECC-47F0-9D7A-FFFBAA69750E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ENDING" ID="{225198F7-1233-47DA-87E7-E62524C7CE9E}" ShortID="459630380">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-16</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="150 ting ting" ID="{6558ECCD-DB7C-4737-92F6-FE9CFD5FC8CF}" ShortID="449354016">
+							<Language>SFX</Language>
+							<AudioFile>150 ting ting.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="150 ting ting" ID="{6558ECCD-DB7C-4737-92F6-FE9CFD5FC8CF}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
