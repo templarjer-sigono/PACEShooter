@@ -14,12 +14,14 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_noise" ID="{EB326613-4C7F-4073-9EDA-D734FB0699DB}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_garage" ID="{3FCE44BC-C80E-40A4-810F-B96E5B722062}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ending" ID="{29CCBDCE-060E-411E-905A-FDA9F0D4A0BE}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Enemy_shoot" ID="{43F81637-18B3-4244-B056-DEE1FE45538F}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_chant" ID="{4F66D2DE-5055-4272-834E-F93E38EEB790}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Enemy_boss_death" ID="{F44E9720-58C5-42F6-A70D-F1C0A53BDEBF}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player_hurt" ID="{3C938FEC-F0BB-44B0-A8C6-ECB3931ED339}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_scream" ID="{EA5165E7-D914-44C5-8EFE-84E61EBB28D0}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_cricket" ID="{B9376B47-86D8-46AD-B318-E460E0EA7C51}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ending Switch" ID="{CE900FC4-1E8B-4822-B4A1-096DC169CA39}" WorkUnitID="{FDF42D48-D880-4852-AB5D-97E72830E17C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Enemy_boss_hurt" ID="{0AC9D3CF-34DA-4883-9F38-437110FA039A}" WorkUnitID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player_Hurt" ID="{FFB7E7CD-D930-4B6C-BBA4-54659C11D45D}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Music" ID="{5D245639-2526-4BE3-A446-EA9A49E17BAB}" WorkUnitID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" Filter="7" Origin="Manual"/>

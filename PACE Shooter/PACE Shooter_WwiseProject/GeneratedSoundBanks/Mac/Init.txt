@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	390902339	NowPlaying			\Default Work Unit\NowPlaying	
+	1373609466	NoPlay			\Default Work Unit\NoPlay	
+
+State	ID	Name	State Group			Notes
+	0	None	NowPlaying			
+	1227244058	NotPlaying	NowPlaying			
+	1852808225	Playing	NowPlaying			
+	0	None	NoPlay			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	
 

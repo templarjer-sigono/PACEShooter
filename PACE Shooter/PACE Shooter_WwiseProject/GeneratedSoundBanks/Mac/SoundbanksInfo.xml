@@ -59,10 +59,6 @@
 					<ShortName>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</ShortName>
 					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_5306B646.wem</Path>
 				</File>
-				<File Id="449354016" Language="SFX">
-					<ShortName>150 ting ting.wav</ShortName>
-					<Path>SFX/150 ting ting_A682DE37.wem</Path>
-				</File>
 				<File Id="635012149" Language="SFX">
 					<ShortName>SFX_BossDeath_2.wav</ShortName>
 					<Path>SFX/SFX_BossDeath_2_903805F1.wem</Path>
@@ -74,6 +70,10 @@
 				<File Id="684284575" Language="SFX">
 					<ShortName>Little Football Ball Bounce_TS 14.wav</ShortName>
 					<Path>SFX/Little Football Ball Bounce_TS 14_7838A66F.wem</Path>
+				</File>
+				<File Id="914217944" Language="SFX">
+					<ShortName>150 ting ting.wav</ShortName>
+					<Path>SFX/150 ting ting_BF30CD25.wem</Path>
 				</File>
 				<File Id="919250972" Language="SFX">
 					<ShortName>volleyball_hit_medium_2.wav</ShortName>

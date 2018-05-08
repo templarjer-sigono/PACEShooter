@@ -31,6 +31,30 @@ namespace AK
         static const AkUniqueID PLAYER_SHOOT = 4004702906U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace NOPLAY
+        {
+            static const AkUniqueID GROUP = 1373609466U;
+
+            namespace STATE
+            {
+            } // namespace STATE
+        } // namespace NOPLAY
+
+        namespace NOWPLAYING
+        {
+            static const AkUniqueID GROUP = 390902339U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NOTPLAYING = 1227244058U;
+                static const AkUniqueID PLAYING = 1852808225U;
+            } // namespace STATE
+        } // namespace NOWPLAYING
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
