@@ -5,11 +5,6 @@
 			<ChildrenList>
 				<Bus Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>-4</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Volume" Type="Real64">
 							<RTPCList>
 								<RTPC Name="" ID="{8F92E9C4-75DC-4545-9976-CCD580026CBF}" ShortID="925648537">

@@ -27,6 +27,12 @@
 						<Property Name="Threshold" Type="Real32" Value="-20.3"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Peak_Limiter_01" ID="{AC6272CF-004F-4E03-B6E2-B2DAFC1C75F0}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="Ratio" Type="Real32" Value="11.8"/>
+						<Property Name="Threshold" Type="Real32" Value="-28.9"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

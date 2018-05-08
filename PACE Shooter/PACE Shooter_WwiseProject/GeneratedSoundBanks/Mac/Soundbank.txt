@@ -19,6 +19,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	960762675	New_Wwise_Delay	Wwise Delay			
+	3038057016	New_Wwise_Peak_Limiter_01	Wwise Peak Limiter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	104414493	Player_heartbeat	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HEARTBEAT SLOW.R_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_heartbeat		736892
@@ -27,8 +28,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	393663107	Play_bosswind	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Spacewind_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_bosswind		5728708
 	396550388	Play_Scream	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_5DB9F973.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Scream		4192648
 	635012149	Enemy_Boss_death	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossDeath_2_9173290C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_death		222736
-	684284575	Little Football Ball Bounce_TS 14	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Little Football Ball Bounce_TS 14_A5DA4FF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Death\Little Football Ball Bounce_TS 14		33760
-	881094850	Enemy_Boss_hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossHurt_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_hurt		5184
+	684284575	Enemy_Boss_hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Little Football Ball Bounce_TS 14_A5DA4FF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_hurt		33760
 	919250972	Player_Hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\volleyball_hit_medium_2_CB838C72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_Hurt		44380
 	920018117	Play_rain	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_D10BD2A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_rain		5577012
 	932886245	Play_Noise	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Pluton_A43B4F8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Noise		2822492

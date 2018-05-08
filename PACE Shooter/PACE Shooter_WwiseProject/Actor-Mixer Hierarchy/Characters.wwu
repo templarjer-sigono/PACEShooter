@@ -295,7 +295,7 @@
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-16</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

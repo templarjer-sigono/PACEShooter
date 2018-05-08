@@ -33,7 +33,7 @@ public class BossGun : MonoBehaviour {
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
 			BossMultiShot -= Random.Range(0, 2);
-			AkSoundEngine.PostEvent ("Enemy_shoot", gameObject);
+			AkSoundEngine.PostEvent ("Enemy_boss_hurt", gameObject);
 		} else {
 			BossMultiShot = Random.Range(0, 4);
 		}

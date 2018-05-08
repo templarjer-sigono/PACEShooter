@@ -65,10 +65,6 @@
 					<ShortName>Little Football Ball Bounce_TS 14.wav</ShortName>
 					<Path>SFX/Little Football Ball Bounce_TS 14_A5DA4FF6.wem</Path>
 				</File>
-				<File Id="881094850" Language="SFX">
-					<ShortName>SFX_BossHurt_3.wav</ShortName>
-					<Path>SFX/SFX_BossHurt_3_1C9C67B2.wem</Path>
-				</File>
 				<File Id="919250972" Language="SFX">
 					<ShortName>volleyball_hit_medium_2.wav</ShortName>
 					<Path>SFX/volleyball_hit_medium_2_CB838C72.wem</Path>
