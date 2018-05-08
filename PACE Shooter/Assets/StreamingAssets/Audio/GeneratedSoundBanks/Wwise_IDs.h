@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID ENEMY_BOSS_HURT = 3891866179U;
         static const AkUniqueID ENEMY_DEATH = 1205999388U;
         static const AkUniqueID ENEMY_SHOOT = 1050776119U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_BOSSWIND = 1727127563U;
         static const AkUniqueID PLAY_CHANT = 2984543794U;
         static const AkUniqueID PLAY_CRICKET = 3829433163U;

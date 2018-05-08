@@ -14,8 +14,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3891866179	Enemy_boss_hurt			\Default Work Unit\Characters\Enemy_boss_hurt	
 	4004702906	Player_shoot			\Default Work Unit\Characters\Player_shoot	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_health			\Default Work Unit\Player_health	
+
 Effect plug-ins	ID	Name	Type				Notes
 	960762675	New_Wwise_Delay	Wwise Delay			
+	3038057016	New_Wwise_Peak_Limiter_01	Wwise Peak Limiter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	104414493	Player_heartbeat	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Windows\SFX\HEARTBEAT SLOW.R_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_heartbeat		736892

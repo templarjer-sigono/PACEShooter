@@ -14,7 +14,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -69,7 +69,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-26</Value>
+								<Value>-32</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -291,11 +291,16 @@
 				</Sound>
 				<Sound Name="Enemy_Boss_hurt" ID="{923ADF7F-7159-4A2D-9D4B-41B211C244BB}" ShortID="700802209">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1010</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-16</Value>
+								<Value>-23</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -311,13 +316,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="SFX_BossHurt_3" ID="{CD59C9D4-FEB5-479E-AD91-6122D4EB1121}" ShortID="881094850">
+						<AudioFileSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" ShortID="684284575">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0118910873685498"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.258750061139643"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.434262510699438"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+								</Reference>
+							</ReferenceList>
 							<Language>SFX</Language>
-							<AudioFile>SFX_BossHurt_3.wav</AudioFile>
+							<AudioFile>Little Football Ball Bounce_TS 14.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="SFX_BossHurt_3" ID="{CD59C9D4-FEB5-479E-AD91-6122D4EB1121}" Platform="Linked"/>
+						<ActiveSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<BlendContainer Name="Enemy_Death" ID="{322F53AC-E6C8-465F-AC25-234FAB8B738C}" ShortID="649685999">
@@ -374,7 +389,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -387,18 +402,26 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" ShortID="684284575">
+								<AudioFileSource Name="Little Football Ball Bounce_TS 14" ID="{2FC879BD-DC1C-487A-8036-79076E653CAC}" ShortID="575599347">
 									<PropertyList>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.0118910873685498"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.258750061139643"/>
 										<Property Name="TrimEnd" Type="Real64" Value="0.434262510699438"/>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+										</Reference>
+									</ReferenceList>
 									<Language>SFX</Language>
 									<AudioFile>Little Football Ball Bounce_TS 14.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="684284575"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" Platform="Linked"/>
+								<ActiveSource Name="Little Football Ball Bounce_TS 14" ID="{2FC879BD-DC1C-487A-8036-79076E653CAC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -429,7 +452,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-14</Value>
+								<Value>-20</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

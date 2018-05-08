@@ -1,11 +1,18 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_health			\Default Work Unit\Player_health	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	77978275	Ambient			\Default Work Unit\Ambient	
+	669267787	EnemyBullet			\Default Work Unit\EnemyBullet	
+	1256513485	Bullet			\Default Work Unit\Bullet	
+	2179486487	Heartbeat			\Default Work Unit\Heartbeat	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	2917229290	Reverb_Bus			\Default Work Unit\Master Audio Bus\Reverb_Bus	
+	2917229290	Reverb_Bus			\Default Work Unit\Ambient\Reverb_Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
 	2199193560	New_Wwise_RoomVerb	Wwise RoomVerb			
+	3970951098	New_Wwise_Peak_Limiter	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

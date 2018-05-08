@@ -13,6 +13,7 @@ public class Epi_To_Menu : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.Return)) {
+			AkBankManager.UnloadBank ("Soundbank");
 			SceneManager.LoadScene ("Menu");
 		}
 	}

@@ -101,6 +101,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music" ID="{5D245639-2526-4BE3-A446-EA9A49E17BAB}">
+					<ChildrenList>
+						<Action Name="" ID="{A1149EC9-7DF9-4336-ADA3-79B3C269BABE}" ShortID="575294099">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PACE_Music" ID="{98796533-A861-4C22-A040-D486CE965C19}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

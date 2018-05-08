@@ -141,6 +141,7 @@ public class PlayerController : MonoBehaviour {
 
 		
 			if (Input.GetKey (KeyCode.Return)) {
+				AkBankManager.UnloadBank ("Soundbank");
 				SceneManager.LoadScene (0);
 			}
 

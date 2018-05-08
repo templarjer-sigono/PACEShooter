@@ -5,7 +5,8 @@
 			<ChildrenList>
 				<Effect Name="New_Wwise_RoomVerb" ID="{BBBC1433-A84B-4B35-91B1-7A91BE8BF40C}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 					<PropertyList>
-						<Property Name="DryLevel" Type="Real32" Value="-11.3"/>
+						<Property Name="ERLevel" Type="Real32" Value="-5"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="-1"/>
 					</PropertyList>
 				</Effect>
 				<Effect Name="New_Wwise_Delay" ID="{95203709-0D86-4D60-B091-1EE6C9C130CC}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
