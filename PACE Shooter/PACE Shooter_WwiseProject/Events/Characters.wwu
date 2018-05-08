@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" SchemaVersion="85" RootDocumentID="{AC966DCB-BBDD-495B-AFD9-B86DB36D47F6}">
+	<Events>
+		<WorkUnit Name="Characters" ID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" OwnerID="{AC966DCB-BBDD-495B-AFD9-B86DB36D47F6}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Player_shoot" ID="{3DE071F4-F77F-4D2F-8C23-83F034DA440A}">
+					<ChildrenList>
+						<Action Name="" ID="{A8D64094-A43A-480F-A272-9A88EC628530}" ShortID="568480174">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Shoot" ID="{0ACA9B16-1CED-4CEC-A362-0B3B9146D903}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_heartbeat" ID="{9C9984FC-2011-4F69-A7BC-BA9560549963}">
+					<ChildrenList>
+						<Action Name="" ID="{783A9191-1C09-4A1F-BB8F-0CBE76F18C74}" ShortID="1005363481">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_heartbeat" ID="{7DCB619B-0FC1-49C3-B24C-8CCAFE237161}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_shoot" ID="{43F81637-18B3-4244-B056-DEE1FE45538F}">
+					<ChildrenList>
+						<Action Name="" ID="{587A9707-ECB0-4837-AA66-7AC139E59907}" ShortID="91493438">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Shoot" ID="{BF81BBF1-A75C-4D6C-ACB7-02E590B61B03}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_boss_hurt" ID="{0AC9D3CF-34DA-4883-9F38-437110FA039A}">
+					<ChildrenList>
+						<Action Name="" ID="{DE07CA27-9395-4A81-9751-02853741E39E}" ShortID="340323541">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Boss_hurt" ID="{923ADF7F-7159-4A2D-9D4B-41B211C244BB}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_boss_death" ID="{F44E9720-58C5-42F6-A70D-F1C0A53BDEBF}">
+					<ChildrenList>
+						<Action Name="" ID="{1B67FA1C-30D5-4463-BC53-E6ADD1B53580}" ShortID="493712390">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Boss_death" ID="{8BE88B56-3941-4B9A-A48A-CABE92F8FE48}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_death" ID="{B8EC9362-9971-4DFC-A5A3-468D62B3E24F}">
+					<ChildrenList>
+						<Action Name="" ID="{7D4BBD96-22BA-4E9A-9163-ACCF29DDF7C2}" ShortID="341542604">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Death" ID="{322F53AC-E6C8-465F-AC25-234FAB8B738C}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

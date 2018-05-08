@@ -1,19 +1,11 @@
-State Group	ID	Name			Wwise Object Path	Notes
-	2742602365	PosType			\Default Work Unit\PosType	
-
-State	ID	Name	State Group			Notes
-	0	None	PosType			
-	1132214669	Interior	PosType			
-	2213992659	Exterior	PosType			
-
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1310632874	Reverb_Send			\Default Work Unit\Master Audio Bus\Reverb_Send	
+	2917229290	Reverb_Bus			\Default Work Unit\Master Audio Bus\Reverb_Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
-	3164629247	Holy	Wwise RoomVerb			
+	2199193560	New_Wwise_RoomVerb	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

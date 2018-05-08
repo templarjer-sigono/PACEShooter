@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}" SchemaVersion="85" RootDocumentID="{5024A8E5-1710-4AFD-974C-14FC351AA687}">
+	<AudioObjects>
+		<WorkUnit Name="Characters" ID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}" OwnerID="{5024A8E5-1710-4AFD-974C-14FC351AA687}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Enemy_Boss_death" ID="{8BE88B56-3941-4B9A-A48A-CABE92F8FE48}" ShortID="189463226">
+					<PropertyList>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-21</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BossDeath_2" ID="{C5DB24B0-27F7-4315-8231-438502ACA788}" ShortID="635012149">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.39174989144594"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.26230520577025"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>SFX_BossDeath_2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BossDeath_2" ID="{C5DB24B0-27F7-4315-8231-438502ACA788}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Player_Shoot" ID="{0ACA9B16-1CED-4CEC-A362-0B3B9146D903}" ShortID="915129040">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CD15E421-C1A3-4340-BF12-940648098B31}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-20"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Floating_Clave_ss" ID="{5A090B7B-ACDE-490D-A08C-2EC22D6E05CB}" ShortID="1050844826">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0376493762092756"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.148244418824023"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Floating_Clave_ss.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Floating_Clave_ss" ID="{5A090B7B-ACDE-490D-A08C-2EC22D6E05CB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Player_heartbeat" ID="{7DCB619B-0FC1-49C3-B24C-8CCAFE237161}" ShortID="1058675844">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HEARTBEAT SLOW_R" ID="{B55CBF1C-DE11-4660-833D-CBFA95D06A4E}" ShortID="104414493">
+							<Language>SFX</Language>
+							<AudioFile>HEARTBEAT SLOW.R.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HEARTBEAT SLOW_R" ID="{B55CBF1C-DE11-4660-833D-CBFA95D06A4E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Enemy_Shoot" ID="{BF81BBF1-A75C-4D6C-ACB7-02E590B61B03}" ShortID="116238028">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F56F0930-CCE2-4C92-996C-326224228A98}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="909"/>
+											<Property Name="Min" Type="Real64" Value="-556"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-16</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Bullet" ID="{4364B20C-ACE5-42C5-B424-BE7F4CA0C4AC}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="step on floor 1" ID="{D33ABA54-7657-472C-B9B6-2EEB56CC489F}" ShortID="953850921">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.00864231728396911"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0120992441975567"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.129791892301063"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>step on floor 1.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="step on floor 1" ID="{D33ABA54-7657-472C-B9B6-2EEB56CC489F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Enemy_Boss_hurt" ID="{923ADF7F-7159-4A2D-9D4B-41B211C244BB}" ShortID="700802209">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BossHurt_3" ID="{CD59C9D4-FEB5-479E-AD91-6122D4EB1121}" ShortID="881094850">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BossHurt_3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BossHurt_3" ID="{CD59C9D4-FEB5-479E-AD91-6122D4EB1121}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<BlendContainer Name="Enemy_Death" ID="{322F53AC-E6C8-465F-AC25-234FAB8B738C}" ShortID="649685999">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AC87E8CC-93DA-4EA1-A876-A1680DDF2F78}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Little Football Ball Bounce_TS 14" ID="{8E0284C0-DD0C-41A0-94F4-5F5B64D40F0D}" ShortID="494774596">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CF4F0454-ADB4-4BA9-B66B-B00073579FDE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+													<Property Name="Min" Type="Real64" Value="-20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" ShortID="684284575">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0118910873685498"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.258750061139643"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.434262510699438"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Little Football Ball Bounce_TS 14.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" SchemaVersion="85" RootDocumentID="{AC966DCB-BBDD-495B-AFD9-B86DB36D47F6}">
+	<Events>
+		<WorkUnit Name="Ambient" ID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" OwnerID="{AC966DCB-BBDD-495B-AFD9-B86DB36D47F6}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_bosswind" ID="{7624FD9F-06C4-4C75-826F-02B056ED858E}">
+					<ChildrenList>
+						<Action Name="" ID="{8F5CE6C7-7652-4E65-AAD9-B3D70A4CC821}" ShortID="92355637">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_bosswind" ID="{81DBEFBD-DFE0-4C8C-9123-C307D3C310E9}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_chant" ID="{4F66D2DE-5055-4272-834E-F93E38EEB790}">
+					<ChildrenList>
+						<Action Name="" ID="{BCA44EB2-1572-456E-8645-6D100F1BF747}" ShortID="288597680">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Chant" ID="{A7F14216-73D5-4998-8748-E1CBDC8BBA4F}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_cricket" ID="{B9376B47-86D8-46AD-B318-E460E0EA7C51}">
+					<ChildrenList>
+						<Action Name="" ID="{B5765DC5-A5C1-4AD0-AF7F-29DB7F8F56E6}" ShortID="529486930">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Cricket" ID="{10BB7E44-2519-43BD-995E-183D46E70A13}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_garage" ID="{3FCE44BC-C80E-40A4-810F-B96E5B722062}">
+					<ChildrenList>
+						<Action Name="" ID="{C5F591C0-4CBE-4606-980C-50B96A3D201F}" ShortID="835729849">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_garage" ID="{CCB203AA-A0B1-497C-BA87-9F93B9C71C84}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_noise" ID="{EB326613-4C7F-4073-9EDA-D734FB0699DB}">
+					<ChildrenList>
+						<Action Name="" ID="{44D67739-5F5B-4A84-9AD8-D39968B3FCDE}" ShortID="663608586">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Noise" ID="{E535EFE5-49BF-4F9D-B210-C5B37C3C798F}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_rain" ID="{4F68DC85-9E02-4E2E-A49B-E1DD605227AD}">
+					<ChildrenList>
+						<Action Name="" ID="{D0E4FA26-78E5-49E8-A027-463B724D69F4}" ShortID="372566365">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_rain" ID="{CCD07D31-1AAB-425C-A2ED-DDF0376872B4}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_scream" ID="{EA5165E7-D914-44C5-8EFE-84E61EBB28D0}">
+					<ChildrenList>
+						<Action Name="" ID="{6AFCD388-2FB0-4350-858F-ADABE2D82B31}" ShortID="813879883">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Scream" ID="{089B2A0E-8C3D-4B02-A4FF-2AC5658F7446}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

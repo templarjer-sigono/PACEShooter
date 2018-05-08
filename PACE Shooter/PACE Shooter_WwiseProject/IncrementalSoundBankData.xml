@@ -3,42 +3,13 @@
 	<Platform GUID="{BE9AA1D0-DC1C-44BC-B5DE-DF51FE238301}">
 		<Banks>
 			<Language ID="393239870">
-<<<<<<< HEAD
-				<File Name="Ambient" Hash="1192233718" Timestamp="1524651486"/>
-				<File Name="Footsteps_Soundbank" Hash="447644202" Timestamp="1524643831"/>
-				<File Name="Init" Hash="884248084" Timestamp="1524649942"/>
-=======
-				<File Name="Ambient" Hash="1461026493" Timestamp="1525339159"/>
-				<File Name="Footsteps_Soundbank" Hash="3968447363" Timestamp="1525339159"/>
-				<File Name="Init" Hash="4070866522" Timestamp="1525336838"/>
->>>>>>> 153ee25... Adjusted the size again.
-				<File Name="New_SoundBank" Hash="1506437744" Timestamp="1524643805"/>
+				<File Name="Init" Hash="1885420005" Timestamp="1525758964"/>
+				<File Name="Soundbank" Hash="2578907839" Timestamp="1525758964"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-<<<<<<< HEAD
-<<<<<<< HEAD
-				<File Name="" Hash="2277862387" Timestamp="1524651486"/>
-=======
-=======
->>>>>>> 153ee25... Adjusted the size again.
-				<File Name="" Hash="1051670110" Timestamp="1525339159"/>
-			</Language>
-		</XMLInfo>
-	</Platform>
-	<Platform GUID="{005853F4-E0D9-4ABD-B9E1-B1661E43FC3A}">
-		<Banks>
-			<Language ID="393239870">
-				<File Name="Ambient" Hash="1461026493" Timestamp="1525339412"/>
-				<File Name="Footsteps_Soundbank" Hash="447644202" Timestamp="1525331639"/>
-				<File Name="Init" Hash="1532089488" Timestamp="1525339412"/>
-			</Language>
-		</Banks>
-		<XMLInfo>
-			<Language ID="-1">
-				<File Name="" Hash="2618151032" Timestamp="1525339412"/>
->>>>>>> 71e3645... Updated Windows soundbank.
+				<File Name="" Hash="1455590286" Timestamp="1525758964"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

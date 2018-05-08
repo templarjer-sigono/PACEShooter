@@ -1,64 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{AC966DCB-BBDD-495B-AFD9-B86DB36D47F6}" SchemaVersion="85">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{DFBEB161-3850-4B62-BCE2-F20E0DE3AA51}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{AC966DCB-BBDD-495B-AFD9-B86DB36D47F6}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Footsteps" ID="{E934CCF8-2C64-4BA8-BBDC-9D932FF70CDB}">
-					<ChildrenList>
-						<Action Name="" ID="{3FFC01C2-3940-481E-89E5-F9BB25497993}" ShortID="377765111">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{2631E196-368B-48B3-9EAB-620180B25EF5}" WorkUnitID="{11096D2D-C06C-4BAA-82A8-E35B290567F3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Rain" ID="{4A0D9004-7D4A-49E0-90A0-129EAFAA9168}">
-					<ChildrenList>
-						<Action Name="" ID="{B2732D96-AD40-446A-ACF3-6C4BFD2400FB}" ShortID="367333235">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rain" ID="{6582055F-DC7C-4154-855A-24B4DDED3114}" WorkUnitID="{11096D2D-C06C-4BAA-82A8-E35B290567F3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_CHANT" ID="{A3F9A019-1289-472C-B090-E5A3605FF908}">
-					<ChildrenList>
-						<Action Name="" ID="{D698B1AE-5CAF-46A0-BF25-36785F325F82}" ShortID="163503269">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Holy" ID="{33A13F15-6408-4AE8-B4E0-A886A0F88114}" WorkUnitID="{11096D2D-C06C-4BAA-82A8-E35B290567F3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="ENV_Enter" ID="{753CCC4F-5579-4385-98E6-87FBBCB632F6}">
-					<ChildrenList>
-						<Action Name="" ID="{A1626FEB-E05F-4706-993F-59D962DA0762}" ShortID="564902911">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rain" ID="{6582055F-DC7C-4154-855A-24B4DDED3114}" WorkUnitID="{11096D2D-C06C-4BAA-82A8-E35B290567F3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<WorkUnit Name="Ambient" ID="{1BDF72FB-274E-4AA0-A49E-29514040E47E}" PersistMode="Reference"/>
+				<WorkUnit Name="Characters" ID="{3909C8F1-4BF2-47D0-9F5C-D38CA7735708}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

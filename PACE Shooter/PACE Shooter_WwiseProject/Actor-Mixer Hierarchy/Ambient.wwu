@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}" SchemaVersion="85" RootDocumentID="{5024A8E5-1710-4AFD-974C-14FC351AA687}">
+	<AudioObjects>
+		<WorkUnit Name="Ambient" ID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}" OwnerID="{5024A8E5-1710-4AFD-974C-14FC351AA687}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Play_rain" ID="{CCD07D31-1AAB-425C-A2ED-DDF0376872B4}" ShortID="496250908">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Amb" ID="{8556D0C4-635A-43B0-9F82-8A3C4516148F}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="heavy rain 01" ID="{B33E28A5-D896-4CC3-B56C-D85463168BE6}" ShortID="920018117">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="1.32097563897166"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.14484555377544"/>
+								<Property Name="TrimEnd" Type="Real64" Value="31.6153502927216"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>heavy rain 01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="heavy rain 01" ID="{B33E28A5-D896-4CC3-B56C-D85463168BE6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Play_Scream" ID="{089B2A0E-8C3D-4B02-A4FF-2AC5658F7446}" ShortID="962817344">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HORROR GENERAL KID SCREAMS AMBIENT REVERB 01" ID="{1341DD57-5902-47BE-B8F7-B87F2E5908BC}" ShortID="396550388">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.631855500821018"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.534646962233168"/>
+								<Property Name="TrimEnd" Type="Real64" Value="23.7674876847291"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HORROR GENERAL KID SCREAMS AMBIENT REVERB 01" ID="{1341DD57-5902-47BE-B8F7-B87F2E5908BC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Play_Noise" ID="{E535EFE5-49BF-4F9D-B210-C5B37C3C798F}" ShortID="620228709">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>31</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-19</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Amb" ID="{8556D0C4-635A-43B0-9F82-8A3C4516148F}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pluton" ID="{269E06A7-CAEA-423A-8E8A-985B0E3A8C8F}" ShortID="932886245">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.892158520537097"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.13867600647498"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Pluton.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pluton" ID="{269E06A7-CAEA-423A-8E8A-985B0E3A8C8F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Play_Chant" ID="{A7F14216-73D5-4998-8748-E1CBDC8BBA4F}" ShortID="859840174">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Amb" ID="{8556D0C4-635A-43B0-9F82-8A3C4516148F}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CHANT" ID="{99CE6E63-4D99-4113-94D1-F9DE8800F606}" ShortID="959798393">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.739756419662509"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.616463683052093"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>CHANT.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CHANT" ID="{99CE6E63-4D99-4113-94D1-F9DE8800F606}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Play_garage" ID="{CCB203AA-A0B1-497C-BA87-9F93B9C71C84}" ShortID="576343612">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149" ID="{87B636A9-1E69-486A-A40E-0197D41D1E9C}" ShortID="195172219">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.36093947092165"/>
+								<Property Name="TrimEnd" Type="Real64" Value="23.3421185426971"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149" ID="{87B636A9-1E69-486A-A40E-0197D41D1E9C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Play_Cricket" ID="{10BB7E44-2519-43BD-995E-183D46E70A13}" ShortID="915728691">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-22</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="grass" ID="{2B224A74-DD71-470F-BC2B-AF4135CD5E1A}" ShortID="294065667">
+							<Language>SFX</Language>
+							<AudioFile>grass.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="grass" ID="{2B224A74-DD71-470F-BC2B-AF4135CD5E1A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Play_bosswind" ID="{81DBEFBD-DFE0-4C8C-9123-C307D3C310E9}" ShortID="167595680">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Amb" ID="{8556D0C4-635A-43B0-9F82-8A3C4516148F}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Spacewind" ID="{A7455C88-8741-4D77-A296-3BC88B6D4401}" ShortID="393663107">
+							<Language>SFX</Language>
+							<AudioFile>Spacewind.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Spacewind" ID="{A7455C88-8741-4D77-A296-3BC88B6D4401}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

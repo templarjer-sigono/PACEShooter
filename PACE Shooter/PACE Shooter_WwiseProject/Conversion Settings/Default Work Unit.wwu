@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{EF4D81FA-7AB9-453C-9D04-EA28A9BA7E05}" SchemaVersion="85">
+<WwiseDocument Type="WorkUnit" ID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}" SchemaVersion="85">
 	<Conversions>
-		<WorkUnit Name="Default Work Unit" ID="{EF4D81FA-7AB9-453C-9D04-EA28A9BA7E05}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}" PersistMode="Standalone">
 			<ChildrenList>
 				<Conversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
 					<PropertyList>
@@ -31,22 +31,17 @@
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
-<<<<<<< HEAD
 								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
-=======
-								<Value Platform="Mac">1</Value>
-								<Value Platform="Windows">1</Value>
->>>>>>> 71e3645... Updated Windows soundbank.
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{36539627-27F0-4AE0-8308-B2652947D66C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{68086824-BAD4-450D-8A65-4B525B4E3CA4}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{1D298BE3-8D83-4019-B9C5-E95E29223F27}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{94097ABA-8969-4A4B-966C-ABF409A419B5}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
