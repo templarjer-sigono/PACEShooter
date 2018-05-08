@@ -42,13 +42,6 @@ public class PlayerController : MonoBehaviour {
 	private float injurelap = 0.0f;
 	public int health = 18;
 
-	//Hurt Sound
-	public AudioClip HurtSound;
-	public AudioSource Playerhurt;
-
-	//Low Health Alert
-	public AudioClip HealthAlert;
-	public AudioSource HealthAlertSource;
 
 	private bool injuredzoom = false;
 	private bool DeathCheck = false;
@@ -69,6 +62,7 @@ public class PlayerController : MonoBehaviour {
 	public bool canShoot = true;
 	public float timeBetweenShots = 0.1f;
 	private float timestamp;
+	private bool heartbeat_switch = false;
 
 
 
@@ -85,9 +79,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rigidbody2Dp = this.GetComponent<Rigidbody2D> ();
-		Playerhurt = GetComponent<AudioSource>();
-		Playerhurt.playOnAwake = false;
-
+	
 	
 
 	}
@@ -104,13 +96,17 @@ public class PlayerController : MonoBehaviour {
 
 			if ((health > 0)) {
 				if (CanCamShake) {
-					Playerhurt.clip = HurtSound;
-					Playerhurt.Play ();
+					AkSoundEngine.PostEvent ("Player_hurt", gameObject);
 					GameCamera.transform.DOShakePosition (CameraShakeDuration, CameraShakeStrength);
 					CanCamShake = false;
 				}
 				if ((health < 10)) {
+					AkSoundEngine.SetRTPCValue ("Player_health", health);
 					injuredzoom = true;
+					if (!heartbeat_switch) {
+						AkSoundEngine.PostEvent ("Player_heartbeat", gameObject);
+						heartbeat_switch = true;
+					}
 				}
 			}
 				else {
@@ -122,12 +118,7 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 
-		if (health < 10 && !HealthAlertSource.isPlaying) {
-			HealthAlertSource.clip = HealthAlert;
-			HealthAlertSource.Play ();
-		}
-
-
+	
 		if (Time.time >= Camtimestamp) {
 			CanCamShake = true;
 			Camtimestamp = Time.time + BetweenCameraShake;

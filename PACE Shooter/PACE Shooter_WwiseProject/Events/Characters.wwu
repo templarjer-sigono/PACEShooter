@@ -87,6 +87,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_hurt" ID="{3C938FEC-F0BB-44B0-A8C6-ECB3931ED339}">
+					<ChildrenList>
+						<Action Name="" ID="{288C014B-964A-438D-9DBA-20A62ABBC269}" ShortID="652986495">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Hurt" ID="{FFB7E7CD-D930-4B6C-BBA4-54659C11D45D}" WorkUnitID="{88835BBF-4CF1-4636-A3B4-4844807A49FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

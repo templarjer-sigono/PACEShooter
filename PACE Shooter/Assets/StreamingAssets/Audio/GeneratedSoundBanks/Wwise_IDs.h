@@ -25,8 +25,14 @@ namespace AK
         static const AkUniqueID PLAY_RAIN = 2838936948U;
         static const AkUniqueID PLAY_SCREAM = 2470536401U;
         static const AkUniqueID PLAYER_HEARTBEAT = 3484321931U;
+        static const AkUniqueID PLAYER_HURT = 1068092414U;
         static const AkUniqueID PLAYER_SHOOT = 4004702906U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYER_HEALTH = 215992295U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -36,7 +42,10 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID AMBIENT = 77978275U;
+        static const AkUniqueID BULLET = 1256513485U;
+        static const AkUniqueID ENEMYBULLET = 669267787U;
+        static const AkUniqueID HEARTBEAT = 2179486487U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

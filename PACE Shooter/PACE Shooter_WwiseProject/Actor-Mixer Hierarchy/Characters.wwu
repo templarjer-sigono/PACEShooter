@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<Sound Name="Enemy_Boss_death" ID="{8BE88B56-3941-4B9A-A48A-CABE92F8FE48}" ShortID="189463226">
 					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>-21</Value>
@@ -12,16 +14,19 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Deathuation" ID="{6BF15F51-061D-46E8-9E57-E5EFDB92875D}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
@@ -50,8 +55,8 @@
 									<Modifier Name="" ID="{CD15E421-C1A3-4340-BF12-940648098B31}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="20"/>
-											<Property Name="Min" Type="Real64" Value="-20"/>
+											<Property Name="Max" Type="Real64" Value="35"/>
+											<Property Name="Min" Type="Real64" Value="-35"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -64,7 +69,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-26</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -73,7 +78,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
@@ -97,10 +102,104 @@
 					<PropertyList>
 						<Property Name="EnablePositioning" Type="bool" Value="False"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{2454A21D-C38A-437E-B8F3-2532F3960461}" ShortID="810259102">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{4536667D-85FB-4EA5-8395-D4878EF30640}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1341</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>5.91402</XPos>
+												<YPos>482</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>6.0189165950129</XPos>
+												<YPos>470</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>16</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>7</Value>
 							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{D7641A51-A933-4CBB-BBC6-67B2079DDD47}" ShortID="477888408">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{A26AC1C9-F9C0-4731-9F6F-D29667A607BC}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.34394</XPos>
+												<YPos>1.69776</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>3</XPos>
+												<YPos>-7.60133</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>9.999</XPos>
+												<YPos>-13.93101</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -108,7 +207,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Heartbeat" ID="{CE0ECCF5-9AE8-48BB-B157-F95ADA74BD51}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -123,14 +222,26 @@
 				</Sound>
 				<Sound Name="Enemy_Shoot" ID="{BF81BBF1-A75C-4D6C-ACB7-02E590B61B03}" ShortID="116238028">
 					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{99D9BCEE-1B99-414A-B9DB-FA43C7CF0819}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="5"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{F56F0930-CCE2-4C92-996C-326224228A98}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="909"/>
-											<Property Name="Min" Type="Real64" Value="-556"/>
+											<Property Name="Max" Type="Real64" Value="1415"/>
+											<Property Name="Min" Type="Real64" Value="-1036"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -140,7 +251,12 @@
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-16</Value>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -152,7 +268,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="EnemyBullet" ID="{7620C538-124F-400E-8057-92CEC3EBF2C5}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
@@ -175,18 +291,23 @@
 				</Sound>
 				<Sound Name="Enemy_Boss_hurt" ID="{923ADF7F-7159-4A2D-9D4B-41B211C244BB}" ShortID="700802209">
 					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-13</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Deathuation" ID="{6BF15F51-061D-46E8-9E57-E5EFDB92875D}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -208,18 +329,28 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-13</Value>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Deathuation" ID="{6BF15F51-061D-46E8-9E57-E5EFDB92875D}" WorkUnitID="{31D7F876-AC92-4E1B-B17D-6FA165A28FE2}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
@@ -243,7 +374,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -252,7 +383,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+									<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -272,6 +403,64 @@
 						</Sound>
 					</ChildrenList>
 				</BlendContainer>
+				<Sound Name="Player_Hurt" ID="{FFB7E7CD-D930-4B6C-BBA4-54659C11D45D}" ShortID="487703534">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1060</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4C4A94DD-0F79-4033-88F0-5C977932051B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="New_Wwise_Delay" ID="{95203709-0D86-4D60-B091-1EE6C9C130CC}" WorkUnitID="{1AE32FC0-DF5A-441F-A2C0-2DEA396C15FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="volleyball_hit_medium_2" ID="{F60BF894-49B2-4AEB-9083-674BF109B3A3}" ShortID="919250972">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.172950657396732"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.25122279285889"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>volleyball_hit_medium_2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="volleyball_hit_medium_2" ID="{F60BF894-49B2-4AEB-9083-674BF109B3A3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

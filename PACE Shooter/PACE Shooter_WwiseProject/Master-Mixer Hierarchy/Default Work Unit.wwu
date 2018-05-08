@@ -3,7 +3,52 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{39C9A8EC-9049-4434-A307-7639313ACB07}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+				<Bus Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{8F92E9C4-75DC-4545-9976-CCD580026CBF}" ShortID="925648537">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0961B192-C802-45DD-99C7-5DD4A8B27FC0}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>4.999</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>5</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{292694FE-290C-4457-8062-956429B7BC27}" WorkUnitID="{20F95F11-98FB-485D-B8AA-01C27D569002}"/>
@@ -11,6 +56,46 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}">
+							<PropertyList>
+								<Property Name="BypassEffect0" Type="bool">
+									<RTPCList>
+										<RTPC Name="" ID="{EE9E69CC-8559-4034-8E30-EA7FD72B6F2E}" ShortID="836402877">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F8BBC687-D0AD-4AFE-841D-32B2206A4FCD}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2.999</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>3</XPos>
+														<YPos>1</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<ObjectRef Name="New_Wwise_RoomVerb" ID="{BBBC1433-A84B-4B35-91B1-7A91BE8BF40C}" WorkUnitID="{1AE32FC0-DF5A-441F-A2C0-2DEA396C15FF}"/>
@@ -18,6 +103,44 @@
 							</ReferenceList>
 						</AuxBus>
 					</ChildrenList>
+				</Bus>
+				<Bus Name="Heartbeat" ID="{CE0ECCF5-9AE8-48BB-B157-F95ADA74BD51}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{292694FE-290C-4457-8062-956429B7BC27}" WorkUnitID="{20F95F11-98FB-485D-B8AA-01C27D569002}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{292694FE-290C-4457-8062-956429B7BC27}" WorkUnitID="{20F95F11-98FB-485D-B8AA-01C27D569002}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="EnemyBullet" ID="{7620C538-124F-400E-8057-92CEC3EBF2C5}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{292694FE-290C-4457-8062-956429B7BC27}" WorkUnitID="{20F95F11-98FB-485D-B8AA-01C27D569002}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="New_Wwise_Peak_Limiter" ID="{A87BDA74-0CA1-4A43-B2BB-E8EFFC9555B2}" WorkUnitID="{1AE32FC0-DF5A-441F-A2C0-2DEA396C15FF}"/>
+						</Reference>
+					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

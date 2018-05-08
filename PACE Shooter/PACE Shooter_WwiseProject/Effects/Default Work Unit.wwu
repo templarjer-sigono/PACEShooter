@@ -3,7 +3,30 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{1AE32FC0-DF5A-441F-A2C0-2DEA396C15FF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="New_Wwise_RoomVerb" ID="{BBBC1433-A84B-4B35-91B1-7A91BE8BF40C}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+				<Effect Name="New_Wwise_RoomVerb" ID="{BBBC1433-A84B-4B35-91B1-7A91BE8BF40C}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-11.3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Delay" ID="{95203709-0D86-4D60-B091-1EE6C9C130CC}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="0.2"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="HurtQ" ID="{B2D5AE7F-3DFA-45DA-BEA4-514FBB8AE1A7}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="3000"/>
+						<Property Name="GainBand1" Type="Real32" Value="-24"/>
+						<Property Name="GainBand3" Type="Real32" Value="-24"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Peak_Limiter" ID="{A87BDA74-0CA1-4A43-B2BB-E8EFFC9555B2}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="OutputGain" Type="Real32" Value="-2.3"/>
+						<Property Name="Threshold" Type="Real32" Value="-20.3"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

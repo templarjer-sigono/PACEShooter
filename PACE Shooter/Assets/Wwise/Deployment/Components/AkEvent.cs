@@ -95,7 +95,7 @@ public class AkEvent : AkUnityEventHandler
 
 		if (playingId == AkSoundEngine.AK_INVALID_PLAYING_ID && AkSoundEngine.IsInitialized())
 		{
-			UnityEngine.Debug.LogError("Could not post event ID \"" + (uint) eventID +
+   			UnityEngine.Debug.LogError("Could not post event ID \"" + (uint) eventID +
 			                           "\". Did you make sure to load the appropriate SoundBank?");
 		}
 	}

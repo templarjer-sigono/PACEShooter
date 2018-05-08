@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossGun : MonoBehaviour {
 	public GameObject BossBulletGO;
+	public GameObject BossDeathSFX;
 	private int BossHealth = 6;
 	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
@@ -32,7 +33,7 @@ public class BossGun : MonoBehaviour {
 			Vector2 direction = playerishere.transform.position - bullet.transform.position;
 			bullet.GetComponent<EnemyBullet> ().SetDirection (direction);
 			BossMultiShot -= Random.Range(0, 2);
-			AkSoundEngine.PostEvent ("Enemy_boss_shoot", gameObject);
+			AkSoundEngine.PostEvent ("Enemy_shoot", gameObject);
 		} else {
 			BossMultiShot = Random.Range(0, 4);
 		}
@@ -42,8 +43,9 @@ public class BossGun : MonoBehaviour {
 	{
 		if((col.tag == "Bullets")){
 			BossHealth -= 1;
-			AkSoundEngine.PostEvent ("Enemy_boss_hurt", gameObject);
+			AkSoundEngine.PostEvent ("Enemy_death", gameObject);
 			if (BossHealth <= 0) {
+				GameObject.Instantiate(BossDeathSFX);
 				Destroy (gameObject);
 
 			}
