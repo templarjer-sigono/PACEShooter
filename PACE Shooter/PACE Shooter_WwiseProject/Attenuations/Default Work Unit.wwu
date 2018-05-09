@@ -135,7 +135,23 @@
 				</Attenuation>
 				<Attenuation Name="Rainuation" ID="{D5F33610-BFEF-4036-944F-D46AC18ABC90}" ShortID="892502006">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="120"/>
+						<Property Name="ConeHighPassFilterValue" Type="int32">
+							<ValueList>
+								<Value>17</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeInnerAngle" Type="int32" Value="245"/>
+						<Property Name="ConeLowPassFilterValue" Type="int32">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeUse" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RadiusMax" Type="Real64" Value="80"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -151,17 +167,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>76.73982</XPos>
-											<YPos>-24.81272</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>83.322888</XPos>
-											<YPos>-29.2725</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>120</XPos>
+											<XPos>80</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -188,12 +194,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>64.5141</XPos>
-											<YPos>84</YPos>
+											<XPos>79.9973333333333</XPos>
+											<YPos>100</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>120</XPos>
+											<XPos>80</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -214,12 +220,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>72.4137857142857</XPos>
-											<YPos>86</YPos>
+											<XPos>48.7774133333333</XPos>
+											<YPos>100</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>120</XPos>
+											<XPos>80</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -240,12 +246,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>63.9498428571429</XPos>
-											<YPos>13.34872</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>120</XPos>
+											<XPos>80</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

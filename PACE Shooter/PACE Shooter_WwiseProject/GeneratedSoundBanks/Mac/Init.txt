@@ -15,13 +15,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	669267787	EnemyBullet			\Default Work Unit\EnemyBullet	
 	1256513485	Bullet			\Default Work Unit\Bullet	
 	2179486487	Heartbeat			\Default Work Unit\Heartbeat	
+	3991942870	Music			\Default Work Unit\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2917229290	Reverb_Bus			\Default Work Unit\Ambient\Reverb_Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
+	961775091	Wwise Matrix Reverb (Custom)	Wwise Matrix Reverb			
 	2199193560	New_Wwise_RoomVerb	Wwise RoomVerb			
 	3970951098	New_Wwise_Peak_Limiter	Wwise Peak Limiter			
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

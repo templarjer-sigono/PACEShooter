@@ -32,7 +32,7 @@
 				<Event Id="3829433163" Name="Play_cricket" ObjectPath="\Events\Default Work Unit\Ambient\Play_cricket" MaxAttenuation="100.000000"/>
 				<Event Id="897895173" Name="Play_garage" ObjectPath="\Events\Default Work Unit\Ambient\Play_garage"/>
 				<Event Id="1932796752" Name="Play_noise" ObjectPath="\Events\Default Work Unit\Ambient\Play_noise" MaxAttenuation="25.000000"/>
-				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="120.000000"/>
+				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="30.000000"/>
 				<Event Id="2470536401" Name="Play_scream" ObjectPath="\Events\Default Work Unit\Ambient\Play_scream" MaxAttenuation="100.000000"/>
 				<Event Id="3484321931" Name="Player_heartbeat" ObjectPath="\Events\Default Work Unit\Characters\Player_heartbeat"/>
 				<Event Id="1068092414" Name="Player_hurt" ObjectPath="\Events\Default Work Unit\Characters\Player_hurt"/>

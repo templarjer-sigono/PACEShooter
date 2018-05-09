@@ -64,6 +64,7 @@ namespace AK
         static const AkUniqueID BULLET = 1256513485U;
         static const AkUniqueID ENEMYBULLET = 669267787U;
         static const AkUniqueID HEARTBEAT = 2179486487U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

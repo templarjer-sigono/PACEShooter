@@ -60,9 +60,13 @@
 				<Property Name="Music Transition List\{C40F9611-06F2-4918-8890-A214B292D017}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{CE900FC4-1E8B-4822-B4A1-096DC169CA39}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{D74C64BA-4FAD-4086-BF7C-9E6AC025F56F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
+				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
+				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
+				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{E535EFE5-49BF-4F9D-B210-C5B37C3C798F}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{5024A8E5-1710-4AFD-974C-14FC351AA687}"/>
 				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
@@ -87,7 +91,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
-				<Property Name="RTPC\GameParameterSimValue\{1E6304D5-35D2-4013-83A4-18B769B8958D}" Type="Real64" Value="22"/>
+				<Property Name="RTPC\GameParameterSimValue\{1E6304D5-35D2-4013-83A4-18B769B8958D}" Type="Real64" Value="0"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="jSaFv4HcJka7gshmlqZxNA=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">

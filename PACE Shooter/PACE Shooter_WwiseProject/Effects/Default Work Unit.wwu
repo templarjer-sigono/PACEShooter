@@ -5,8 +5,51 @@
 			<ChildrenList>
 				<Effect Name="New_Wwise_RoomVerb" ID="{BBBC1433-A84B-4B35-91B1-7A91BE8BF40C}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
 						<Property Name="ERLevel" Type="Real32" Value="-5"/>
-						<Property Name="ReverbLevel" Type="Real32" Value="-1"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="-96">
+							<RTPCList>
+								<RTPC Name="" ID="{587CA6C3-763B-4998-BEDA-35BDE751233E}" ShortID="219730639">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{54CA6F41-1A2F-4055-A966-C219D217545B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-25</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>5</XPos>
+												<YPos>-31</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-96.3</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>19.62963</XPos>
+												<YPos>-96.3</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-96.3</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 				</Effect>
 				<Effect Name="New_Wwise_Delay" ID="{95203709-0D86-4D60-B091-1EE6C9C130CC}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
@@ -32,6 +75,141 @@
 					<PropertyList>
 						<Property Name="Ratio" Type="Real32" Value="11.8"/>
 						<Property Name="Threshold" Type="Real32" Value="-28.9"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Pitch_Shifter" ID="{850CCD8F-56C5-42C6-AEB3-31C1302C5385}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="23"/>
+						<Property Name="DryLevel" Type="Real32" Value="-4"/>
+						<Property Name="Pitch" Type="Real32" Value="400"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Parametric_EQ" ID="{714112B6-2038-4BA8-8187-C535F17A38FB}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="150"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="300"/>
+						<Property Name="GainBand1" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{638F6187-7BEF-4FB4-9BDF-B124A6C78E37}" ShortID="813612134">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{B45EAE09-2FF2-49F3-B8D8-60613370B7BB}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-7.15973</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>8.64198</XPos>
+												<YPos>-1.44608</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>-0.05708</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="GainBand2" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{C939C6C5-DC01-4413-BBCB-ED24BD10BB7F}" ShortID="682619520">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{2E98A44C-6098-4CC1-A9FE-3A33502B141D}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-24</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>6</XPos>
+												<YPos>-0.02752</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="GainBand3" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{AC91FC1A-709E-44C7-9F4D-4A0F87CC62DA}" ShortID="562604198">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F4D9C01F-D25D-49D7-BB54-324C10CAAE68}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-24</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>4.81381</XPos>
+												<YPos>-5.77263</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>8.51851</XPos>
+												<YPos>-5.46949</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>-0.0369</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Matrix_Reverb" ID="{57E0503C-4B25-4DE2-BA25-A0DDA76B44C1}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-17.3"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>

@@ -14,7 +14,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -117,22 +117,17 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>1341</YPos>
+												<YPos>592</YPos>
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>5.91402</XPos>
-												<YPos>482</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>6.0189165950129</XPos>
-												<YPos>470</YPos>
+												<XPos>0.001</XPos>
+												<YPos>320</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>0</YPos>
+												<YPos>-400</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
@@ -172,8 +167,8 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>1.5</XPos>
-												<YPos>1.69776</YPos>
+												<XPos>1.41401</XPos>
+												<YPos>-4.32603</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
@@ -256,7 +251,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -300,7 +295,7 @@
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-30</Value>
+								<Value>-21</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -356,7 +351,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

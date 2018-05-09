@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{5E00F3F1-7C59-4E10-A5D7-805ACFF20434}" ShortID="325909278">
 					<PropertyList>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Tempo" Type="Real64" Value="130"/>
 					</PropertyList>
 					<ReferenceList>
@@ -12,7 +17,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Music" ID="{44B585CF-8B9E-40F9-9F52-B10A4F31FC6F}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -43,7 +48,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
