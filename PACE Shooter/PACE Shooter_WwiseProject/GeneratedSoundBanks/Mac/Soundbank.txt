@@ -10,23 +10,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	2984543794	Play_chant			\Default Work Unit\Ambient\Play_chant	
 	3388699230	Enemy_boss_death			\Default Work Unit\Characters\Enemy_boss_death	
 	3484321931	Player_heartbeat			\Default Work Unit\Characters\Player_heartbeat	
+	3734989563	Interactive_Music			\Default Work Unit\Music\Interactive_Music	
 	3829433163	Play_cricket			\Default Work Unit\Ambient\Play_cricket	
 	3891866179	Enemy_boss_hurt			\Default Work Unit\Characters\Enemy_boss_hurt	
-	3966194980	Ending			\Default Work Unit\Ambient\Ending	
 	3991942870	Music			\Default Work Unit\Ambient\Music	
 	4004702906	Player_shoot			\Default Work Unit\Characters\Player_shoot	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	390902339	NowPlaying			\Default Work Unit\NowPlaying	
+	2209143460	Music_Levels			\Default Work Unit\Music_Levels	
 
 State	ID	Name	State Group			Notes
-	0	None	NowPlaying			
-	1227244058	NotPlaying	NowPlaying			
-	1852808225	Playing	NowPlaying			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	183539973	NotPlaying	NowPlaying	\Interactive Music Hierarchy\Default Work Unit\Ending Switch		
-	975586718	NotPlaying	NowPlaying	\Interactive Music Hierarchy\Default Work Unit\Ending Switch\Ending		
+	0	None	Music_Levels			
+	1277114380	State_1	Music_Levels			
+	1277114382	State_3	Music_Levels			
+	1277114383	State_2	Music_Levels			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	
@@ -37,18 +34,20 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	104414493	Player_heartbeat	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HEARTBEAT SLOW.R_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_heartbeat		11576
-	195172219	Play_garage	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_4739C720.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_garage		280168
+	195172219	Play_garage	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_A8428956.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_garage		280168
 	294065667	Play_Cricket	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\grass_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Cricket		11584916
 	393663107	Play_bosswind	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Spacewind_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_bosswind		1432224
-	396550388	Play_Scream	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_5306B646.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Scream		2281740
-	635012149	Enemy_Boss_death	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossDeath_2_903805F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_death		30356
+	396550388	Play_Scream	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_639021E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Scream		2281740
+	472151440	130 B	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\130 B_BF30CD25.wem		\Interactive Music Hierarchy\Default Work Unit\Music\2NDSide\130 B\130 B		1890528
+	635012149	Enemy_Boss_death	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossDeath_2_1B262DC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_death		30356
 	669396732	PACE_Music	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\pace_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\PACE_Music		9976900
-	684284575	Enemy_Boss_hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Little Football Ball Bounce_TS 14_7838A66F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_hurt		16912
-	914217944	150 ting ting	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\150 ting ting_BF30CD25.wem		\Interactive Music Hierarchy\Default Work Unit\Ending Switch\Ending\150 ting ting		8294404
-	919250972	Player_Hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\volleyball_hit_medium_2_77887DAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_Hurt		6092
-	920018117	Play_rain	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_8A4D2A31.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_rain		5577012
-	932886245	Play_Noise	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Pluton_C3302ABB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Noise		192064
-	953850921	Enemy_Shoot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\step on floor 1_B60D300C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Shoot		5712
-	959798393	Play_Chant	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\CHANT_4E48F850.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Chant		2688832
-	1050844826	Player_Shoot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Floating_Clave_ss_0AB5AECF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_Shoot		3700
+	684284575	Enemy_Boss_hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Little Football Ball Bounce_TS 14_480D1DD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_hurt		16912
+	710367645	130 C	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\130 C_BF30CD25.wem		\Interactive Music Hierarchy\Default Work Unit\Music\3RDSide\130 C\130 C		177292
+	837970780	130 A	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\130 A_BF30CD25.wem		\Interactive Music Hierarchy\Default Work Unit\Music\1STSide\A\130 A		177292
+	919250972	Player_Hurt	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\volleyball_hit_medium_2_03DCF3A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_Hurt		6092
+	920018117	Play_rain	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\heavy rain 01_BD2C9F68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_rain		5577012
+	932886245	Play_Noise	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Pluton_A5F39E9E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Noise		192064
+	953850921	Enemy_Shoot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\step on floor 1_B5A70D31.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Shoot		5712
+	959798393	Play_Chant	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\CHANT_4088568E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Chant		2688832
+	1050844826	Player_Shoot	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Floating_Clave_ss_06BB8E3A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Player_Shoot		3700
 

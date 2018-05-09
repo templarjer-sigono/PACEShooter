@@ -3,24 +3,12 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{864A4961-7B92-415A-BE75-11A5A4032FC2}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="NowPlaying" ID="{C5C7A943-84B2-4335-BDE5-B2A0B8E342F7}">
+				<StateGroup Name="Music_Levels" ID="{CFB04FD5-E3D8-455C-9D3A-195AEA5D6D55}">
 					<ChildrenList>
-						<State Name="None" ID="{E18D66F0-514F-41B6-B526-495C14A5FA15}"/>
-						<State Name="NotPlaying" ID="{B07A1730-B089-49AD-8E77-217175AD1C8F}"/>
-						<State Name="Playing" ID="{DF3D40EB-CA1C-4ACC-B823-FA4A1DE93086}"/>
-					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="None" ID="{E18D66F0-514F-41B6-B526-495C14A5FA15}"/>
-							<EndState Name="NotPlaying" ID="{B07A1730-B089-49AD-8E77-217175AD1C8F}"/>
-							<Time>1</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-					</TransitionList>
-				</StateGroup>
-				<StateGroup Name="NoPlay" ID="{F24CC5B6-5393-478F-BD54-B9FFCAC8F5A9}">
-					<ChildrenList>
-						<State Name="None" ID="{CB255708-8023-409E-BBD4-04B0BD70DE30}"/>
+						<State Name="None" ID="{507D05B8-B492-4E9C-ADEA-9E942157A045}"/>
+						<State Name="State_1" ID="{E7480A9F-A14A-4482-AF3A-D356775F1437}"/>
+						<State Name="State_2" ID="{5292512C-BF53-4366-853C-29CBC35A084E}"/>
+						<State Name="State_3" ID="{00169640-036D-4BFF-9318-00D9433CF0B7}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

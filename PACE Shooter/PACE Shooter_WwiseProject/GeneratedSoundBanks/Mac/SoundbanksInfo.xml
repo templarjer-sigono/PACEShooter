@@ -21,11 +21,11 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3966194980" Name="Ending" ObjectPath="\Events\Default Work Unit\Ambient\Ending"/>
 				<Event Id="3388699230" Name="Enemy_boss_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_death" MaxAttenuation="40.000000"/>
 				<Event Id="3891866179" Name="Enemy_boss_hurt" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_hurt" MaxAttenuation="40.000000"/>
 				<Event Id="1205999388" Name="Enemy_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_death" MaxAttenuation="40.000000"/>
 				<Event Id="1050776119" Name="Enemy_shoot" ObjectPath="\Events\Default Work Unit\Characters\Enemy_shoot" MaxAttenuation="25.000000"/>
+				<Event Id="3734989563" Name="Interactive_Music" ObjectPath="\Events\Default Work Unit\Music\Interactive_Music"/>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Ambient\Music"/>
 				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="25.000000"/>
 				<Event Id="2984543794" Name="Play_chant" ObjectPath="\Events\Default Work Unit\Ambient\Play_chant" MaxAttenuation="25.000000"/>
@@ -45,7 +45,7 @@
 				</File>
 				<File Id="195172219" Language="SFX">
 					<ShortName>Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149.wav</ShortName>
-					<Path>SFX/Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_4739C720.wem</Path>
+					<Path>SFX/Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_A8428956.wem</Path>
 				</File>
 				<File Id="294065667" Language="SFX">
 					<ShortName>grass.wav</ShortName>
@@ -57,11 +57,15 @@
 				</File>
 				<File Id="396550388" Language="SFX">
 					<ShortName>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</ShortName>
-					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_5306B646.wem</Path>
+					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_639021E3.wem</Path>
+				</File>
+				<File Id="472151440" Language="SFX">
+					<ShortName>130 B.wav</ShortName>
+					<Path>SFX/130 B_BF30CD25.wem</Path>
 				</File>
 				<File Id="635012149" Language="SFX">
 					<ShortName>SFX_BossDeath_2.wav</ShortName>
-					<Path>SFX/SFX_BossDeath_2_903805F1.wem</Path>
+					<Path>SFX/SFX_BossDeath_2_1B262DC2.wem</Path>
 				</File>
 				<File Id="669396732" Language="SFX">
 					<ShortName>pace.wav</ShortName>
@@ -69,35 +73,39 @@
 				</File>
 				<File Id="684284575" Language="SFX">
 					<ShortName>Little Football Ball Bounce_TS 14.wav</ShortName>
-					<Path>SFX/Little Football Ball Bounce_TS 14_7838A66F.wem</Path>
+					<Path>SFX/Little Football Ball Bounce_TS 14_480D1DD7.wem</Path>
 				</File>
-				<File Id="914217944" Language="SFX">
-					<ShortName>150 ting ting.wav</ShortName>
-					<Path>SFX/150 ting ting_BF30CD25.wem</Path>
+				<File Id="710367645" Language="SFX">
+					<ShortName>130 C.wav</ShortName>
+					<Path>SFX/130 C_BF30CD25.wem</Path>
+				</File>
+				<File Id="837970780" Language="SFX">
+					<ShortName>130 A.wav</ShortName>
+					<Path>SFX/130 A_BF30CD25.wem</Path>
 				</File>
 				<File Id="919250972" Language="SFX">
 					<ShortName>volleyball_hit_medium_2.wav</ShortName>
-					<Path>SFX/volleyball_hit_medium_2_77887DAF.wem</Path>
+					<Path>SFX/volleyball_hit_medium_2_03DCF3A9.wem</Path>
 				</File>
 				<File Id="920018117" Language="SFX">
 					<ShortName>heavy rain 01.wav</ShortName>
-					<Path>SFX/heavy rain 01_8A4D2A31.wem</Path>
+					<Path>SFX/heavy rain 01_BD2C9F68.wem</Path>
 				</File>
 				<File Id="932886245" Language="SFX">
 					<ShortName>Pluton.wav</ShortName>
-					<Path>SFX/Pluton_C3302ABB.wem</Path>
+					<Path>SFX/Pluton_A5F39E9E.wem</Path>
 				</File>
 				<File Id="953850921" Language="SFX">
 					<ShortName>step on floor 1.wav</ShortName>
-					<Path>SFX/step on floor 1_B60D300C.wem</Path>
+					<Path>SFX/step on floor 1_B5A70D31.wem</Path>
 				</File>
 				<File Id="959798393" Language="SFX">
 					<ShortName>CHANT.wav</ShortName>
-					<Path>SFX/CHANT_4E48F850.wem</Path>
+					<Path>SFX/CHANT_4088568E.wem</Path>
 				</File>
 				<File Id="1050844826" Language="SFX">
 					<ShortName>Floating_Clave_ss.wav</ShortName>
-					<Path>SFX/Floating_Clave_ss_0AB5AECF.wem</Path>
+					<Path>SFX/Floating_Clave_ss_06BB8E3A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

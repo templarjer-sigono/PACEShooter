@@ -13,11 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID ENDING = 3966194980U;
         static const AkUniqueID ENEMY_BOSS_DEATH = 3388699230U;
         static const AkUniqueID ENEMY_BOSS_HURT = 3891866179U;
         static const AkUniqueID ENEMY_DEATH = 1205999388U;
         static const AkUniqueID ENEMY_SHOOT = 1050776119U;
+        static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_BOSSWIND = 1727127563U;
         static const AkUniqueID PLAY_CHANT = 2984543794U;
@@ -33,25 +33,17 @@ namespace AK
 
     namespace STATES
     {
-        namespace NOPLAY
+        namespace MUSIC_LEVELS
         {
-            static const AkUniqueID GROUP = 1373609466U;
+            static const AkUniqueID GROUP = 2209143460U;
 
             namespace STATE
             {
+                static const AkUniqueID STATE_1 = 1277114380U;
+                static const AkUniqueID STATE_2 = 1277114383U;
+                static const AkUniqueID STATE_3 = 1277114382U;
             } // namespace STATE
-        } // namespace NOPLAY
-
-        namespace NOWPLAYING
-        {
-            static const AkUniqueID GROUP = 390902339U;
-
-            namespace STATE
-            {
-                static const AkUniqueID NOTPLAYING = 1227244058U;
-                static const AkUniqueID PLAYING = 1852808225U;
-            } // namespace STATE
-        } // namespace NOWPLAYING
+        } // namespace MUSIC_LEVELS
 
     } // namespace STATES
 

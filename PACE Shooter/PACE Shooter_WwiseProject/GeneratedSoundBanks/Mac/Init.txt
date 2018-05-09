@@ -1,12 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	390902339	NowPlaying			\Default Work Unit\NowPlaying	
-	1373609466	NoPlay			\Default Work Unit\NoPlay	
+	2209143460	Music_Levels			\Default Work Unit\Music_Levels	
 
 State	ID	Name	State Group			Notes
-	0	None	NowPlaying			
-	1227244058	NotPlaying	NowPlaying			
-	1852808225	Playing	NowPlaying			
-	0	None	NoPlay			
+	0	None	Music_Levels			
+	1277114380	State_1	Music_Levels			
+	1277114382	State_3	Music_Levels			
+	1277114383	State_2	Music_Levels			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	

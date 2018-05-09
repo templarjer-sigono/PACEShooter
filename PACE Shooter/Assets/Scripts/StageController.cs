@@ -63,7 +63,7 @@ public class StageController : MonoBehaviour {
 					Debug.Log ("Level Now Changed to: " + stage);
 					//_currentstage++;
 			
-					SceneManager.LoadSceneaww (SceneNbr+1);
+					SceneManager.LoadScene (SceneNbr+1);
 				}
 			}
 		}

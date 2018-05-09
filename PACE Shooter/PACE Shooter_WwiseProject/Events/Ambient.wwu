@@ -115,30 +115,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Ending" ID="{29CCBDCE-060E-411E-905A-FDA9F0D4A0BE}">
-					<ChildrenList>
-						<Action Name="" ID="{9A60F381-00B0-48F7-B98C-841970FA5D49}" ShortID="705391365">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="NotPlaying" ID="{B07A1730-B089-49AD-8E77-217175AD1C8F}" WorkUnitID="{864A4961-7B92-415A-BE75-11A5A4032FC2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{2BE5F0F9-B456-433A-AECF-C40BCA8F9F78}" ShortID="994439418">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ending" ID="{C77F3690-2077-4AE4-9A83-ECAD3BF95C5C}" WorkUnitID="{FDF42D48-D880-4852-AB5D-97E72830E17C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
