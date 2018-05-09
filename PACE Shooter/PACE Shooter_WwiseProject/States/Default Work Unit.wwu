@@ -9,6 +9,14 @@
 						<State Name="NotPlaying" ID="{B07A1730-B089-49AD-8E77-217175AD1C8F}"/>
 						<State Name="Playing" ID="{DF3D40EB-CA1C-4ACC-B823-FA4A1DE93086}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{E18D66F0-514F-41B6-B526-495C14A5FA15}"/>
+							<EndState Name="NotPlaying" ID="{B07A1730-B089-49AD-8E77-217175AD1C8F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="NoPlay" ID="{F24CC5B6-5393-478F-BD54-B9FFCAC8F5A9}">
 					<ChildrenList>
