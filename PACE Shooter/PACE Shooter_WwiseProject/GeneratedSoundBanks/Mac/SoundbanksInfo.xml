@@ -32,7 +32,7 @@
 				<Event Id="3829433163" Name="Play_cricket" ObjectPath="\Events\Default Work Unit\Ambient\Play_cricket" MaxAttenuation="100.000000"/>
 				<Event Id="897895173" Name="Play_garage" ObjectPath="\Events\Default Work Unit\Ambient\Play_garage"/>
 				<Event Id="1932796752" Name="Play_noise" ObjectPath="\Events\Default Work Unit\Ambient\Play_noise" MaxAttenuation="25.000000"/>
-				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="30.000000"/>
+				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="80.000000"/>
 				<Event Id="2470536401" Name="Play_scream" ObjectPath="\Events\Default Work Unit\Ambient\Play_scream" MaxAttenuation="100.000000"/>
 				<Event Id="3484321931" Name="Player_heartbeat" ObjectPath="\Events\Default Work Unit\Characters\Player_heartbeat"/>
 				<Event Id="1068092414" Name="Player_hurt" ObjectPath="\Events\Default Work Unit\Characters\Player_hurt"/>
@@ -46,6 +46,10 @@
 				<File Id="195172219" Language="SFX">
 					<ShortName>Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149.wav</ShortName>
 					<Path>SFX/Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_A8428956.wem</Path>
+				</File>
+				<File Id="198825584" Language="SFX">
+					<ShortName>150 ting ting.wav</ShortName>
+					<Path>SFX/150 ting ting_BF30CD25.wem</Path>
 				</File>
 				<File Id="294065667" Language="SFX">
 					<ShortName>grass.wav</ShortName>
@@ -74,10 +78,6 @@
 				<File Id="684284575" Language="SFX">
 					<ShortName>Little Football Ball Bounce_TS 14.wav</ShortName>
 					<Path>SFX/Little Football Ball Bounce_TS 14_480D1DD7.wem</Path>
-				</File>
-				<File Id="710367645" Language="SFX">
-					<ShortName>130 C.wav</ShortName>
-					<Path>SFX/130 C_BF30CD25.wem</Path>
 				</File>
 				<File Id="837970780" Language="SFX">
 					<ShortName>130 A.wav</ShortName>
