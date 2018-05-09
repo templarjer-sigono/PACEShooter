@@ -129,6 +129,13 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="2NDSide" ID="{90624F4E-74BD-40C2-B69C-2419FC6FAB2A}" ShortID="869251532">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
@@ -267,6 +274,13 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="3RDSide" ID="{C40F9611-06F2-4918-8890-A214B292D017}" ShortID="573786698">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
@@ -290,13 +304,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="130 C" ID="{3CC9125F-5C66-49BF-956D-8D916E992398}" ShortID="763868774">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
@@ -505,7 +512,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="57599.6041666667"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -595,6 +602,111 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="5THSilence" ID="{259E5551-DEFD-434B-87B1-8BF2CDCB4F9A}" ShortID="283009353">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="stellar" ID="{E933D55D-8976-4D31-BB20-54C8D6747E5F}" ShortID="606471134">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="36000"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3C925A5E-BB1E-43F0-9202-FDC975672D20}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="stellar" ID="{78431088-A0CE-4D78-8C13-23013CD4F7A0}" ShortID="765286619">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambient" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="stellar" ID="{5C697EFE-569E-497F-AC6E-1D97DF389C5F}" ShortID="533428724">
+													<Language>SFX</Language>
+													<AudioFile>stellar.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{231C5AF0-3956-4B24-B998-9FD6B39F304F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{B936C45D-D179-405E-8284-7686F345D958}">
+													<ClipList>
+														<MusicClip Name="stellar" ID="{BFC3331A-659C-4F39-90F0-56BC12C0CF9A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="36000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="stellar" ID="{5C697EFE-569E-497F-AC6E-1D97DF389C5F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{B109F191-38C5-47E4-B99D-65F954A8F214}"/>
+										<MusicCue Name="Exit Cue" ID="{4A3757C4-55BF-4D43-BD1C-D7CC4B9108AF}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="36000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{010EF270-D97C-4490-A8FD-11B0321CF6C5}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{BE094F73-0848-4DD4-819B-E6A8BDF38AD9}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{C4A6CC3F-661C-4324-A5A3-D6F13C7CA266}" ShortID="190905742">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{ADBA55DE-9790-404D-8878-B4814840D080}" ShortID="1019075437">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="stellar" ID="{E933D55D-8976-4D31-BB20-54C8D6747E5F}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -614,6 +726,10 @@
 							<CustomState>
 								<StateRef Name="State_4" ID="{21E1EAC9-8847-45D0-A9F0-1E972523A6F5}"/>
 								<State Name="" ID="{6BFC5C82-C066-4707-A226-B3C1781423D7}" ShortID="26536210"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="State_5_Silence" ID="{3F0ADDE9-C245-48FA-8DFC-66CD7786AD37}"/>
+								<State Name="" ID="{9F76A11B-F7C0-444D-A85A-00AF13C9D770}" ShortID="209610811"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="State_3" ID="{00169640-036D-4BFF-9318-00D9433CF0B7}"/>
@@ -727,6 +843,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="4THSide" ID="{E7BA5FD6-720D-4025-8975-1C9952A36A5E}" WorkUnitID="{FDF42D48-D880-4852-AB5D-97E72830E17C}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="State_5_Silence" ID="{3F0ADDE9-C245-48FA-8DFC-66CD7786AD37}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="5THSilence" ID="{259E5551-DEFD-434B-87B1-8BF2CDCB4F9A}" WorkUnitID="{FDF42D48-D880-4852-AB5D-97E72830E17C}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

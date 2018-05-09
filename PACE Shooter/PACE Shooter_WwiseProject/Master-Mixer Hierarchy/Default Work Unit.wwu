@@ -108,6 +108,40 @@
 							</ReferenceList>
 						</AuxBus>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music_Levels" ID="{CFB04FD5-E3D8-455C-9D3A-195AEA5D6D55}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="State_2" ID="{5292512C-BF53-4366-853C-29CBC35A084E}"/>
+								<State Name="" ID="{0339CAF0-A4FC-4F9F-A666-056D5F866185}" ShortID="503229492"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="State_1" ID="{E7480A9F-A14A-4482-AF3A-D356775F1437}"/>
+								<State Name="" ID="{36D9FA23-DF80-4202-B044-4DE34A5CBDB9}" ShortID="699112517"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="State_4" ID="{21E1EAC9-8847-45D0-A9F0-1E972523A6F5}"/>
+								<State Name="" ID="{D834BE02-DAB4-43D7-9157-D10A62FBA193}" ShortID="455307055"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="State_5_Silence" ID="{3F0ADDE9-C245-48FA-8DFC-66CD7786AD37}"/>
+								<State Name="" ID="{3CC66BBC-DC3E-4342-B0C6-74EC192D8830}" ShortID="411624954">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="57"/>
+										<Property Name="Volume" Type="Real64" Value="-11"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="State_3" ID="{00169640-036D-4BFF-9318-00D9433CF0B7}"/>
+								<State Name="" ID="{590A75C2-D2E4-4A56-8BC3-9E5316869F1C}" ShortID="742473450"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</Bus>
 				<Bus Name="Heartbeat" ID="{CE0ECCF5-9AE8-48BB-B157-F95ADA74BD51}">
 					<PropertyList>

@@ -10,6 +10,7 @@
 						<State Name="State_2" ID="{5292512C-BF53-4366-853C-29CBC35A084E}"/>
 						<State Name="State_3" ID="{00169640-036D-4BFF-9318-00D9433CF0B7}"/>
 						<State Name="State_4" ID="{21E1EAC9-8847-45D0-A9F0-1E972523A6F5}"/>
+						<State Name="State_5_Silence" ID="{3F0ADDE9-C245-48FA-8DFC-66CD7786AD37}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
