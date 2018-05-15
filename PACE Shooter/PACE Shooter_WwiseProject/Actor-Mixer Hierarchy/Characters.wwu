@@ -12,6 +12,11 @@
 								<Value>-21</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -253,7 +258,7 @@
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-44</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
@@ -273,7 +278,7 @@
 							<ObjectRef Name="EnemyBullet" ID="{7620C538-124F-400E-8057-92CEC3EBF2C5}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Realverb" ID="{DD9AED85-E744-455A-BA51-5126F86AD672}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -370,16 +375,16 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-7.44079</YPos>
+												<YPos>-1.08392</YPos>
 												<Flags>5</Flags>
 											</Point>
 											<Point>
 												<XPos>0.001</XPos>
-												<YPos>-7.14125</YPos>
+												<YPos>-1.26913</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>3</XPos>
+												<XPos>5</XPos>
 												<YPos>-200</YPos>
 												<Flags>0</Flags>
 											</Point>
@@ -470,7 +475,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>7</Value>
+								<Value>4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

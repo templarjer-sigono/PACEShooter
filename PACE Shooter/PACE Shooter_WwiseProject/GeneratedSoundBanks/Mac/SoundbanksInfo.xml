@@ -25,6 +25,7 @@
 				<Event Id="3891866179" Name="Enemy_boss_hurt" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_hurt" MaxAttenuation="40.000000"/>
 				<Event Id="1205999388" Name="Enemy_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_death" MaxAttenuation="40.000000"/>
 				<Event Id="1050776119" Name="Enemy_shoot" ObjectPath="\Events\Default Work Unit\Characters\Enemy_shoot" MaxAttenuation="25.000000"/>
+				<Event Id="2555741448" Name="Finish" ObjectPath="\Events\Default Work Unit\Music\Finish"/>
 				<Event Id="3734989563" Name="Interactive_Music" ObjectPath="\Events\Default Work Unit\Music\Interactive_Music"/>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Ambient\Music"/>
 				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="25.000000"/>
@@ -62,6 +63,10 @@
 				<File Id="396550388" Language="SFX">
 					<ShortName>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</ShortName>
 					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_639021E3.wem</Path>
+				</File>
+				<File Id="402696624" Language="SFX">
+					<ShortName>finished.wav</ShortName>
+					<Path>SFX/finished_BF30CD25.wem</Path>
 				</File>
 				<File Id="472151440" Language="SFX">
 					<ShortName>130 B.wav</ShortName>

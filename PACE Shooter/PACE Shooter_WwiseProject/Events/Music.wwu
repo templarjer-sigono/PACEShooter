@@ -27,6 +27,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Finish" ID="{6A8051CE-BAEE-4030-9F57-D65274241B05}">
+					<ChildrenList>
+						<Action Name="" ID="{BDE1CA33-04AC-42CF-AC91-7C6B97597268}" ShortID="69551429">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pace_Ending" ID="{DEF30598-E89E-4D7F-9CCF-9D7C1AD751E3}" WorkUnitID="{6D034EA9-ABCE-48D7-B1C9-F95FA5E63989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

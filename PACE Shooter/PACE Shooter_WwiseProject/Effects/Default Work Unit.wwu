@@ -214,9 +214,20 @@
 				</Effect>
 				<Effect Name="Realverb" ID="{77710A44-EE3A-42FE-9907-428DADCBAFF5}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 					<PropertyList>
-						<Property Name="DryLevel" Type="Real32" Value="-23.3"/>
-						<Property Name="ReverbLevel" Type="Real32" Value="-15"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="0"/>
 						<Property Name="RoomSize" Type="Real32" Value="44"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Harmonizer" ID="{BD56078C-62AA-4C8F-8DB3-86251F711518}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<PropertyList>
+						<Property Name="Voice1Pitch" Type="Real32" Value="5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Delay_01" ID="{96D22EE7-7346-4DAA-BA0C-47CC0BDBDD90}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="0.375"/>
+						<Property Name="Feedback" Type="Real32" Value="63"/>
+						<Property Name="WetDryMix" Type="Real32" Value="29.5"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>

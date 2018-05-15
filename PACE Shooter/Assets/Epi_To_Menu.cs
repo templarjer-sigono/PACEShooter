@@ -7,7 +7,7 @@ public class Epi_To_Menu : MonoBehaviour {
 	private int health = 16; 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame

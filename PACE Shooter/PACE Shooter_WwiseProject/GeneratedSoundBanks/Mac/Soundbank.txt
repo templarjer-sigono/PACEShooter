@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1727127563	Play_bosswind			\Default Work Unit\Ambient\Play_bosswind	
 	1932796752	Play_noise			\Default Work Unit\Ambient\Play_noise	
 	2470536401	Play_scream			\Default Work Unit\Ambient\Play_scream	
+	2555741448	Finish			\Default Work Unit\Music\Finish	
 	2838936948	Play_rain			\Default Work Unit\Ambient\Play_rain	
 	2984543794	Play_chant			\Default Work Unit\Ambient\Play_chant	
 	3388699230	Enemy_boss_death			\Default Work Unit\Characters\Enemy_boss_death	
@@ -33,6 +34,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	960762675	New_Wwise_Delay	Wwise Delay			
+	1471270119	New_Wwise_Delay_01	Wwise Delay			
+	2282264063	New_Wwise_Harmonizer	Wwise Harmonizer			
 	3038057016	New_Wwise_Peak_Limiter_01	Wwise Peak Limiter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -42,6 +45,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	294065667	Play_Cricket	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\grass_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Cricket		11584916
 	393663107	Play_bosswind	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\Spacewind_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_bosswind		1432224
 	396550388	Play_Scream	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_639021E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Play_Scream		2281740
+	402696624	Pace_Ending	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\finished_BF30CD25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Pace_Ending		3456064
 	472151440	130 B	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\130 B_BF30CD25.wem		\Interactive Music Hierarchy\Default Work Unit\Music\2NDSide\130 B\130 B		1890528
 	533428724	stellar	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\stellar_BF30CD25.wem		\Interactive Music Hierarchy\Default Work Unit\Music\5THSilence\stellar\stellar		864064
 	635012149	Enemy_Boss_death	Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\.cache\Mac\SFX\SFX_BossDeath_2_1B262DC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Enemy_Boss_death		30356
