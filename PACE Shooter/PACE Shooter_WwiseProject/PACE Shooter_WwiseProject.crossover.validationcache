@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="85">
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Actor-Mixer Hierarchy\Ambient.wwu" DateLow="1525856574" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Actor-Mixer Hierarchy\Characters.wwu" DateLow="1525856401" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Actor-Mixer Hierarchy\Ambient.wwu" DateLow="1526368028" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Actor-Mixer Hierarchy\Characters.wwu" DateLow="1526378347" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1525755178" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1525862457" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1525751740" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1525751740" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1525774343" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1525751740" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1525849719" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1526367846" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Events\Ambient.wwu" DateLow="1525838561" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Events\Characters.wwu" DateLow="1525766337" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Events\Default Work Unit.wwu" DateLow="1525838822" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Events\Music.wwu" DateLow="1525864522" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1525768085" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Events\Music.wwu" DateLow="1526367873" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1526358771" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1525863830" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1525862847" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1526360011" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1525751740" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1525751740" DateHigh="0"/>
-	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\PACE Shooter_WwiseProject.crossover.wsettings" DateLow="1526351489" DateHigh="0"/>
+	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\PACE Shooter_WwiseProject.crossover.wsettings" DateLow="1526378357" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\PACE Shooter_WwiseProject.wproj" DateLow="1525852106" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1525751740" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\Sourcetree Repositories\PACEShooter\PACE Shooter\PACE Shooter_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1525751739" DateHigh="0"/>
