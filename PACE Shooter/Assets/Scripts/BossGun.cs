@@ -46,6 +46,7 @@ public class BossGun : MonoBehaviour {
 			AkSoundEngine.PostEvent ("Enemy_boss_hurt", gameObject);
 			if (BossHealth <= 0) {
 				GameObject.Instantiate(BossDeathSFX);
+				//AkTerminator.Destroy ();
 				Destroy (gameObject);
 
 			}

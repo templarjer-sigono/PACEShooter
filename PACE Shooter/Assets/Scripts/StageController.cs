@@ -60,10 +60,10 @@ public class StageController : MonoBehaviour {
 			if (BossLeft < 1 || Input.GetKeyDown (KeyCode.P)) 
 			{
 				    AkBankManager.UnloadBank ("Soundbank");
-					Debug.Log ("Level Now Changed to: " + stage);
+					//Debug.Log ("Level Now Changed to: " + stage);
 					//_currentstage++;
-			
-					SceneManager.LoadScene (SceneNbr+1);
+				SceneManager.UnloadScene(SceneNbr);	
+				SceneManager.LoadScene (SceneNbr+1);
 				}
 			}
 		}
