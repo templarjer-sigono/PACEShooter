@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="Player_health" ID="{1E6304D5-35D2-4013-83A4-18B769B8958D}"/>
+				<GameParameter Name="Boss_Health" ID="{DE1BCB72-F85E-44B5-B6A4-BE5ADC07CD29}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

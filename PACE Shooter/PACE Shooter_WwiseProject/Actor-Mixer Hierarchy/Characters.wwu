@@ -12,11 +12,6 @@
 								<Value>-21</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -37,6 +32,11 @@
 							<PropertyList>
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.39174989144594"/>
 								<Property Name="TrimEnd" Type="Real64" Value="1.26230520577025"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>SFX_BossDeath_2.wav</AudioFile>
@@ -69,7 +69,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-32</Value>
+								<Value>-20</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -207,6 +207,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="HEARTBEAT SLOW_R" ID="{B55CBF1C-DE11-4660-833D-CBFA95D06A4E}" ShortID="104414493">
+							<PropertyList>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>HEARTBEAT SLOW.R.wav</AudioFile>
 						</AudioFileSource>
@@ -251,7 +258,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -275,6 +282,11 @@
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.00864231728396911"/>
 								<Property Name="TrimBegin" Type="Real64" Value="0.0120992441975567"/>
 								<Property Name="TrimEnd" Type="Real64" Value="0.129791892301063"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>step on floor 1.wav</AudioFile>
@@ -288,14 +300,107 @@
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
-								<Value>-1010</Value>
+								<Value>-30</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EF6B5EBB-F300-4A88-BCEE-F0E2821D1974}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+							<RTPCList>
+								<RTPC Name="" ID="{9B973933-8244-49EF-97E2-E0BB244C83DB}" ShortID="348525894">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Boss_Health" ID="{DE1BCB72-F85E-44B5-B6A4-BE5ADC07CD29}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5AD68D03-8F16-4144-AB9C-5C05ECF65010}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>810</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>4</XPos>
+												<YPos>247</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>8.02084363972165</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
 						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{8EBC51CB-D11A-4ACF-8D08-D15DC955465F}" ShortID="798038557">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Boss_Health" ID="{DE1BCB72-F85E-44B5-B6A4-BE5ADC07CD29}" WorkUnitID="{75DF1815-DF9F-4333-A2D2-72C4AA5C22F6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{52490B79-B369-4CB9-AC1D-C63C0C39A8B7}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-7.44079</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.001</XPos>
+												<YPos>-7.14125</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>3</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-21</Value>
+								<Value>-7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -309,6 +414,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Little Football Ball Bounce_TS 14" ID="{4245CC6F-2BA4-4973-B254-7D12233882D7}" ShortID="684284575">
@@ -316,6 +424,11 @@
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.0118910873685498"/>
 								<Property Name="TrimBegin" Type="Real64" Value="0.258750061139643"/>
 								<Property Name="TrimEnd" Type="Real64" Value="0.434262510699438"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -338,7 +451,13 @@
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{AC87E8CC-93DA-4EA1-A876-A1680DDF2F78}"/>
+									<Modifier Name="" ID="{AC87E8CC-93DA-4EA1-A876-A1680DDF2F78}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
@@ -351,7 +470,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -387,7 +506,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -450,7 +569,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -473,6 +592,11 @@
 							<PropertyList>
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.172950657396732"/>
 								<Property Name="TrimEnd" Type="Real64" Value="0.25122279285889"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>volleyball_hit_medium_2.wav</AudioFile>

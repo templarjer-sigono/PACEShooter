@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossGun : MonoBehaviour {
 	public GameObject BossBulletGO;
 	public GameObject BossDeathSFX;
-	private int BossHealth = 6;
+	private int BossHealth = 10;
 	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
 
@@ -19,7 +19,7 @@ public class BossGun : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		
+		AkSoundEngine.SetRTPCValue ("Boss_Health", BossHealth);
 	}
 	void FireBossBullet()
 	{

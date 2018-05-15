@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
@@ -57,11 +57,6 @@
 					<ChildrenList>
 						<AuxBus Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}">
 							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
 								<Property Name="BypassEffect0" Type="bool">
 									<RTPCList>
 										<RTPC Name="" ID="{EE9E69CC-8559-4034-8E30-EA7FD72B6F2E}" ShortID="836402877">
@@ -99,6 +94,11 @@
 											</Curve>
 										</RTPC>
 									</RTPCList>
+								</Property>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -161,13 +161,6 @@
 					</ReferenceList>
 				</Bus>
 				<Bus Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>8</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{292694FE-290C-4457-8062-956429B7BC27}" WorkUnitID="{20F95F11-98FB-485D-B8AA-01C27D569002}"/>
@@ -187,6 +180,9 @@
 				<Bus Name="Music" ID="{44B585CF-8B9E-40F9-9F52-B10A4F31FC6F}">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{2F6E78B5-DACF-464A-B9A0-85CF20B737FA}" ShortID="416225640">
 									<ReferenceList>

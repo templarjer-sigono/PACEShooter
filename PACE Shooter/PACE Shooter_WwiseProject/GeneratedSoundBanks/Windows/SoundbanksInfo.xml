@@ -25,12 +25,14 @@
 				<Event Id="3891866179" Name="Enemy_boss_hurt" ObjectPath="\Events\Default Work Unit\Characters\Enemy_boss_hurt" MaxAttenuation="40.000000"/>
 				<Event Id="1205999388" Name="Enemy_death" ObjectPath="\Events\Default Work Unit\Characters\Enemy_death" MaxAttenuation="40.000000"/>
 				<Event Id="1050776119" Name="Enemy_shoot" ObjectPath="\Events\Default Work Unit\Characters\Enemy_shoot" MaxAttenuation="25.000000"/>
-				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="45.000000"/>
-				<Event Id="2984543794" Name="Play_chant" ObjectPath="\Events\Default Work Unit\Ambient\Play_chant" MaxAttenuation="45.000000"/>
+				<Event Id="3734989563" Name="Interactive_Music" ObjectPath="\Events\Default Work Unit\Music\Interactive_Music"/>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Ambient\Music"/>
+				<Event Id="1727127563" Name="Play_bosswind" ObjectPath="\Events\Default Work Unit\Ambient\Play_bosswind" MaxAttenuation="25.000000"/>
+				<Event Id="2984543794" Name="Play_chant" ObjectPath="\Events\Default Work Unit\Ambient\Play_chant" MaxAttenuation="25.000000"/>
 				<Event Id="3829433163" Name="Play_cricket" ObjectPath="\Events\Default Work Unit\Ambient\Play_cricket" MaxAttenuation="100.000000"/>
 				<Event Id="897895173" Name="Play_garage" ObjectPath="\Events\Default Work Unit\Ambient\Play_garage"/>
-				<Event Id="1932796752" Name="Play_noise" ObjectPath="\Events\Default Work Unit\Ambient\Play_noise" MaxAttenuation="45.000000"/>
-				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="120.000000"/>
+				<Event Id="1932796752" Name="Play_noise" ObjectPath="\Events\Default Work Unit\Ambient\Play_noise" MaxAttenuation="25.000000"/>
+				<Event Id="2838936948" Name="Play_rain" ObjectPath="\Events\Default Work Unit\Ambient\Play_rain" MaxAttenuation="80.000000"/>
 				<Event Id="2470536401" Name="Play_scream" ObjectPath="\Events\Default Work Unit\Ambient\Play_scream" MaxAttenuation="100.000000"/>
 				<Event Id="3484321931" Name="Player_heartbeat" ObjectPath="\Events\Default Work Unit\Characters\Player_heartbeat"/>
 				<Event Id="1068092414" Name="Player_hurt" ObjectPath="\Events\Default Work Unit\Characters\Player_hurt"/>
@@ -39,59 +41,79 @@
 			<IncludedMemoryFiles>
 				<File Id="104414493" Language="SFX">
 					<ShortName>HEARTBEAT SLOW.R.wav</ShortName>
-					<Path>SFX/HEARTBEAT SLOW.R_F17FB28C.wem</Path>
+					<Path>SFX/HEARTBEAT SLOW.R_BF30CD25.wem</Path>
 				</File>
 				<File Id="195172219" Language="SFX">
 					<ShortName>Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149.wav</ShortName>
-					<Path>SFX/Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_8F6DB5F3.wem</Path>
+					<Path>SFX/Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149_A8428956.wem</Path>
+				</File>
+				<File Id="198825584" Language="SFX">
+					<ShortName>150 ting ting.wav</ShortName>
+					<Path>SFX/150 ting ting_BF30CD25.wem</Path>
 				</File>
 				<File Id="294065667" Language="SFX">
 					<ShortName>grass.wav</ShortName>
-					<Path>SFX/grass_F17FB28C.wem</Path>
+					<Path>SFX/grass_BF30CD25.wem</Path>
 				</File>
 				<File Id="393663107" Language="SFX">
 					<ShortName>Spacewind.wav</ShortName>
-					<Path>SFX/Spacewind_F17FB28C.wem</Path>
+					<Path>SFX/Spacewind_BF30CD25.wem</Path>
 				</File>
 				<File Id="396550388" Language="SFX">
 					<ShortName>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</ShortName>
-					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_A6D51752.wem</Path>
+					<Path>SFX/HORROR GENERAL KID SCREAMS AMBIENT REVERB 01_639021E3.wem</Path>
+				</File>
+				<File Id="472151440" Language="SFX">
+					<ShortName>130 B.wav</ShortName>
+					<Path>SFX/130 B_BF30CD25.wem</Path>
+				</File>
+				<File Id="533428724" Language="SFX">
+					<ShortName>stellar.wav</ShortName>
+					<Path>SFX/stellar_BF30CD25.wem</Path>
 				</File>
 				<File Id="635012149" Language="SFX">
 					<ShortName>SFX_BossDeath_2.wav</ShortName>
-					<Path>SFX/SFX_BossDeath_2_21CEB1C3.wem</Path>
+					<Path>SFX/SFX_BossDeath_2_1B262DC2.wem</Path>
+				</File>
+				<File Id="669396732" Language="SFX">
+					<ShortName>pace.wav</ShortName>
+					<Path>SFX/pace_BF30CD25.wem</Path>
 				</File>
 				<File Id="684284575" Language="SFX">
 					<ShortName>Little Football Ball Bounce_TS 14.wav</ShortName>
-					<Path>SFX/Little Football Ball Bounce_TS 14_FC81D84E.wem</Path>
+					<Path>SFX/Little Football Ball Bounce_TS 14_480D1DD7.wem</Path>
 				</File>
-				<File Id="881094850" Language="SFX">
-					<ShortName>SFX_BossHurt_3.wav</ShortName>
-					<Path>SFX/SFX_BossHurt_3_1C9C67B2.wem</Path>
+				<File Id="710367645" Language="SFX">
+					<ShortName>130 C.wav</ShortName>
+					<Path>SFX/130 C_BF30CD25.wem</Path>
+				</File>
+				<File Id="837970780" Language="SFX">
+					<ShortName>130 A.wav</ShortName>
+					<Path>SFX/130 A_BF30CD25.wem</Path>
 				</File>
 				<File Id="919250972" Language="SFX">
 					<ShortName>volleyball_hit_medium_2.wav</ShortName>
-					<Path>SFX/volleyball_hit_medium_2_A792FE00.wem</Path>
+					<Path>SFX/volleyball_hit_medium_2_03DCF3A9.wem</Path>
 				</File>
 				<File Id="920018117" Language="SFX">
 					<ShortName>heavy rain 01.wav</ShortName>
-					<Path>SFX/heavy rain 01_C5105EA1.wem</Path>
+					<Path>SFX/heavy rain 01_BD2C9F68.wem</Path>
 				</File>
 				<File Id="932886245" Language="SFX">
 					<ShortName>Pluton.wav</ShortName>
-					<Path>SFX/Pluton_D105CF93.wem</Path>
+					<Path>SFX/Pluton_A5F39E9E.wem</Path>
 				</File>
 				<File Id="953850921" Language="SFX">
 					<ShortName>step on floor 1.wav</ShortName>
-					<Path>SFX/step on floor 1_8CA35408.wem</Path>
+					<Path>SFX/step on floor 1_B5A70D31.wem</Path>
 				</File>
 				<File Id="959798393" Language="SFX">
 					<ShortName>CHANT.wav</ShortName>
-					<Path>SFX/CHANT_72825533.wem</Path>
+					<Path>SFX/CHANT_4088568E.wem</Path>
 				</File>
 				<File Id="1050844826" Language="SFX">
 					<ShortName>Floating_Clave_ss.wav</ShortName>
-					<Path>SFX/Floating_Clave_ss_E5AFB33B.wem</Path>
+					<Path>SFX/Floating_Clave_ss_06BB8E3A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

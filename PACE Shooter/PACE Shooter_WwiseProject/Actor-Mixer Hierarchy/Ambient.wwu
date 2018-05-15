@@ -36,6 +36,11 @@
 								<Property Name="FadeInDuration" Type="Real64" Value="1.32097563897166"/>
 								<Property Name="FadeOutDuration" Type="Real64" Value="1.14484555377544"/>
 								<Property Name="TrimEnd" Type="Real64" Value="31.6153502927216"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>heavy rain 01.wav</AudioFile>
@@ -226,6 +231,11 @@
 								<Property Name="FadeInDuration" Type="Real64" Value="0.631855500821018"/>
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.534646962233168"/>
 								<Property Name="TrimEnd" Type="Real64" Value="23.7674876847291"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>HORROR GENERAL KID SCREAMS AMBIENT REVERB 01.wav</AudioFile>
@@ -280,6 +290,11 @@
 							<PropertyList>
 								<Property Name="FadeInDuration" Type="Real64" Value="0.892158520537097"/>
 								<Property Name="FadeOutDuration" Type="Real64" Value="1.13867600647498"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Pluton.wav</AudioFile>
@@ -315,6 +330,11 @@
 							<PropertyList>
 								<Property Name="FadeInDuration" Type="Real64" Value="0.739756419662509"/>
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.616463683052093"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>CHANT.wav</AudioFile>
@@ -350,6 +370,11 @@
 							<PropertyList>
 								<Property Name="FadeOutDuration" Type="Real64" Value="2.36093947092165"/>
 								<Property Name="TrimEnd" Type="Real64" Value="23.3421185426971"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Sound design horror accent bed swells low dark ambient 01_SFXBible_ss01149.wav</AudioFile>
@@ -486,6 +511,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="grass" ID="{2B224A74-DD71-470F-BC2B-AF4135CD5E1A}" ShortID="294065667">
+							<PropertyList>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>grass.wav</AudioFile>
 						</AudioFileSource>
@@ -505,7 +537,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -544,7 +576,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
