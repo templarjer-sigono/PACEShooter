@@ -571,12 +571,12 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-13</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -588,7 +588,7 @@
 							<ObjectRef Name="Music" ID="{44B585CF-8B9E-40F9-9F52-B10A4F31FC6F}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Realverb" ID="{DD9AED85-E744-455A-BA51-5126F86AD672}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

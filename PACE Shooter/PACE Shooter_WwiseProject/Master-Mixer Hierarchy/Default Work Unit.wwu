@@ -107,6 +107,13 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<AuxBus Name="Realverb" ID="{DD9AED85-E744-455A-BA51-5126F86AD672}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Realverb" ID="{77710A44-EE3A-42FE-9907-428DADCBAFF5}" WorkUnitID="{1AE32FC0-DF5A-441F-A2C0-2DEA396C15FF}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>

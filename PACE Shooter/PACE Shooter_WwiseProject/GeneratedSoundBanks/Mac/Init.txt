@@ -23,11 +23,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2237556270	Realverb			\Default Work Unit\Ambient\Realverb	
 	2917229290	Reverb_Bus			\Default Work Unit\Ambient\Reverb_Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
 	961775091	Wwise Matrix Reverb (Custom)	Wwise Matrix Reverb			
 	2199193560	New_Wwise_RoomVerb	Wwise RoomVerb			
+	2237556270	Realverb	Wwise RoomVerb			
 	3970951098	New_Wwise_Peak_Limiter	Wwise Peak Limiter			
 	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 

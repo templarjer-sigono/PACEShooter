@@ -24,7 +24,7 @@
 							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Realverb" ID="{DD9AED85-E744-455A-BA51-5126F86AD672}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -354,7 +354,7 @@
 						<Property Name="Spatialization" Type="int16" Value="0"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-96</Value>
+								<Value>-28</Value>
 							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{8EBC51CB-D11A-4ACF-8D08-D15DC955465F}" ShortID="798038557">
@@ -415,7 +415,7 @@
 							<ObjectRef Name="Bullet" ID="{C8781197-45F7-4F3F-98B8-FD5BECB6431D}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Bus" ID="{7C58614E-FF2D-48DB-AC62-6D557F8562B6}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
+							<ObjectRef Name="Realverb" ID="{DD9AED85-E744-455A-BA51-5126F86AD672}" WorkUnitID="{39C9A8EC-9049-4434-A307-7639313ACB07}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -72,6 +72,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID REALVERB = 2237556270U;
         static const AkUniqueID REVERB_BUS = 2917229290U;
     } // namespace AUX_BUSSES
 
