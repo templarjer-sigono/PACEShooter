@@ -8,6 +8,7 @@ public class BossGun : MonoBehaviour {
 	private int BossHealth = 10;
 	private int BossMultiShot = 4;
 	public Animator _ShootAnim;
+	public GameObject Shiny;
 
 	// Use this for initialization
 	void Start () {
@@ -43,6 +44,8 @@ public class BossGun : MonoBehaviour {
 	{
 		if((col.tag == "Bullets")){
 			BossHealth -= 1;
+			Shiny.transform.position = this.gameObject.transform.position;
+			GameObject.Instantiate(Shiny);
 			AkSoundEngine.PostEvent ("Enemy_boss_hurt", gameObject);
 			if (BossHealth <= 0) {
 				GameObject.Instantiate(BossDeathSFX);

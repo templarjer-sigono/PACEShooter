@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MENUtoGAME : MonoBehaviour {
 
 	public string levelName;
-	private int health = 16;
+	private int health = 18;
 	// Use this for initialization
 	void Start () {
 		int SceneNbr = SceneManager.GetActiveScene ().buildIndex;

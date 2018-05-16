@@ -13,6 +13,7 @@ public class EnemyGun : MonoBehaviour {
 
 
 
+
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireEnemyBullet", 0.5f, 1f);
@@ -42,13 +43,15 @@ public class EnemyGun : MonoBehaviour {
 			AkSoundEngine.PostEvent ("Enemy_shoot", gameObject);
 		}
 	}
-
+    
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if((col.tag == "Bullets")){
+			EnemyDeathSFX.transform.position = this.gameObject.transform.position;
+			GameObject.Instantiate(EnemyDeathSFX);
 			Destroy(gameObject);
 			Debug.Log ("Destroyed!");
-			GameObject.Instantiate(EnemyDeathSFX);
+		
 		}
 			
 	}

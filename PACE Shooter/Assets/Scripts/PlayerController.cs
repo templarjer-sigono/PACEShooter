@@ -112,6 +112,7 @@ public class PlayerController : MonoBehaviour {
 				else {
 					DeathZoom = true;
 					DeathCheck = true;
+				    health = 18;
 				}
 			}
 		}

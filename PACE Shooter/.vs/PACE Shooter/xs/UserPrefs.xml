@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{F347F7DA-9202-1090-2C10-09C8378D105C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Epi_To_Menu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyGun.cs">
     <Files>
-      <File FileName="Assets/Wwise/Deployment/Components/AkTerminator.cs" Line="20" Column="41" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="148" Column="21" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="117" Column="5" />
       <File FileName="Assets/Scripts/WWiseInstantiator.cs" Line="1" Column="1" />
       <File FileName="Assets/wwise_destroy.cs" Line="1" Column="1" />
       <File FileName="Assets/Wwise/Deployment/API/Handwritten/AkCallbackManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Wwise/Deployment/Components/AkEvent.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/BulletScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EnemyGun.cs" Line="42" Column="11" />
-      <File FileName="Assets/Scripts/MENUtoGAME.cs" Line="9" Column="14" />
+      <File FileName="Assets/Scripts/MENUtoGAME.cs" Line="10" Column="16" />
       <File FileName="Assets/Epi_To_Menu.cs" Line="10" Column="1" />
       <File FileName="Assets/Wwise/Deployment/Components/AkTriggerEnter.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/BossGun.cs" Line="8" Column="29" />
+      <File FileName="Assets/Scripts/EnemyDeathPostEvent.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
